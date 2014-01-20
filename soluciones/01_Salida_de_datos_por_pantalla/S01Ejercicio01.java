@@ -1,5 +1,5 @@
 /**
- * 1. Salida por pantalla y variables
+ * 1. Salida por pantalla
  *
  * 1. Escribe una programa que muestre tu nombre por pantalla.
  *

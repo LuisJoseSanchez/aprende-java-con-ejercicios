@@ -1,6 +1,6 @@
 /**
  * 
- * 1. Salida por pantalla y variables
+ * 1. Salida por pantalla
  *
  * 3. Escribe un programa que muestre por pantalla 10 palabras en inglés
  *    junto a su correspondiente traducción al castellano. Las palabras

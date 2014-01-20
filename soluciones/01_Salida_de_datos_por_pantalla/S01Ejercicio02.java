@@ -1,6 +1,6 @@
 /**
  *
- * 1. Salida por pantalla y variables
+ * 1. Salida por pantalla
  *
  * 2. Modifica el programa anterior para que además se muestre tu
  *    dirección y tu número de teléfono. Asegúrate de que los
