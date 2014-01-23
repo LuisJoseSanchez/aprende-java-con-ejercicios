@@ -17,11 +17,9 @@ public class NumeroPrimoConFuncion {
 	
 	static boolean esPrimo(int x) {
 		
-		boolean esPri = true;
-		
 		for (int i = 2; i < x; i++)
-			if ((x % i) == 0) esPri = false;
+			if ((x % i) == 0) return false;
 		
-		return esPri;	
+		return true;
 	}
 }
