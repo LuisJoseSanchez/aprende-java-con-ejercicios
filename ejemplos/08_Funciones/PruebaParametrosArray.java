@@ -6,9 +6,8 @@ public class PruebaParametrosArray {
 		int m[] = new int[5];
 		
 		muestraArray(n);
-		m = incrementa2(n);
+		incrementa(n);
 		muestraArray(n);
-		muestraArray(m);
 	}
 	
 	public static void muestraArray(int x[]) {
@@ -22,14 +21,5 @@ public class PruebaParametrosArray {
 			
 		for (int i = 0; i < x.length; i++)
 			x[i]++;
-	}
-	
-	public static int[] incrementa2(int x[]) {
-		int[] a = new int[x.length];
-		
-		for (int i = 0; i < x.length; i++)
-			a[i] = x[i] + 1;
-			
-		return a;
 	}
 }
