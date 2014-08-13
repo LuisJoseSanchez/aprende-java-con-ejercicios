@@ -3,8 +3,7 @@
  *
  * @author Luis J. Sánchez
  */
- 
-public class VariablesEnteras {
+  public class VariablesEnteras {
 	public static void main(String[] args) {
 		int x; // Se declara la variable x como entera
 
