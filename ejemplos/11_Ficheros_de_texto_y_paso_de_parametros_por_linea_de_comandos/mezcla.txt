@@ -1,0 +1,15 @@
+verde
+Venus
+amarillo
+Marte
+azul
+La Tierra
+rojo
+Mercurio
+blanco
+Saturno
+naranja
+Júpiter
+Urano
+Neptuno
+Plutón
