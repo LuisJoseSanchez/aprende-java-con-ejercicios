@@ -5,14 +5,15 @@
  */
 
 public class Asignaciones {
-	public static void main(String[] args) {
+  public static void main(String[] args) {
 
-		int x = 2, y = 9;
+    int x = 2;
+    int y = 9;
 
-		int sum = x + y;
-		int mul = x * y;
-
-		System.out.println("La suma de mis variables es " + sum);
-		System.out.println("La multiplicación de mis variables es " + mul); 	
-	}
+    int sum = x + y;
+    System.out.println("La suma de mis variables es " + sum);
+    
+    int mul = x * y;
+    System.out.println("La multiplicación de mis variables es " + mul);   
+  }
 }
