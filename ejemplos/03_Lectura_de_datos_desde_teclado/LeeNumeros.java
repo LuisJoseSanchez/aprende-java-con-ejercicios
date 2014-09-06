@@ -5,24 +5,26 @@
 */
 
 public class LeeNumeros {
-	public static void main(String[] args) {
-		int x, y, total;
-		String linea;
+  public static void main(String[] args) {
 
-		System.out.print("Por favor, introduce un número: ");
-		//linea = System.console().readLine();
-		x = System.console().readLine();
-		//x = Integer.parseInt( linea );
+    String linea;
 
-		System.out.print("introduce otro, por favor: ");
-		linea = System.console().readLine();
-		y = Integer.parseInt( linea );
+    System.out.print("Por favor, introduce un número: ");
+    linea = System.console().readLine();
+    int primerNumero;
+    primerNumero = Integer.parseInt( linea );
 
-		total = (2 * x) + y;
+    System.out.print("introduce otro, por favor: ");
+    linea = System.console().readLine();
+    int segundoNumero;
+    segundoNumero = Integer.parseInt( linea );
 
-		System.out.print("El primer número introducido es " + x);
-		System.out.println(" y el segundo es " + y);
-		System.out.print("El doble del primer número por el segundo es ");
-		System.out.print(total); 	
-	} 
+    int total;
+    total = (2 * primerNumero) + segundoNumero;
+
+    System.out.print("El primer número introducido es " + primerNumero);
+    System.out.println(" y el segundo es " + segundoNumero);
+    System.out.print("El doble del primer número más el segundo es ");
+    System.out.print(total);   
+  } 
 }
