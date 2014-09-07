@@ -1,7 +1,7 @@
 /**
- * @author Luis José Sánchez
- *
  * Ejemplo de uso de arrays
+ * 
+ * @author Luis José Sánchez
  */
 
 public class Array01 {
