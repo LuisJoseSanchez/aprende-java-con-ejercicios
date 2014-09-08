@@ -1,4 +1,11 @@
-import matematicas.*;
+/**
+ * Dice si un número es o no es primo usando una función
+ * 
+ * @author Luis José Sánchez
+ */
+
+import matematicas.Varias;
+import matematicas.Geometria;
 
 public class PruebaFunciones {
 	
@@ -11,10 +18,11 @@ public class PruebaFunciones {
 		System.out.print("Introduzca un número entero positivo: ");
 		n = Integer.parseInt(System.console().readLine());
 	
-		if (matematicas.Varias.esPrimo(n))
+		if (matematicas.Varias.esPrimo(n)) {
 			System.out.println("El " + n + " es primo.");
-		else
+		} else {
 			System.out.println("El " + n + " no es primo.");
+    }
 		
 		
 		// Prueba digitos()

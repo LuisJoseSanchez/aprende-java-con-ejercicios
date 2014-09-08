@@ -1,3 +1,9 @@
+/**
+ * Paso de parámetros por valor
+ * 
+ * @author Luis José Sánchez
+ */
+ 
 public class PruebaParametros1 {
 	
 	public static void main(String[] args) {
@@ -13,6 +19,5 @@ public class PruebaParametros1 {
 			
 			x += 24;
 			System.out.println(x);
-			
 	}
 }

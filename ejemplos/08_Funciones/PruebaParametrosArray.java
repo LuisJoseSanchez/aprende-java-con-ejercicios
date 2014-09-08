@@ -1,3 +1,9 @@
+/**
+ * Paso de un array como parámetro
+ * 
+ * @author Luis José Sánchez
+ */
+ 
 public class PruebaParametrosArray {
 	
 	public static void main(String[] args) {
@@ -12,14 +18,16 @@ public class PruebaParametrosArray {
 	
 	public static void muestraArray(int x[]) {
 		
-		for (int i = 0; i < x.length; i++)
+		for (int i = 0; i < x.length; i++) {
 			System.out.print(x[i] + " ");
-			System.out.println();
+    }
+    System.out.println();
 	}
 	
 	public static void incrementa(int x[]) {
 			
-		for (int i = 0; i < x.length; i++)
+		for (int i = 0; i < x.length; i++) {
 			x[i]++;
+    }
 	}
 }
