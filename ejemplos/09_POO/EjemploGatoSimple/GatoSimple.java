@@ -58,7 +58,7 @@ public class GatoSimple {
    * Solo se van a pelear dos machos entre sí.
    * 
    * @param contrincante es el gato contra el que pelear
-   */  
+   */
   void peleaCon(GatoSimple contrincante) {
     if (this.sexo.equals("hembra")) {
       System.out.println("no me gusta pelear");

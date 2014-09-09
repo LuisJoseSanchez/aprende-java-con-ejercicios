@@ -6,26 +6,28 @@
 
 public abstract class Animal {
 
-	private Sexo sexo;
+  private Sexo sexo;
 
-	public Animal () {
-		sexo = Sexo.MACHO;
-	}
+  public Animal () {
+    sexo = Sexo.MACHO;
+  }
 
-	public Animal (Sexo s) {
-		sexo = s;
-	}
+  public Animal (Sexo s) {
+    sexo = s;
+  }
 
-	public Sexo getSexo() {
-		return sexo;
-	}
+  public Sexo getSexo() {
+    return sexo;
+  }
 
-	public void duerme() {
-		System.out.println("Zzzzzzz");
-	}
-	
-	public String toString() {
-		return "Sexo: " + this.sexo + "\n";
-	}
-	
+  public String toString() {
+    return "Sexo: " + this.sexo + "\n";
+  }
+  
+  /**
+   * Hace que el animal se eche a dormir.
+   */
+  public void duerme() {
+    System.out.println("Zzzzzzz");
+  }
 }
