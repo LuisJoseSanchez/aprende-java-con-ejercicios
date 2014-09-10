@@ -1,31 +1,34 @@
-/*
+/**
  * Ejemplo de uso de la clase ArrayList
+ * 
  * @author Luis José Sánchez
  */
 
 import java.util.ArrayList;
 
 public class EjemploArrayList06 {
-   public static void main(String[] args) {
+  public static void main(String[] args) {
 
-   		ArrayList<String> a = new ArrayList<String>();
-   		
-        a.add("rojo");
-        a.add("verde");
-        a.add("azul");
-        a.add("blanco");
-        a.add("amarillo");
+    ArrayList<String> a = new ArrayList<String>();
 
-        System.out.println("Contenido de la lista: ");        
+    a.add("rojo");
+    a.add("verde");
+    a.add("azul");
+    a.add("blanco");
+    a.add("amarillo");
 
-        for(String color: a)
-            System.out.println(color);
+    System.out.println("Contenido de la lista: ");
 
-        a.add(1, "turquesa");
+    for(String color: a) {
+      System.out.println(color);
+    }
 
-        System.out.println("Contenido del vector después de insertar en la posición 1: ");        
+    a.add(1, "turquesa");
 
-        for(String color: a)
-            System.out.println(color);       
-     }
+    System.out.println("Contenido del vector después de insertar en la posición 1: ");
+
+    for(String color: a) {
+      System.out.println(color);
+    }
+  }
 }
