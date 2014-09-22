@@ -9,7 +9,8 @@ public class EjemplosString {
 	public static void main(String[] args) {
 
 		System.out.println("\nEjemplo 1");
-		System.out.println("En la posición 2 de \"berengena\" está la letra " + "berengena".charAt(2));
+		System.out.println("En la posición 2 de \"berengena\" está la letra "
+                        + "berengena".charAt(2));
 		
 		System.out.println("\nEjemplo 2");
 		String frase = "Hola caracola.";
@@ -20,10 +21,12 @@ public class EjemplosString {
 		System.out.println(trozo);
 		
 		System.out.println("\nEjemplo 3");
-		System.out.println("La secuencia \"co\" aparece en la frase en la posición " + frase.indexOf("co"));
+		System.out.println("La secuencia \"co\" aparece en la frase en la posición "
+                        + frase.indexOf("co"));
 		
 		System.out.println("\nEjemplo 4");
-		System.out.println("La palabra \"murciélago\" tiene " + "murciélago".length() + " letras");
+		System.out.println("La palabra \"murciélago\" tiene "
+                        + "murciélago".length() + " letras");
 		
 		System.out.println("\nEjemplo 5");
 		String frase2 = frase.replace('o', 'u');

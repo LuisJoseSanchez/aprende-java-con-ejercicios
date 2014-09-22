@@ -1,12 +1,14 @@
-/*
- *
+/**
  * Ejemplo de uso de la clase File
  * Calcula la media de los números que se encuentran en un fichero de texto.
  * El nombre del fichero se pasa como argumento en la línea de comandos.
  *
+ * @author Luis José Sánchez
  */
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 
 class EjemploFichero09 {
 
