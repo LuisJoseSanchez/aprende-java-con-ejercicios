@@ -1,13 +1,13 @@
 # Orden de los ejemplos
 
-* Saludo1
-* Saludo2
-* Saludo3
-* Saludo4
-* PruebaVariable1
-* PruebaVariable2
-* MuestraInfo
-* Tabla
+* saludo1.jsp
+* saludo2.jsp
+* saludo3.jsp
+* saludo4.jsp
+* pruebaVariable1.jsp
+* pruebaVariable2.jsp
+* muestraInfo.jsp
+* tabla.jsp
 * PasoDeCadena
 * Incrementa5
 * Suma
