@@ -11,14 +11,15 @@
  */
 
 public class S02Ejercicio01 {
-	public static void main(String[] args) {
-		float x = 144, y = 999;
-		
-		System.out.println("x = " + x);
-		System.out.println("y = " + y);
-		System.out.println("x + y = " + (x + y));
-		System.out.println("x - y = " + (x - y));
-		System.out.println("x / y = " + (x / y));
-		System.out.println("x * y = " + (x * y));
-	}
+  public static void main(String[] args) {
+    float x = 144;
+    float y = 999;
+    
+    System.out.println("x = " + x);
+    System.out.println("y = " + y);
+    System.out.println("x + y = " + (x + y));
+    System.out.println("x - y = " + (x - y));
+    System.out.println("x / y = " + (x / y));
+    System.out.println("x * y = " + (x * y));
+  }
 }
