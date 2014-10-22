@@ -10,7 +10,6 @@
  *
  * @author Luis José Sánchez
  */
-
 public class S04Ejercicio15 {
 
 	public static void main(String[] args) {
@@ -26,25 +25,31 @@ public class S04Ejercicio15 {
 		int opcion = Integer.parseInt(System.console().readLine());
 
 		switch(opcion) {
-			case 1: System.out.println("  " + r);
-					System.out.println(" " + r + r + r);
-					System.out.println(r + r + r + r + r);
-					break;
-			case 2: System.out.println(r + r + r + r + r);
-					System.out.println(" " + r + r + r);
-					System.out.println("  " + r);
-					break;
-			case 3: System.out.println("    " + r);
-					System.out.println("  " + r + " " + r);
-					System.out.println(r + " " + r + " " + r);
-					System.out.println("  " + r + " " + r);
-					System.out.println("    " + r);
-					break;
-			case 4: System.out.println(r);
-					System.out.println(r + " " + r);
-					System.out.println(r + " " + r + " " + r);
-					System.out.println(r + " " + r);
-					System.out.println(r);
+			case 1:
+        System.out.println("  " + r);
+        System.out.println(" " + r + r + r);
+        System.out.println(r + r + r + r + r);
+        break;
+			case 2:
+        System.out.println(r + r + r + r + r);
+        System.out.println(" " + r + r + r);
+        System.out.println("  " + r);
+        break;
+			case 3:
+        System.out.println("    " + r);
+        System.out.println("  " + r + " " + r);
+        System.out.println(r + " " + r + " " + r);
+        System.out.println("  " + r + " " + r);
+        System.out.println("    " + r);
+        break;
+			case 4:
+        System.out.println(r);
+        System.out.println(r + " " + r);
+        System.out.println(r + " " + r + " " + r);
+        System.out.println(r + " " + r);
+        System.out.println(r);
+        break;
+      default:
 		}
 	}
 }
