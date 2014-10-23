@@ -34,7 +34,7 @@ public class S05Ejercicio18 {
       segundoNumero = aux;
     }
     
-    for(int i = primerNumero; i <= segundoNumero; i+=7) {
+    for(int i = primerNumero; i <= segundoNumero; i += 7) {
       System.out.print(i + " ");
     }
     

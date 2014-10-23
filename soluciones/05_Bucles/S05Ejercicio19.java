@@ -1,5 +1,4 @@
 /**
- * 
  * 5. Bucles
  * 
  * 19. Realiza un programa que pinte una pirámide por pantalla. La altura
@@ -7,9 +6,7 @@
  *     también se debe pedir por teclado.
  * 
  * @author Luis José Sánchez
- * 
  */
-
 public class S05Ejercicio19 {
 
 	public static void main(String[] args) {
@@ -27,13 +24,15 @@ public class S05Ejercicio19 {
 		while (altura <= alturaIntroducida) {
 			
 			// inserta espacios
-			for (i = 1; i <= espacios; i++)
+			for (i = 1; i <= espacios; i++) {
 				System.out.print(" ");
+      }
 			
 			// pinta la línea
-			for (i = 1; i < altura*2; i++)
+			for (i = 1; i < altura * 2; i++) {
 				System.out.print(relleno);
-			
+			}
+      
 			System.out.println();
 			
 			altura++;
