@@ -1,5 +1,4 @@
 /**
- * 
  * 6. Números aleatorios
  * 
  * 3. Igual que el ejercicio anterior pero con la baraja española. Se utilizará la baraja de
