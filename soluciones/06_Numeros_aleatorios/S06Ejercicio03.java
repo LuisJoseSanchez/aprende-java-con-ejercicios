@@ -12,24 +12,41 @@ public class S06Ejercicio03 {
 
 	public static void main(String[] args) {
 		
-		String palo = "", carta = "";
-		int numeroPalo = (int)(Math.random()*4) + 1;
+		String palo = "";
+    String carta = "";
 		
-		switch(numeroPalo) {
-			case 1: palo = "oros"; break;
-			case 2: palo = "copas"; break;
-			case 3: palo = "bastos"; break;
-			case 4: palo = "espadas";
+		switch((int)(Math.random()*4)) {
+			case 0:
+        palo = "oros";
+        break;
+			case 1:
+        palo = "copas";
+        break;
+			case 2:
+        palo = "bastos";
+        break;
+			case 3:
+        palo = "espadas";
+      default:
 		}
-
-		int numeroCarta = (int)(Math.random()*13) + 1;
 		
+    int numeroCarta = (int)(Math.random()*11) + 1;
+    
 		switch(numeroCarta) {
-			case 1:  carta = "As"; break;
-			case 11: carta = "Sota"; break;
-			case 12: carta = "Caballo"; break;
-			case 13: carta = "Rey"; break;
-			default: carta = String.valueOf(numeroCarta);
+			case 1:
+        carta = "As";
+        break;
+			case 8:
+        carta = "Sota";
+        break;
+			case 9:
+        carta = "Caballo";
+        break;
+			case 10:
+        carta = "Rey";
+        break;
+			default:
+        carta = String.valueOf(numeroCarta);
 		}
 		
 		System.out.println(carta + " de " + palo);
