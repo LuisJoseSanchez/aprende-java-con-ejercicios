@@ -1,5 +1,4 @@
 /**
- * 
  * 6. Números aleatorios
  * 
  * 1. Escribe un programa que muestre la tirada de tres dados.
@@ -7,14 +6,12 @@
  *    entre los tres dados).
  * 
  * @author Luis José Sánchez
- * 
  */
-
 public class S06Ejercicio01 {
-
   public static void main(String[] args) {
     
-    int tirada, suma = 0;
+    int tirada;
+    int suma = 0;
     
     System.out.print("Tirada de tres dados: ");
 
