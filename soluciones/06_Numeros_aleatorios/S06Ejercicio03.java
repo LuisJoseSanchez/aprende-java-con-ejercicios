@@ -10,45 +10,45 @@
 
 public class S06Ejercicio03 {
 
-	public static void main(String[] args) {
-		
-		String palo = "";
+  public static void main(String[] args) {
+    
+    String palo = "";
     String carta = "";
-		
-		switch((int)(Math.random()*4)) {
-			case 0:
+    
+    switch((int)(Math.random()*4)) {
+      case 0:
         palo = "oros";
         break;
-			case 1:
+      case 1:
         palo = "copas";
         break;
-			case 2:
+      case 2:
         palo = "bastos";
         break;
-			case 3:
+      case 3:
         palo = "espadas";
       default:
-		}
-		
+    }
+    
     int numeroCarta = (int)(Math.random()*11) + 1;
     
-		switch(numeroCarta) {
-			case 1:
+    switch(numeroCarta) {
+      case 1:
         carta = "As";
         break;
-			case 8:
+      case 8:
         carta = "Sota";
         break;
-			case 9:
+      case 9:
         carta = "Caballo";
         break;
-			case 10:
+      case 10:
         carta = "Rey";
         break;
-			default:
+      default:
         carta = String.valueOf(numeroCarta);
-		}
-		
-		System.out.println(carta + " de " + palo);
-	}
+    }
+    
+    System.out.println(carta + " de " + palo);
+  }
 }

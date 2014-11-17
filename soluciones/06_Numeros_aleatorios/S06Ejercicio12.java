@@ -12,11 +12,11 @@
 
 public class S06Ejercicio12 {
 
-	public static void main(String[] args) {
+  public static void main(String[] args) {
 
-		for(int i = 0; i < 4000; i++)
-			System.out.print((char)(Math.random() * ((126 - 32 + 1) + 32)));
+    for(int i = 0; i < 4000; i++)
+      System.out.print((char)(Math.random() * ((126 - 32 + 1) + 32)));
 
-		System.out.println();
-	}
+    System.out.println();
+  }
 }

@@ -12,27 +12,27 @@
 
 public class S06Ejercicio08 {
 
-	public static void main(String[] args) {
-		
-		int resultadoPartido;
-		
-		for (int fila = 1; fila <= 15; fila++) {
-			System.out.printf("%4d. |", fila);
-			
-			for (int apuesta = 1; apuesta <= 3; apuesta++) {
-				resultadoPartido = (int)(Math.random() * 6) + 1;
-				switch(resultadoPartido) {
-					case 1:
-					case 2:
-					case 3: System.out.print("1  |"); break;
-					case 4:
-					case 5: System.out.print(" X |"); break;
-					case 6: System.out.print("  2|"); 
-				}
-			}
-			
-			System.out.println();
+  public static void main(String[] args) {
+    
+    int resultadoPartido;
+    
+    for (int fila = 1; fila <= 15; fila++) {
+      System.out.printf("%4d. |", fila);
+      
+      for (int apuesta = 1; apuesta <= 3; apuesta++) {
+        resultadoPartido = (int)(Math.random() * 6) + 1;
+        switch(resultadoPartido) {
+          case 1:
+          case 2:
+          case 3: System.out.print("1  |"); break;
+          case 4:
+          case 5: System.out.print(" X |"); break;
+          case 6: System.out.print("  2|"); 
+        }
+      }
+      
+      System.out.println();
 
-		}
-	}
+    }
+  }
 }
