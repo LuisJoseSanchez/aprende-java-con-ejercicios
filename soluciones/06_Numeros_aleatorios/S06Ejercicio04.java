@@ -1,5 +1,4 @@
 /**
- * 
  * 6. Números aleatorios
  * 
  * 4. Muestra 20 números enteros aleatorios entre 0 y 10 (ambos incluidos)
@@ -7,9 +6,7 @@
  *
  * @author Luis José Sánchez
  */
-
 public class S06Ejercicio04 {
-
   public static void main(String[] args) {
     
     for (int i = 0; i < 20; i++) {
