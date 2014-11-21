@@ -1,7 +1,7 @@
 /**
  * 7.1 Arrays
  * 
- * 2. Define un array de 10 caracteres con nombre “simbolo” y asigna
+ * 2. Define un array de 10 simboloes con nombre “simbolo” y asigna
  *    valores a los elementos según la siguiente tabla:
  *    Posición  0   1   2   3   4   5   6   7   8   9
  *    Valor    'a' 'x'         '@'    '  ' '+' 'Q'
@@ -11,28 +11,23 @@
  *
  * @author Luis José Sánchez
  */
-
 public class S71Ejercicio02 {
 
-	public static void main(String[] args) {
-		
-			char[] caracter = new char[12];
-			
-			caracter[0] = 'a';
-			caracter[1] = 'x';
-			caracter[4] = '@';
-			caracter[6] = ' ';
-			caracter[7] = '+';
-			caracter[8] = 'Q';
-						
-			for (int i = 1; i < 12; i++)
-				System.out.println(caracter[i]);
-/**
- * 
- * Se puede observar que los valores del array se inicializan
- * automáticamente al caracter vacío.
- *
- */			
-
-	}
+  public static void main(String[] args) {
+    
+    char[] simbolo = new char[10];
+    
+    simbolo[0] = 'a';
+    simbolo[1] = 'x';
+    simbolo[4] = '@';
+    simbolo[6] = ' ';
+    simbolo[7] = '+';
+    simbolo[8] = 'Q';
+          
+    for (int i = 0; i < 10; i++) {
+      System.out.println("simbolo[" + i + "]: " + simbolo[i]);
+    }
+    // Se puede observar que los valores del array se inicializan automáticamente
+    // al simbolo vacío.
+  }
 }
