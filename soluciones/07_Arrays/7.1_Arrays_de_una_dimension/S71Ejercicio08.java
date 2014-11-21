@@ -7,17 +7,23 @@
  *
  * @author Luis José Sánchez
  */
-
 public class S71Ejercicio08 {
 
 	public static void main(String[] args) {
 	
-		String[] mes = {"enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "nomviembre", "diciembre" };
+		String[] mes = {
+      "enero", "febrero", "marzo", "abril", "mayo", "junio",
+      "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"
+    };
+                  
 		int[] temperatura = new int[12];
 		int i, j;
 		
-		String rojo = "\033[31m", verde = "\033[32m", naranja = "\033[33m";
-		String azul = "\033[34m", morado = "\033[35m", blanco = "\033[37m";
+		String verde = "\033[32m";
+    String naranja = "\033[33m";
+		String azul = "\033[34m";
+    String morado = "\033[35m";
+    String blanco = "\033[37m";
 					
 		for (i = 0; i < 12; i++) {
 			System.out.print("Introduzca la temperatura media de " + mes[i] + ": ");
@@ -26,8 +32,9 @@ public class S71Ejercicio08 {
 
 		for (i = 0; i < 12; i++) {
 			System.out.printf(azul + "%12s " + verde + "│", mes[i]);
-			for (j = 0; j < temperatura[i]; j++)
+			for (j = 0; j < temperatura[i]; j++) {
 				System.out.print(morado + "▄");
+      }
 			System.out.println(naranja + " " + temperatura[i] + "ºC" + blanco);
 		}
 	}
