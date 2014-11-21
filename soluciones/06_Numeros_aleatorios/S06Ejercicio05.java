@@ -6,9 +6,7 @@
  *
  * @author Luis José Sánchez
  */
-
 public class S06Ejercicio05 {
-
   public static void main(String[] args) {
     
     int maximo = 100;
@@ -30,6 +28,6 @@ public class S06Ejercicio05 {
       }
     }
     
-    System.out.println("\nMínimo: " + minimo + "\nMáximo: " + maximo + "\nMedia: " + suma/50);
+    System.out.println("\nMínimo: " + minimo + "\nMáximo: " + maximo + "\nMedia: " + suma / 50);
   }
 }
