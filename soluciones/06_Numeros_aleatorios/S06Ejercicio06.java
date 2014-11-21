@@ -5,15 +5,13 @@
  *
  * @author Luis José Sánchez
  */
-
 public class S06Ejercicio06 {
-
   public static void main(String[] args) {
     
     int oportunidades = 5;
     int numeroIntroducido;
     boolean acertado = false;
-    int numeroMisterioso = (int)(Math.random()*101);
+    int numeroMisterioso = (int)(Math.random() * 101);
     
     System.out.println("Estoy pensando un número del 0 al 100, intenta adivinarlo. Tienes 5 oportunidades.");
 
