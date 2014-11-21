@@ -10,11 +10,16 @@ public class S06Ejercicio07 {
   public static void main(String[] args) {
     
     int resultadoPartido;
+    int columnas = 3;
     
-    for (int fila = 1; fila <= 14; fila++) {
+    for (int fila = 1; fila <= 15; fila++) {
       System.out.printf("%4d. |", fila);
       
-      for (int apuesta = 1; apuesta <= 3; apuesta++) {
+      if (fila == 15) {
+        columnas = 1;
+      }
+      
+      for (int apuesta = 1; apuesta <= columnas; apuesta++) {
         resultadoPartido = (int)(Math.random() * 3) + 1;
         switch(resultadoPartido) {
           case 1:
@@ -29,19 +34,6 @@ public class S06Ejercicio07 {
         }
       }
       System.out.println();
-    }
-    System.out.print("\nPleno al quince: ");
-    resultadoPartido = (int)(Math.random() * 3) + 1;
-    switch(resultadoPartido) {
-      case 1:
-        System.out.print("1");
-        break;
-      case 2:
-        System.out.print("2");
-        break;
-      case 3:
-        System.out.print("X");
-      default:
     }
   }
 }
