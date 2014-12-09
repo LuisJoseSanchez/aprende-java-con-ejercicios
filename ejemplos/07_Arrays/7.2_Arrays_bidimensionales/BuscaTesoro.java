@@ -52,10 +52,11 @@ public class BuscaTesoro {
       for(y = 3; y >= 0; y--) {
         System.out.print(y + "|");  
         for(x = 0; x < 5; x++) {
-          if (cuadrante[x][y] == INTENTO)
+          if (cuadrante[x][y] == INTENTO) {
             System.out.print("X ");
-          else 
+          } else {
             System.out.print("  ");
+          }
         }
         System.out.println();   
       }
@@ -76,7 +77,8 @@ public class BuscaTesoro {
           System.out.println("Lo siento, has perdido.");
           salir = true;
           break;
-        case TESORO:System.out.println("Enhorabuena, has encontrado el tesoro."); 
+        case TESORO:
+          System.out.println("Enhorabuena, has encontrado el tesoro."); 
           salir = true;
           break;
         default:
