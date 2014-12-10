@@ -8,7 +8,8 @@ public class ArrayBi02 {
   public static void main(String[] args) 
     throws InterruptedException { // Se añade esta línea para poder usar sleep
  
-      int fila, columna;
+      int fila;
+      int columna;
       int[][] n = {{20, 4}, {67, 33}, {0,7}};
 
       for(fila = 0; fila < 3; fila++) {
