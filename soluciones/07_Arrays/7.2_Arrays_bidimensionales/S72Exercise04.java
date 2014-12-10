@@ -37,8 +37,9 @@ public class S72Exercise04 {
     }
     
     // Muestra las sumas parciales de las columnas
-    for(columna = 0; columna < 5; columna++)
+    for(columna = 0; columna < 5; columna++) {
       System.out.print("----------");
+    }
     System.out.println("-----------");
 
     int sumaColumna;
