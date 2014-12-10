@@ -14,9 +14,7 @@
  * 
  * @author Luis José Sánchez
  */
-
 public class S72Exercise01 {
-
   public static void main(String[] args) 
     throws InterruptedException { // Se añade esta línea para poder usar sleep
  
