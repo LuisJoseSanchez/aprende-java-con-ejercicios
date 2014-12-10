@@ -19,11 +19,12 @@ public class S72Exercise02 {
     
     // Lee los datos de teclado
     System.out.println("Por favor, introduzca los números (enteros) en el array");
-    for(fila = 0; fila < 4; fila++)
+    for(fila = 0; fila < 4; fila++) {
       for(columna = 0; columna < 5; columna++) {
         System.out.print("Fila " + fila + ", columna " + columna + ": ");
         num[fila][columna] = Integer.parseInt(System.console().readLine());
       }
+    }
 
     // Muestra los datos y las sumas parciales de las filas
     int sumaFila;
