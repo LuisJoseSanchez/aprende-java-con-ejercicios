@@ -31,20 +31,23 @@ public class S72Exercise03 {
     }
     
     // Muestra las sumas parciales de las columnas
-    for(columna = 0; columna < 5; columna++)
+    for(columna = 0; columna < 5; columna++) {
       System.out.print("----------");
+    }
     System.out.println("-----------");
 
     int sumaColumna;
-    int sumaTotal = 0; 
+    int sumaTotal = 0;
+    
     for(columna = 0; columna < 5; columna++) {
       sumaColumna = 0;
-      for(fila = 0; fila < 4; fila++)
+      for(fila = 0; fila < 4; fila++) {
         sumaColumna += num[fila][columna];
+      }
 
       sumaTotal += sumaColumna;
       System.out.printf("%7d   ", sumaColumna);
     }
     System.out.printf("|%7d   ", sumaTotal);
-    }
+  }
 }
