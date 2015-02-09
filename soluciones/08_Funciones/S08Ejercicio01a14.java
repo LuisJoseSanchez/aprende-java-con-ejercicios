@@ -1,11 +1,9 @@
 /**
- * 
  * 8. Funciones
  * 
  * Ejercicios 1 a 14
  * 
  * @author Luis José Sánchez
- * 
  */
  
 import matematicas.*;
