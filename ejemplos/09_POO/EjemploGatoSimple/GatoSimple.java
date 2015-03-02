@@ -8,7 +8,9 @@ public class GatoSimple {
 
   // atributos /////////////////////////////
   
-  String color, raza, sexo;
+  String color;
+  String raza;
+  String sexo;
   int    edad;
   double peso;
   
@@ -47,9 +49,9 @@ public class GatoSimple {
    */
   void come(String comida) {
     if (comida.equals("pescado")) {
-        System.out.println("Hmmmm, gracias");
+      System.out.println("Hmmmm, gracias");
     } else {
-        System.out.println("Lo siento, yo solo como pescado");
+      System.out.println("Lo siento, yo solo como pescado");
     }
   }
 
@@ -64,9 +66,9 @@ public class GatoSimple {
       System.out.println("no me gusta pelear");
     } else {
       if (contrincante.getSexo().equals("hembra")) {
-          System.out.println("no peleo contra gatitas");
+        System.out.println("no peleo contra gatitas");
       } else {
-          System.out.println("ven aquí que te vas a enterar");
+        System.out.println("ven aquí que te vas a enterar");
       }
     }
   }

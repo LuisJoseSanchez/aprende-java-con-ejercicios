@@ -64,7 +64,7 @@ public class Cubo {
    * Vuelca el contenido de un cubo sobre otro.
    * Antes de echar el agua se comprueba cuánto le cabe al
    * cubo destino.
-   */   
+   */
   void vuelcaEn(Cubo destino) {
     int libres = destino.getCapacidad() - destino.getContenido();
     

@@ -9,5 +9,7 @@ public class PruebaCuadrado {
     
     Cuadrado miCuadradito = new Cuadrado(5);
     System.out.println(miCuadradito);
+    miCuadradito.setLado(10);
+    System.out.println(miCuadradito);
   }
 }

@@ -5,5 +5,5 @@
  */
 
 public enum Sexo {
-	MACHO, HEMBRA, HERMAFRODITA
+  MACHO, HEMBRA, HERMAFRODITA
 }

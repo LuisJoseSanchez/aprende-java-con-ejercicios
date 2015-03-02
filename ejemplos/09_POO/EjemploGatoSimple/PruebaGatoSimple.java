@@ -30,6 +30,7 @@ public class PruebaGatoSimple {
     
     garfield.peleaCon(lisa);
     lisa.peleaCon(tom);
-    tom.peleaCon(garfield);    
+    tom.peleaCon(garfield);
+    
   }
 }

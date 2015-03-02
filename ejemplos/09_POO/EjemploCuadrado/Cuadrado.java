@@ -12,6 +12,10 @@ public class Cuadrado {
     this.lado = l;
   }
   
+  void setLado(int l) {
+    this.lado = l;
+  }
+  
   public String toString() {
     
     int i, espacios;
