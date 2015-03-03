@@ -11,7 +11,7 @@ public class Coche {
   
   // método de clase
   public static int getKilometrajeTotal() {
-    return kilometrajeTotal;
+    return Coche.kilometrajeTotal;
   }
   
   private String marca;
@@ -19,13 +19,13 @@ public class Coche {
   private int kilometraje;
 
   public Coche(String ma, String mo) {
-    marca = ma;
-    modelo = mo;
-    kilometraje = 0;
+    this.marca = ma;
+    this.modelo = mo;
+    this.kilometraje = 0;
   }
   
   public int getKilometraje() {
-    return kilometraje;
+    return this.kilometraje;
   }
 
   /**
@@ -34,7 +34,7 @@ public class Coche {
    * @param km distancia a recorrer en kilómetros
    */  
   public void recorre(int km) {
-    kilometraje += km;
-    kilometrajeTotal += km;
+    this.kilometraje += km;
+    Coche.kilometrajeTotal += km;
   }
 }

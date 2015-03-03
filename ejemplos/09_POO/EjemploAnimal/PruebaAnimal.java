@@ -17,12 +17,18 @@ public class PruebaAnimal {
     System.out.println(lisa);
     System.out.println(silvestre);
     
+    silvestre.come();
+    silvestre.come("pescado");
+    
     Ave miLoro = new Ave();
     miLoro.aseate();
     miLoro.vuela();
+    miLoro.come("hamburguesa");
+    miLoro.come();
     
     Pinguino pingu = new Pinguino(Sexo.HEMBRA);
     pingu.aseate();
     pingu.vuela();
+     
   }
 }

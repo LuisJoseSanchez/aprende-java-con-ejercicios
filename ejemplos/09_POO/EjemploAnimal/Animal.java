@@ -8,12 +8,12 @@ public abstract class Animal {
 
   private Sexo sexo;
 
-  public Animal () {
+  public Animal() {
     sexo = Sexo.MACHO;
   }
 
-  public Animal (Sexo s) {
-    sexo = s;
+  public Animal (Sexo x) {
+    sexo = x;
   }
 
   public Sexo getSexo() {
@@ -30,4 +30,13 @@ public abstract class Animal {
   public void duerme() {
     System.out.println("Zzzzzzz");
   }
+  
+  public void come() {
+    System.out.println("¡Qué rico!");
+  }
+  
+  public void come(String comida) {
+    System.out.println("¡Qué rico, me gusta comer " + comida + "!");
+  }
+  
 }

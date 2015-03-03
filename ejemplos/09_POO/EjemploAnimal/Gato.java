@@ -11,7 +11,7 @@ public class Gato extends Animal {
 
   public Gato (Sexo s, String r) {
     super(s);
-    raza = r;
+    this.raza = r;
   }
   
   public Gato (Sexo s) {
@@ -57,9 +57,13 @@ public class Gato extends Animal {
    * @param comida la comida que se le ofrece al gato
    */
   public void come(String comida) {
+    
     if (comida.equals("pescado")) {
+      super();
+      //super.come();
       System.out.println("Hmmmm, gracias");
     } else {
+      
       System.out.println("Lo siento, yo solo como pescado");
     }
   }
