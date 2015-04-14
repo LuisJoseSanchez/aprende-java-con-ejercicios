@@ -10,28 +10,36 @@
 import java.util.ArrayList;
 
 public class S10Ejercicio02 {
-   public static void main(String[] args) {
-		
-		int suma = 0, minimo = 100, maximo = 0, contador = 0;
-		
-   		ArrayList<Integer> a = new ArrayList<Integer>();
-   		
-   		contador = (int)(Math.random()*11 + 10);
-   		
-        for (int i = 0; i < contador; i++)
-			a.add((int)(Math.random()*101));
-			
-		System.out.println("Lista generada: " + a);
-		
-		for(int n : a) {       
-            suma += n;        
-            if(n < minimo)	minimo = n;
-			if(n > maximo)	maximo = n;
-         }
+  public static void main(String[] args) {
 
-        System.out.println("La suma total es : " + suma);
-        System.out.println("La media es : " + suma / contador);
-        System.out.println("El mínimo es : " + minimo);
-        System.out.println("El máximo es : " + maximo);         
+    int suma = 0;
+    int minimo = 100;
+    int maximo = 0;
+    int tamano = (int)(Math.random() * 11 + 10);
+
+    ArrayList<Integer> a = new ArrayList<Integer>();
+
+    for (int i = 0; i < tamano; i++) {
+      a.add((int)(Math.random()*101));
+    }
+
+    System.out.println("Lista generada: " + a);
+
+    for(int n : a) {       
+      suma += n;        
+      
+      if(n < minimo) {
+        minimo = n;
+      }
+      
+      if(n > maximo) {
+        maximo = n;
+      }
      }
+
+    System.out.println("La suma total es : " + suma);
+    System.out.println("La media es : " + suma / tamano);
+    System.out.println("El mínimo es : " + minimo);
+    System.out.println("El máximo es : " + maximo);         
+  }
 }
