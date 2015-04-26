@@ -34,8 +34,7 @@ public class Ejercicio08 {
   // de cartas
   public static boolean existeCarta(Carta c, ArrayList<Carta> cartas) {
     for (Carta car : cartas)
-      if ( (c.getNumero().equals(car.getNumero()))
-        && (c.getPalo().equals(car.getPalo())) ) {
+      if ( (c.getNumero().equals(car.getNumero())) && (c.getPalo().equals(car.getPalo())) ) {
         return true;
       }
 

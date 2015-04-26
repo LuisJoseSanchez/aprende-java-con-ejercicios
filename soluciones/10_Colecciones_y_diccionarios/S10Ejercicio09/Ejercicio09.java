@@ -12,36 +12,37 @@ import java.util.Collections;
 
 public class Ejercicio09 {
 
-	public static void main(String[] args) {
-		
-		ArrayList<Carta> c = new ArrayList<Carta>();
-		
-		Carta cartaAux = new Carta();
-		c.add(cartaAux);
-		
-		for (int i = 0; i < 9; i++) {
-			do {
-				cartaAux = new Carta();			
-			} while (existeCarta(cartaAux, c));
-			
-			c.add(cartaAux);
-		}
-		
-		Collections.sort(c);
-		
-		for (Carta miCarta: c)  System.out.println(miCarta);
-		
-	} // main /////////////////////////////////////////////////////////
-	
-	
-	// Comprueba si existe una determinada carta dentro de un ArrayList
-	// de cartas
-	public static boolean existeCarta(Carta c, ArrayList<Carta> cartas) {
-		for (Carta car : cartas)
-			if ( (c.getNumero() == car.getNumero())
-				 && (c.getPalo().equals(car.getPalo())) )
-				 return true;
-				 
-		return false;
-	}
+  public static void main(String[] args) {
+    
+    ArrayList<Carta> c = new ArrayList<Carta>();
+    
+    Carta cartaAux = new Carta();
+    c.add(cartaAux);
+    
+    for (int i = 0; i < 9; i++) {
+      do {
+        cartaAux = new Carta();      
+      } while (existeCarta(cartaAux, c));
+      
+      c.add(cartaAux);
+    }
+    
+    Collections.sort(c);
+    
+    for (Carta miCarta: c)  System.out.println(miCarta);
+    
+  } // main /////////////////////////////////////////////////////////
+  
+  
+  // Comprueba si existe una determinada carta dentro de un ArrayList
+  // de cartas
+  public static boolean existeCarta(Carta c, ArrayList<Carta> cartas) {
+    for (Carta car : cartas) {
+      if ( (c.getNumero() == car.getNumero()) && (c.getPalo().equals(car.getPalo())) ) {
+        return true;
+      }
+    }
+         
+    return false;
+  }
 }
