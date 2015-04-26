@@ -16,33 +16,33 @@ import java.util.*;
 public class S10Ejercicio06 {
    public static void main(String[] args) {
 
-   		HashMap<String, String> m = new HashMap<String, String>();
+    HashMap<String, String> m = new HashMap<String, String>();
         
-        String usuario, clave;
-        boolean entra = false;
-        int intentos = 0;
-        
-        m.put("admin", "224477");
-        m.put("maria", "ztf99");      
-        m.put("pepe", "zxcvb");
+    String usuario, clave;
+    boolean entra = false;
+    int intentos = 0;
+    
+    m.put("admin", "224477");
+    m.put("maria", "ztf99");      
+    m.put("pepe", "zxcvb");
 
      
         
-        while ((!entra) && (intentos++ < 3)) {
-			
-			System.out.print("Usuario: ");
-			usuario = System.console().readLine();		
-			System.out.print("Contraseña: ");
-			clave = System.console().readLine();
-			
-			if (m.containsKey(usuario))
-				if (m.get(usuario).equals(clave)) {
-					System.out.print("Ha accedido al área restringida");
-					entra = true;
-				}
-		}
-		
-		if (!entra)
-			System.out.print("Lo siento, no tiene acceso al área restringida");
+    while ((!entra) && (intentos++ < 3)) {
+      System.out.print("Usuario: ");
+      usuario = System.console().readLine();    
+      System.out.print("Contraseña: ");
+      clave = System.console().readLine();
+      
+      if (m.containsKey(usuario)) {
+        if (m.get(usuario).equals(clave)) {
+          System.out.print("Ha accedido al área restringida");
+          entra = true;
+        }
+      }
+    } //while
+    
+    if (!entra)
+      System.out.print("Lo siento, no tiene acceso al área restringida");
    }
 }
