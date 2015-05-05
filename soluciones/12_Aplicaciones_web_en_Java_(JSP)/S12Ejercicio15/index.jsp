@@ -21,12 +21,12 @@
       <%
         int n;
         for (int i = 0; i < 100; i++) {
-            n = (int)(Math.random() * 200) + 1;
-            if (esPrimo(n)) {
-              out.print("<span class=\"verde\">" + n + "</span> ");
-            } else {
-              out.print(n + " ");
-            }
+          n = (int)(Math.random() * 200) + 1;
+          if (esPrimo(n)) {
+            out.print("<span class=\"verde\">" + n + "</span> ");
+          } else {
+            out.print(n + " ");
+          }
         }
       %>
     </p>
