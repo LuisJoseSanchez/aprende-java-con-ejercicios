@@ -26,8 +26,12 @@ class EjemploFichero03 {
       while ( (linea1 != null) || (linea2 != null) ) {
         linea1 = bf1.readLine();
         linea2 = bf2.readLine();
-        if (linea1 != null) bw.write(linea1 + "\n");
-        if (linea2 != null) bw.write(linea2 + "\n");
+        if (linea1 != null) {
+          bw.write(linea1 + "\n");
+        }
+        if (linea2 != null) {
+          bw.write(linea2 + "\n");
+        }
       } 
     
       bf1.close();
