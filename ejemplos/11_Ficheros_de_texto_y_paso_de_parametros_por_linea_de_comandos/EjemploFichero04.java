@@ -15,8 +15,8 @@ class EjemploFichero04 {
                 // el punto (.) es el directorio actual
 
     String[] listaArchivos = fichero.list();
-    for(int i = 0; i < listaArchivos.length; i++){
-      System.out.println(listaArchivos[i]);
+    for(String f : listaArchivos){
+      System.out.println(f);
     }  
   }
 }

@@ -50,7 +50,7 @@ public class EjemploProcesamiento10 {
 
       } catch (IOException ioe) {
         System.out.println("Se ha producido un error de lectura/escritura");
-        System.err.println(ioe.getMessage());			
+        System.err.println(ioe.getMessage());
       }
 
       System.out.println("hecho");

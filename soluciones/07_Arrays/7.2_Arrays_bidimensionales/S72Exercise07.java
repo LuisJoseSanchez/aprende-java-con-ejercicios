@@ -8,8 +8,7 @@
  */
 public class S72Exercise07 {
 
-  // Se definen constantes para representar el
-  // contenido de las celdas
+  // Se definen constantes para representar el contenido de las celdas
   static final int VACIO = 0;
   static final int MINA = 1;
   static final int TESORO = 2;
@@ -23,10 +22,12 @@ public class S72Exercise07 {
     int y;
     
     // Inicializa el array
-    for(x = 0; x < 4; x++)
-      for(y = 0; y < 3; y++)
+    for(x = 0; x < 4; x++) {
+      for(y = 0; y < 3; y++) {
         cuadrante[x][y] = VACIO;
-        
+      }
+    }
+    
     // Coloca la mina
     int minaX = (int)(Math.random()*4);
     int minaY = (int)(Math.random()*3);
