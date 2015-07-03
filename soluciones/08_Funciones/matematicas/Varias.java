@@ -64,6 +64,7 @@ public class Varias {
 
   /**
    * Dada una base y un exponente, devuelve la potencia.
+   *
    * @param base      base de la potencia
    * @param exponente exponente de la potencia
    * @return          número resultante de elevar la base a la potencia indicada
@@ -86,43 +87,38 @@ public class Varias {
     return n;
   }
 
-
-
-  /*************************************************************/
-  /*                                                           */
-  /* int digitos(long x)                                       */
-  /* int digitos(int x)                                        */
-  /*                                                           */
-  /*************************************************************/
-  /*                                                           */
-  /* Cuenta el número de dígitos de un número entero.          */
-  /*                                                           */
-  /*************************************************************/
-
+  /**
+   * Cuenta el número de dígitos de un número entero.
+   *
+   * @param x número al que se le quieren contar los dígitos
+   * @return  número de dígitos que tiene el número que se pasa como parámetro
+   */
   public static int digitos(long x) {
-
-    if (x < 0)
+    if (x < 0) {
       x = -x;
+    }
 
-    if (x == 0)
+    if (x == 0) {}
       return 1;
-
-    else {
+    } else {
       int n = 0;
       while (x > 0) {
-        x = x / 10;
-        n++;
+        x = x / 10; // se le quita un dígito a x
+        n++; // incrementa la cuenta de dígitos
       }
       return n;
     }
   }
 
+  /**
+   * Cuenta el número de dígitos de un número entero.
+   *
+   * @param x número al que se le quieren contar los dígitos
+   * @return  número de dígitos que tiene el número que se pasa como parámetro
+   */
   public static int digitos(int x) {
-
     return digitos((long)x);
   }
-
-
 
   /*************************************************************/
   /*                                                           */
