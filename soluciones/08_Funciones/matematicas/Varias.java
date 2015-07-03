@@ -5,7 +5,9 @@ public class Varias {
   /**
    * Devuelve verdadero si el número que se pasa como parámetro es capicúa y
      falso en caso contrario.
-   *
+   * <p>
+   * Un número capicúa es el que se lee igual de izquierda a derecha que de
+   * derecha a izquierda.
    * @param x número del que se quiere saber si es capicúa
    * @return  verdadero si el número que se pasa como parámetro es capicúa y
               falso en caso contrario
@@ -17,6 +19,9 @@ public class Varias {
   /**
    * Devuelve verdadero si el número que se pasa como parámetro es capicúa y
    * falso en caso contrario.
+   * <p>
+   * Un número capicúa es el que se lee igual de izquierda a derecha que de
+   * derecha a izquierda.
    *
    * @param x número del que se quiere saber si es capicúa
    * @return  verdadero si el número que se pasa como parámetro es capicúa y
@@ -26,61 +31,57 @@ public class Varias {
     return esCapicua((long)x);
   }
 
-  /**                                                           */
-  /* Devuelve verdadero si el número que se pasa como          */
-  /* parámetro es primo y falso en caso contrario.             */
-  /*                                                           */
-  /*************************************************************/
+  /**
+   * Devuelve verdadero si el número que se pasa como parámetro es primo y falso
+   * en caso contrario.
+   * <p>
+   * Un número es primo cuando es divisible únicamente entre el mismo y entre 1.
+   *
+   * @param x número del que se quiere saber si es primo
+   * @return  verdadero si el número que se pasa como parámetro es primo y falso
+   *          en caso contrario
+   */
   public static boolean esPrimo(int x) {
-
-    for (int i = 2; i < x; i++)
-      if ((x % i) == 0) return false;
-
+    for (int i = 2; i < x; i++) {
+      if ((x % i) == 0) {
+        return false;
+      }
+    }
     return true;
   }
 
-
-  /*************************************************************/
-  /*                                                           */
-  /* int siguientePrimo(int x)                                 */
-  /*                                                           */
-  /*************************************************************/
-  /*                                                           */
-  /* Devuelve el menor primo que es mayor al número que se     */
-  /* pasa como parámetro.                                      */
-  /*                                                           */
-  /*************************************************************/
-
+  /**
+  /* Devuelve el menor primo que es mayor al número que se pasa como parámetro.
+   *
+   * @param x un número entero
+   * @return  el menor primo que es mayor al número que se pasa como parámetro
+   */
   public static int siguientePrimo(int x) {
-
-    while (!esPrimo(++x));
+    while (!esPrimo(++x)) {};
 
     return x;
   }
 
-
-
-  /*************************************************************/
-  /*                                                           */
-  /* double potencia(int base, int exponente)                  */
-  /*                                                           */
-  /*************************************************************/
-  /*                                                           */
-  /* Dada una base y un exponente devuelve la potencia.        */
-  /*                                                           */
-  /*************************************************************/
-
+  /**
+   * Dada una base y un exponente, devuelve la potencia.
+   * @param base      base de la potencia
+   * @param exponente exponente de la potencia
+   * @return          número resultante de elevar la base a la potencia indicada
+   */
   public static double potencia(int base, int exponente) {
-
-    if (exponente == 0)
+    if (exponente == 0) {
       return 1;
+    }
 
-    if (exponente < 0)
+    if (exponente < 0) {}
       return 1/potencia(base, -exponente);
+    }
 
     int n = 1;
-    for (int i = 0; i < Math.abs(exponente); i++)
+
+    for (int i = 0; i < Math.abs(exponente); i++) {}
       n = n * base;
+    }
 
     return n;
   }
