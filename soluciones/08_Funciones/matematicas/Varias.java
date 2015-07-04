@@ -335,7 +335,6 @@ public class Varias {
     return (int)trozoDeNumero((long)x, inicio, fin);
   }
 
-
   /*************************************************************/
   /*                                                           */
   /* long juntaNumeros(long x, long y)                         */
@@ -346,15 +345,18 @@ public class Varias {
   /* Pega dos números para formar uno.                         */
   /*                                                           */
   /*************************************************************/
-
+  /**
+   * Pega dos números para formar uno solo.
+   *
+   * @param x trozo que se pegará por la izquierda
+   * @param y trozo que se pegará por la derecha
+   * @return  número compuesto de los trozos x e y
+   */
   public static long juntaNumeros(long x, long y) {
-
     return (long)(x * potencia(10, digitos(y))) + y;
   }
 
   public static int juntaNumeros(int x, int y) {
-
     return (int)(juntaNumeros((long)x, (long)y));
   }
-
 }
