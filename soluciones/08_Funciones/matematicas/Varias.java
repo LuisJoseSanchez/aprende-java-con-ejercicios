@@ -281,49 +281,55 @@ public class Varias {
     return (int)pegaPorDetras((long)x, d);
   }
 
-
-
-  /*************************************************************/
-  /*                                                           */
-  /* long pegaPorDelante(long x, int d)                        */
-  /* int pegaPorDelante(int x, int d)                          */
-  /*                                                           */
-  /*************************************************************/
-  /*                                                           */
-  /* Añade un dígito a un número por delante.                  */
-  /*                                                           */
-  /*************************************************************/
-
+  /**
+   * Añade un dígito a un número por delante (por la izquierda).                                                 *
+   * @param x número entero
+   * @param d dígito que se le va a pegar por la izquierda
+   * @return  número inicial x con el dígitos d pegado por la izquierda
+   */
   public static long pegaPorDelante(long x, int d) {
-
     return juntaNumeros(d, x);
   }
 
+  /**
+   * Añade un dígito a un número por delante (por la izquierda).                                                 *
+   * @param x número entero
+   * @param d dígito que se le va a pegar por la izquierda
+   * @return  número inicial x con el dígitos d pegado por la izquierda
+   */
   public static int pegaPorDelante(int x, int d) {
-
     return (int)pegaPorDelante((long)x, d);
   }
 
-  /*************************************************************/
-  /*                                                           */
-  /* long trozoDeNumero(long x, int inicio, int fin)           */
-  /* int trozoDeNumero(int x, int inicio, int fin)             */
-  /*                                                           */
-  /*************************************************************/
-  /*                                                           */
-  /* Toma como parámetros las posiciones inicial y final       */
-  /* dentro de un número y devuelve el trozo correspondiente.  */
-  /*                                                           */
-  /*************************************************************/
-
+  /**
+   * Toma como parámetros las posiciones inicial y final dentro de un número y
+   * devuelve el trozo correspondiente.                                                 * <p>
+   * Las posiciones se cuentan de izquierda a derecha comenzando por el cero.
+   *
+   * @param x      número entero
+   * @param inicio posición inicial
+   * @param fin    posición final
+   * @return       trozo de número compuesto por todos los dígitos que van desde
+   *               la posición inicial a la posición final incluyendo ambos
+   */
   public static long trozoDeNumero(long x, int inicio, int fin) {
-
     int longitud = digitos(x);
     x = quitaPorDelante(x, inicio);
     x = quitaPorDetras(x, longitud - fin - 1);
     return x;
   }
 
+  /**
+   * Toma como parámetros las posiciones inicial y final dentro de un número y
+   * devuelve el trozo correspondiente.                                                 * <p>
+   * Las posiciones se cuentan de izquierda a derecha comenzando por el cero.
+   *
+   * @param x      número entero
+   * @param inicio posición inicial
+   * @param fin    posición final
+   * @return       trozo de número compuesto por todos los dígitos que van desde
+   *               la posición inicial a la posición final incluyendo ambos
+   */
   public static int trozoDeNumero(int x, int inicio, int fin) {
 
     return (int)trozoDeNumero((long)x, inicio, fin);
