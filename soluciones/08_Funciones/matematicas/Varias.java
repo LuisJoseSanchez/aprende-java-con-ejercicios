@@ -261,24 +261,23 @@ public class Varias {
     return (int)quitaPorDelante((long)x, n);
   }
 
-  /*************************************************************/
-  /*                                                           */
-  /* long pegaPorDetras(long x, int d)                         */
-  /* int pegaPorDetras(int x, int d)                           */
-  /*                                                           */
-  /*************************************************************/
-  /*                                                           */
-  /* Añade un dígito a un número por detrás.                   */
-  /*                                                           */
-  /*************************************************************/
-
+  /**
+   * Añade un dígito a un número por detrás (por la derecha).                                                 *
+   * @param x número entero
+   * @param d dígito que se le va a pegar por la derecha
+   * @return  número inicial x con el dígitos d pegado por la derecha
+   */
   public static long pegaPorDetras(long x, int d) {
-
     return juntaNumeros(x, d);
   }
 
+  /**
+   * Añade un dígito a un número por detrás (por la derecha).                                                 *
+   * @param x número entero
+   * @param d dígito que se le va a pegar por la derecha
+   * @return  número inicial x con el dígitos d pegado por la derecha
+   */
   public static int pegaPorDetras(int x, int d) {
-
     return (int)pegaPorDetras((long)x, d);
   }
 
