@@ -120,21 +120,16 @@ public class Varias {
     return digitos((long)x);
   }
 
-  /*************************************************************/
-  /*                                                           */
-  /* long voltea(long x)                                       */
-  /* int voltea(int x)                                         */
-  /*                                                           */
-  /*************************************************************/
-  /*                                                           */
-  /* Le da la vuelta a un número.                              */
-  /*                                                           */
-  /*************************************************************/
-
+  /**
+   * Le da la vuelta a un número.
+   *
+   * @param x número al que se le quiere dar la vuelta
+   * @return  número volteado (al revés)
+   */
   public static long voltea(long x) {
-
-    if (x < 0)
+    if (x < 0) {
       return -voltea(-x);
+    }
 
     long volteado = 0;
 
@@ -146,72 +141,81 @@ public class Varias {
     return volteado;
   }
 
+  /**
+   * Le da la vuelta a un número.
+   *
+   * @param x número al que se le quiere dar la vuelta
+   * @return  número volteado (al revés)
+   */
   public static int voltea(int x) {
-
     return (int)voltea((long)x);
   }
 
-
-  /*************************************************************/
-  /*                                                           */
-  /* int digitoN(long x, int n)                                */
-  /* int digitoN(int x, int n)                                 */
-  /*                                                           */
-  /*************************************************************/
-  /*                                                           */
-  /* Devuelve el dígito que está en la posición n de un número */
-  /* entero. Se empieza contando por el 0 y de izquierda a     */
-  /* derecha.                                                  */
-  /*                                                           */
-  /*************************************************************/
-
+  /**
+  /* Devuelve el dígito que está en la posición n de un número entero. Se
+   * empieza contando por el 0 y de izquierda a derecha.
+   *
+   * @param x número entero
+   * @param n posición dentro del número x
+   * @return  dígito que está en la posición n del número x empezando a contar
+   *          por el 0 y de izquierda a derecha
+   */
   public static int digitoN(long x, int n) {
-
     x = voltea(x);
 
-    while (n-- > 0)
+    while (n-- > 0) {
       x = x / 10;
+    }
 
     return (int)x % 10;
   }
 
+  /**
+  /* Devuelve el dígito que está en la posición n de un número entero. Se
+   * empieza contando por el 0 y de izquierda a derecha.
+   *
+   * @param x número entero
+   * @param n posición dentro del número x
+   * @return  dígito que está en la posición n del número x empezando a contar
+   *          por el 0 y de izquierda a derecha
+   */
   public static int digitoN(int x, int n) {
-
     return digitoN((long)x, n);
   }
 
-
-  /*************************************************************/
-  /*                                                           */
-  /* int posicionDeDigito(long x, int d)                       */
-  /* int posicionDeDigito(int x, int d)                        */
-  /*                                                           */
-  /*************************************************************/
-  /*                                                           */
-  /* Da la posición de la primera ocurrencia de un dígito      */
-  /* dentro  de un número entero. Si no se encuentra,          */
-  /* devuelve -1.                                              */
-  /*                                                           */
-  /*************************************************************/
-
+  /**
+   * Da la posición de la primera ocurrencia de un dígito dentro de un número
+   * entero. Si no se encuentra, devuelve -1.
+   *
+   * @param x número entero
+   * @param d dígito a buscar dentro del número
+   * @return  posición de la primera ocurrencia del dígito dentro del número o
+   *          -1 si no se encuentra
+   */
   public static int posicionDeDigito(long x, int d) {
-
     int i;
 
-    for (i = 0; (i < digitos(x)) && (digitoN(x, i) != d); i++);
+    for (i = 0; (i < digitos(x)) && (digitoN(x, i) != d); i++) {};
 
-    if (i == digitos(x))
+    if (i == digitos(x)) {
       return -1;
-    else
+    } else {
       return i;
+    }
   }
 
+  /**
+   * Da la posición de la primera ocurrencia de un dígito dentro de un número
+   * entero. Si no se encuentra, devuelve -1.
+   *
+   * @param x número entero
+   * @param d dígito a buscar dentro del número
+   * @return  posición de la primera ocurrencia del dígito dentro del número o
+   *          -1 si no se encuentra
+   */
   public static int posicionDeDigito(int x, int d) {
-
     return posicionDeDigito((long)x, d);
   }
-
-
 
   /*************************************************************/
   /*                                                           */
