@@ -223,44 +223,43 @@ public class Varias {
    * @param n número de dígitos que se le van a quitar
    * @return  número inicial x con n dígitos menos quitados de la derecha
    */
-
   public static long quitaPorDetras(long x, int n) {
-
     return x / (long)potencia(10, n);
   }
 
+  /**
+   * Le quita a un número n dígitos por detrás (por la derecha).                                                 *
+   * @param x número entero
+   * @param n número de dígitos que se le van a quitar
+   * @return  número inicial x con n dígitos menos quitados de la derecha
+   */
   public static int quitaPorDetras(int x, int n) {
 
     return (int)quitaPorDetras((long) x, n);
   }
 
-
-
-  /*************************************************************/
-  /*                                                           */
-  /* long quitaPorDelante(long x, int n)                       */
-  /* int quitaPorDelante(int x, int n)                         */
-  /*                                                           */
-  /*************************************************************/
-  /*                                                           */
-  /* Le quita a un número n dígitos por delante (por la        */
-  /* izquierda).                                               */
-  /*                                                           */
-  /*************************************************************/
-
+  /**
+   * Le quita a un número n dígitos por delante (por la izquierda).                                                 *
+   * @param x número entero
+   * @param n número de dígitos que se le van a quitar
+   * @return  número inicial x con n dígitos menos quitados por la izquierda
+   */
   public static long quitaPorDelante(long x, int n) {
-
     x = pegaPorDetras(x, 1); // "cierra" el número por si acaso termina en 0
     x = voltea(quitaPorDetras(voltea(x), n));
     x = quitaPorDetras(x, 1);
     return x;
   }
 
+  /**
+   * Le quita a un número n dígitos por delante (por la izquierda).                                                 *
+   * @param x número entero
+   * @param n número de dígitos que se le van a quitar
+   * @return  número inicial x con n dígitos menos quitados por la izquierda
+   */
   public static int quitaPorDelante(int x, int n) {
-
     return (int)quitaPorDelante((long)x, n);
   }
-
 
   /*************************************************************/
   /*                                                           */
