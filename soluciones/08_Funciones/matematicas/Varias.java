@@ -74,13 +74,13 @@ public class Varias {
       return 1;
     }
 
-    if (exponente < 0) {}
+    if (exponente < 0) {
       return 1/potencia(base, -exponente);
     }
 
     int n = 1;
 
-    for (int i = 0; i < Math.abs(exponente); i++) {}
+    for (int i = 0; i < Math.abs(exponente); i++) {
       n = n * base;
     }
 
@@ -98,7 +98,7 @@ public class Varias {
       x = -x;
     }
 
-    if (x == 0) {}
+    if (x == 0) {
       return 1;
     } else {
       int n = 0;
@@ -331,20 +331,9 @@ public class Varias {
    *               la posición inicial a la posición final incluyendo ambos
    */
   public static int trozoDeNumero(int x, int inicio, int fin) {
-
     return (int)trozoDeNumero((long)x, inicio, fin);
   }
 
-  /*************************************************************/
-  /*                                                           */
-  /* long juntaNumeros(long x, long y)                         */
-  /* int juntaNumeros(int x, int y)                            */
-  /*                                                           */
-  /*************************************************************/
-  /*                                                           */
-  /* Pega dos números para formar uno.                         */
-  /*                                                           */
-  /*************************************************************/
   /**
    * Pega dos números para formar uno solo.
    *
@@ -356,6 +345,13 @@ public class Varias {
     return (long)(x * potencia(10, digitos(y))) + y;
   }
 
+  /**
+   * Pega dos números para formar uno solo.
+   *
+   * @param x trozo que se pegará por la izquierda
+   * @param y trozo que se pegará por la derecha
+   * @return  número compuesto de los trozos x e y
+   */
   public static int juntaNumeros(int x, int y) {
     return (int)(juntaNumeros((long)x, (long)y));
   }
