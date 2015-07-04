@@ -217,17 +217,12 @@ public class Varias {
     return posicionDeDigito((long)x, d);
   }
 
-  /*************************************************************/
-  /*                                                           */
-  /* long quitaPorDetras(long x, int n)                        */
-  /* int quitaPorDetras(int x, int n)                          */
-  /*                                                           */
-  /*************************************************************/
-  /*                                                           */
-  /* Le quita a un número n dígitos por detrás (por la         */
-  /* derecha).                                                 */
-  /*                                                           */
-  /*************************************************************/
+  /**
+   * Le quita a un número n dígitos por detrás (por la derecha).                                                 *
+   * @param x número entero
+   * @param n número de dígitos que se le van a quitar
+   * @return  número inicial x con n dígitos menos quitados de la derecha
+   */
 
   public static long quitaPorDetras(long x, int n) {
 
