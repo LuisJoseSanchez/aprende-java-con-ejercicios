@@ -17,7 +17,13 @@ public class S08Ejercicio18 {
     System.out.println(decimal + " en decimal es " + decimalABinario(decimal) + " en binario.");
     
   } // main
-    
+  
+  /**
+   * Pasa un número decimal (en base 10) a binario (base 2).
+   * 
+   * @param decimal número entero en base 10
+   * @return        número inicial pasado a binario
+   */
   public static long decimalABinario(int decimal) {
   
     if (decimal == 0) {
