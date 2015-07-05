@@ -1,24 +1,36 @@
 package array;
 
 public class Array {
-  
-  
-  
+
+  /**
+   * Muestra por pantalla todos los elementos de un array de números enteros
+   * separados por un espacio.
+   * 
+   * @param x array unidimiensional de números enteros
+   */
   public static void muestraArrayInt(int x[]) {
-    
-    for (int i = 0; i < x.length; i++)
+    for (int i = 0; i < x.length; i++) {
       System.out.print(x[i] + " ");
-      System.out.println();
+    }
+    System.out.println();
   }
-  
-  
-  
+
+  /**
+   * Crea un array y lo rellena con valores aleatorios dentro de un rango.
+   * <p>
+   * Por ejemplo, generaArrayInt(100, 10, 30) devolvería un array de 100 números
+   * generados al azar comprendidos entre 10 y 30.
+   * 
+   * @param n número de elementos que contendrá el array
+   * @param minimo límite inferior del intervalo de números aleatorios.
+   */
   public static int[] generaArrayInt(int n, int minimo, int maximo) {
       
     int[] x = new int[n];
 
-    for(int i = 0; i < n; i++)
+    for(int i = 0; i < n; i++) {
       x[i] = (int)(Math.random()*(maximo - minimo) + minimo + 1);
+    }
       
     return x;
   }
