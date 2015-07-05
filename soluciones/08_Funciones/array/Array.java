@@ -145,33 +145,52 @@ public class Array {
     return a;
   }
   
-  
+  /**
+   * Devuelve un array rotada <code>n</code> posiciones a la derecha tomando
+   * como referencia el array que se pasa como parámetro. Los números que van
+   * saliendo por la derecha vuelven a entrar por la izquierda.
+   *
+   * @param x array unidimiensional de números enteros
+   * @param n número de movimientos (rotaciones hacia la derecha) a realizar
+   * @return  array rotada <code>n</code> posiciones a la derecha
+   */
   public static int[] rotaDerechaArrayInt(int[] x, int n) {
     
-    int[] a = x.clone();
-    int i, aux;
+    int[] a = x.clone(); // clona en a el contenido de x
+    int i;
+    int aux;
     
     while (n-- > 0) {
       aux = a[a.length - 1];
-      for(i = a.length - 1; i > 0; i--)
+      for(i = a.length - 1; i > 0; i--) {
         a[i] = a[i - 1];
+      }
       a[0] = aux;
     }
       
     return a;
   }
   
-  
-  
+  /**
+   * Devuelve un array rotada <code>n</code> posiciones a la izquierda tomando
+   * como referencia el array que se pasa como parámetro. Los números que van
+   * saliendo por la izquierda vuelven a entrar por la derecha.
+   *
+   * @param x array unidimiensional de números enteros
+   * @param n número de movimientos (rotaciones hacia la izquierda) a realizar
+   * @return  array rotada <code>n</code> posiciones a la izquierda
+   */
   public static int[] rotaIzquierdaArrayInt(int[] x, int n) {
     
-    int[] a = x.clone();
-    int i, aux;
+    int[] a = x.clone(); // clona en a el contenido de x
+    int i;
+    int aux;
     
     while (n-- > 0) {
       aux = a[0];
-      for(i = 0; i < a.length - 1; i++)
+      for(i = 0; i < a.length - 1; i++) {
         a[i] = a[i + 1];
+      }
       a[a.length - 1] = aux;
     }
       
