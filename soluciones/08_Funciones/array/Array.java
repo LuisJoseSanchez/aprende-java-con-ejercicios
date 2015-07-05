@@ -92,6 +92,15 @@ public class Array {
     return (double)suma / x.length;
   }
   
+  /**
+   * Nos dice si un determindado valor está o no dentro de un array de números
+   * enteros.
+   * 
+   * @param x array unidimiensional de números enteros
+   * @param n números entero que se buscará dentro del array
+   * @return  verdadero si n se encuentra en el array x o falso en caso
+   *          contrario
+   */
   public static boolean estaEnArrayInt(int[] x, int n) {
     
     for(int i = 0; i < x.length; i++)
