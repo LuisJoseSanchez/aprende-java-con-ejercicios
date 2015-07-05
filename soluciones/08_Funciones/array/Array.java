@@ -22,7 +22,8 @@ public class Array {
    * de 100 números generados al azar comprendidos entre 10 y 30.
    * 
    * @param n      número de elementos que contendrá el array
-   * @param minimo límite inferior del intervalo de números aleatorios.
+   * @param minimo límite inferior del intervalo de números aleatorios
+   * @param maximo límite superior del intervalo de números aleatorios
    */
   public static int[] generaArrayInt(int n, int minimo, int maximo) {
     int[] x = new int[n];
