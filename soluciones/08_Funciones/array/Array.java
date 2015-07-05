@@ -9,8 +9,8 @@ public class Array {
    * @param x array unidimiensional de números enteros
    */
   public static void muestraArrayInt(int x[]) {
-    for (int i = 0; i < x.length; i++) {
-      System.out.print(x[i] + " ");
+    for (int n : x) {
+      System.out.print(n + " ");
     }
     System.out.println();
   }
@@ -18,8 +18,8 @@ public class Array {
   /**
    * Crea un array y lo rellena con valores aleatorios dentro de un rango.
    * <p>
-   * Por ejemplo, generaArrayInt(100, 10, 30) devolvería un array de 100 números
-   * generados al azar comprendidos entre 10 y 30.
+   * Por ejemplo, <code>generaArrayInt(100, 10, 30)</code> devolvería un array
+   * de 100 números generados al azar comprendidos entre 10 y 30.
    * 
    * @param n      número de elementos que contendrá el array
    * @param minimo límite inferior del intervalo de números aleatorios.
@@ -45,9 +45,9 @@ public class Array {
   public static int minimoArrayInt(int[] x) {
     int minimo = Integer.MAX_VALUE;
     
-    for(int i = 0; i < x.length; i++) {
-      if (x[i] < minimo) {
-        minimo = x[i];
+    for (int n : x) {
+      if (n < minimo) {
+        minimo = n;
       }
     }
     return minimo;
@@ -64,15 +64,14 @@ public class Array {
   public static int maximoArrayInt(int[] x) {
     int maximo = Integer.MIN_VALUE;
     
-    for(int i = 0; i < x.length; i++) {
-      if (x[i] > maximo) {
-        maximo = x[i];
+    for (int n : x) {
+      if (n > maximo) {
+        maximo = n;
       }
     }
       
     return maximo;
   }
-    
   
   /**
    * Devuelve la media aritmética de los números contenidos en el array que se
@@ -85,8 +84,8 @@ public class Array {
   public static double mediaArrayInt(int[] x) {
     int suma = 0;
     
-    for(int i = 0; i < x.length; i++) {
-      suma += x[i];
+    for (int n : x) {
+      suma += n;
     }
       
     return (double)suma / x.length;
@@ -98,37 +97,50 @@ public class Array {
    * 
    * @param x array unidimiensional de números enteros
    * @param n números entero que se buscará dentro del array
-   * @return  verdadero si n se encuentra en el array x o falso en caso
-   *          contrario
+   * @return  verdadero si <code>n</code> se encuentra en el array
+   *          <code>x</code> en caso contrario.
    */
   public static boolean estaEnArrayInt(int[] x, int n) {
-    
-    for(int i = 0; i < x.length; i++)
-      if (x[i] == n)
+    for (int numero : x) {
+      if (numero == n) {
         return true;
-      
+      }
+    }
     return false;
   }
-          
   
-  
+  /**
+   * Devuelve la posición (el índice) de la primera ocurrencia de un número
+   * dentro de un array.
+   *
+   * @param x array unidimiensional de números enteros
+   * @param n números entero que se buscará dentro del array
+   * @return  posición (índice) de la primera ocurrencia del número
+   *          <code>n</code> dentro del array <code>x</code> o -1 en caso de
+   *          no encontrarse el número
+   */
   public static int posicionEnArrayInt(int[] x, int n) {
-    
-    for(int i = 0; i < x.length; i++)
-      if (x[i] == n)
+    for(int i = 0; i < x.length; i++) {
+      if (x[i] == n) {
         return i;
-      
+      }
+    }
     return -1;
   }
-  
-  
-  
+
+  /**
+   * Le da la vuelta a un array. Los primeros números estarán al final y
+   * viceversa.
+   *
+   * @param x array unidimiensional de números enteros
+   * @return  array volteada con los primeros números al final y viceversa
+   */
   public static int[] volteaArrayInt(int[] x) {
-    
     int[] a = new int[x.length];
     
-    for(int i = 0; i < x.length; i++)
+    for(int i = 0; i < x.length; i++) {
       a[x.length - i - 1] = x[i];
+    }
       
     return a;
   }
