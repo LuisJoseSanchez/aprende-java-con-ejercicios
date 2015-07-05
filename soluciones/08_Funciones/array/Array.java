@@ -43,7 +43,6 @@ public class Array {
    *          parametro
    */
   public static int minimoArrayInt(int[] x) {
-    
     int minimo = Integer.MAX_VALUE;
     
     for(int i = 0; i < x.length; i++) {
@@ -53,33 +52,45 @@ public class Array {
     }
     return minimo;
   }
-  
-  
-  
+
+  /**
+   * Devuelve el máximo (el número más grande) del array que se pasa como
+   * parámetro.
+   * 
+   * @param x array unidimiensional de números enteros
+   * @return  el número más grande encontrado en el array que se pasa como
+   *          parametro
+   */
   public static int maximoArrayInt(int[] x) {
-    
     int maximo = Integer.MIN_VALUE;
     
-    for(int i = 0; i < x.length; i++)
-      if (x[i] > maximo)
+    for(int i = 0; i < x.length; i++) {
+      if (x[i] > maximo) {
         maximo = x[i];
+      }
+    }
       
     return maximo;
   }
     
   
-  
+  /**
+   * Devuelve la media aritmética de los números contenidos en el array que se
+   * pasa como parámetro.
+   * 
+   * @param x array unidimiensional de números enteros
+   * @return  media aritmética de los números contenidos en el array que se pasa
+   *          como parámetro
+   */
   public static double mediaArrayInt(int[] x) {
-    
     int suma = 0;
     
-    for(int i = 0; i < x.length; i++)
+    for(int i = 0; i < x.length; i++) {
       suma += x[i];
+    }
       
     return (double)suma / x.length;
   }
-      
-  
   
   public static boolean estaEnArrayInt(int[] x, int n) {
     
