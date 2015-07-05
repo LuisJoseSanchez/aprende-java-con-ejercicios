@@ -1,17 +1,14 @@
 /**
- * 
  * 8. Funciones
  * 
  * 17. Escribe un programa que pase de binario a decimal.
  * 
  * @author Luis José Sánchez
- * 
  */
- 
-import matematicas.*;
+import matematicas.Varias;
 
 public class S08Ejercicio17 {
-
+  
   public static void main(String[] args) {
 
     long decimal = 0;
