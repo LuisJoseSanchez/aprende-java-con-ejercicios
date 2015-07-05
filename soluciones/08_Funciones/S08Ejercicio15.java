@@ -1,14 +1,11 @@
 /**
- * 
  * 8. Funciones
- * 
+ *
  * 15. Muestra los números primos que hay entre 1 y 1000.
- * 
+ *
  * @author Luis José Sánchez
- * 
  */
- 
-import matematicas.*;
+import matematicas.Varias;
 
 public class S08Ejercicio15 {
 
