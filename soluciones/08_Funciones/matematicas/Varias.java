@@ -318,7 +318,8 @@ public class Varias {
 
   /**
    * Toma como parámetros las posiciones inicial y final dentro de un número y
-   * devuelve el trozo correspondiente.                                                 * <p>
+   * devuelve el trozo correspondiente.
+   * <p>
    * Las posiciones se cuentan de izquierda a derecha comenzando por el cero.
    *
    * @param x      número entero
@@ -336,7 +337,8 @@ public class Varias {
 
   /**
    * Toma como parámetros las posiciones inicial y final dentro de un número y
-   * devuelve el trozo correspondiente.                                                 * <p>
+   * devuelve el trozo correspondiente.
+   * <p>
    * Las posiciones se cuentan de izquierda a derecha comenzando por el cero.
    *
    * @param x      número entero
@@ -354,7 +356,7 @@ public class Varias {
    *
    * @param x trozo que se pegará por la izquierda
    * @param y trozo que se pegará por la derecha
-   * @return  número compuesto de los trozos x e y
+   * @return  número compuesto de los trozos <code>x</code> e <code>y</code>
    */
   public static long juntaNumeros(long x, long y) {
     return (long)(x * potencia(10, digitos(y))) + y;
@@ -365,7 +367,7 @@ public class Varias {
    *
    * @param x trozo que se pegará por la izquierda
    * @param y trozo que se pegará por la derecha
-   * @return  número compuesto de los trozos x e y
+   * @return  número compuesto de los trozos <code>x</code> e <code>y</code>
    */
   public static int juntaNumeros(int x, int y) {
     return (int)(juntaNumeros((long)x, (long)y));
