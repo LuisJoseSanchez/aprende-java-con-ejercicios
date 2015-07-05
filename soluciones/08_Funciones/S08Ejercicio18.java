@@ -1,20 +1,17 @@
 /**
- * 
  * 8. Funciones
  * 
  * 18. Escribe un programa que pase de decimal a binario.
  * 
  * @author Luis José Sánchez
- * 
  */
- 
-import matematicas.*;
+import matematicas.Varias;
 
 public class S08Ejercicio18 {
 
   public static void main(String[] args) {
     
-    System.out.print("Introduzca un número: ");
+    System.out.print("Introduzca un número en base diez para pasarlo a binario: ");
     int decimal = Integer.parseInt(System.console().readLine());
     
     System.out.println(decimal + " en decimal es " + decimalABinario(decimal) + " en binario.");
