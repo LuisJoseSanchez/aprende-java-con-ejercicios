@@ -42,6 +42,9 @@ public class ArrayBi {
    * @param columnas número de columnas que tendrá el array
    * @param minimo   límite inferior del intervalo de números aleatorios
    * @param máximo   límite superior del intervalo de números aleatorios
+   * @return         array bidimensional de números enteros rellena con valores
+   *                 aleatorios dentro del rango definido por los valores
+   *                 <code>minimo</code> y <code>maximo</code>
    */
   public static int[][] generaArrayBiInt(int filas, int columnas, int minimo, int maximo) {
     int[][] x = new int[filas][columnas];
@@ -55,17 +58,24 @@ public class ArrayBi {
     return x;
   }
 
-
-
+  /**
+   * Devuelve el valor máximo de un array bidimensional que se pasa como
+   * parámetro.
+   * 
+   * @param x array bidimiensional de números enteros
+   * @return  número máximo encontrado en el array
+   */
   public static int maximoArrayBiInt(int x[][]) {
-    
     int maximo = Integer.MIN_VALUE;
     
-    for (int f = 0; f < x.length; f++)
-      for (int c = 0; c < x[0].length; c++)
-        if (x[f][c] > maximo)
+    for (int f = 0; f < x.length; f++) {
+      for (int c = 0; c < x[0].length; c++) {
+        if (x[f][c] > maximo) {
           maximo = x[f][c];
-          
+        }
+      }
+    }  
+
     return maximo;
   }
 

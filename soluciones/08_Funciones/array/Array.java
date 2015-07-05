@@ -24,6 +24,8 @@ public class Array {
    * @param n      número de elementos que contendrá el array
    * @param minimo límite inferior del intervalo de números aleatorios
    * @param maximo límite superior del intervalo de números aleatorios
+   * @return       array relleno con valores aleatorios dentro del rango
+   *               definido por <code>minimo</code> y <code>maximo</code>
    */
   public static int[] generaArrayInt(int n, int minimo, int maximo) {
     int[] x = new int[n];
