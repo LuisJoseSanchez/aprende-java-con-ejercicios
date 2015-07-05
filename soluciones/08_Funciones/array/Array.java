@@ -21,11 +21,10 @@ public class Array {
    * Por ejemplo, generaArrayInt(100, 10, 30) devolvería un array de 100 números
    * generados al azar comprendidos entre 10 y 30.
    * 
-   * @param n número de elementos que contendrá el array
+   * @param n      número de elementos que contendrá el array
    * @param minimo límite inferior del intervalo de números aleatorios.
    */
   public static int[] generaArrayInt(int n, int minimo, int maximo) {
-      
     int[] x = new int[n];
 
     for(int i = 0; i < n; i++) {
@@ -35,16 +34,23 @@ public class Array {
     return x;
   }
 
-
-
+  /**
+   * Devuelve el mínimo (el número más pequeño) del array que se pasa como
+   * parámetro.
+   * 
+   * @param x array unidimiensional de números enteros
+   * @return  el número más pequeño encontrado en el array que se pasa como
+   *          parametro
+   */
   public static int minimoArrayInt(int[] x) {
     
     int minimo = Integer.MAX_VALUE;
     
-    for(int i = 0; i < x.length; i++)
-      if (x[i] < minimo)
+    for(int i = 0; i < x.length; i++) {
+      if (x[i] < minimo) {
         minimo = x[i];
-      
+      }
+    }
     return minimo;
   }
   
