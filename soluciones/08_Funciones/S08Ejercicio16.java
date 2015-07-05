@@ -1,14 +1,11 @@
 /**
- * 
  * 8. Funciones
  * 
  * 16. Muestra los números capicúa que hay entre 1 y 99999.
  * 
  * @author Luis José Sánchez
- * 
  */
- 
-import matematicas.*;
+import matematicas.Varias;
 
 public class S08Ejercicio16 {
 
