@@ -8,7 +8,7 @@
  * 
  */
  
-import array.*;
+import array.Array;
 
 public class S08Ejercicio20a28 {
 
