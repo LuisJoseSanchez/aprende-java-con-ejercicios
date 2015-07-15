@@ -34,11 +34,24 @@ public class Fraccion {
     }
   }
 
+  /**
+   * Devuelve una fracción invertida. Lo que antes era el numerador
+   * ahora será el denominador y viceversa.
+   */
   public Fraccion invierte() {
     return new Fraccion(this.signo * this.denominador, this.numerador);
   }
   
-  // multiplicación por un escalar
+  /**
+   * Devuelve una fracción multiplicada por un escalar (un número)
+   * <code>n</code>.
+   * <p>
+   * Cuando una fracción se multiplica por un número <code>n</code>, el
+   * resultado es otra fracción con el mismo denominador que la
+   * original.
+   * El numerador se obtiene multiplicando <code>n</code> por el
+   * numerador de la fracción original.
+   */
   public Fraccion multiplica(int n) {
     return new Fraccion(this.signo * this.numerador * n, this.denominador);
   }
