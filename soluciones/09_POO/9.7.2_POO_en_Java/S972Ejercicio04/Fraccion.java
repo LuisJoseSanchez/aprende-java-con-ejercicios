@@ -37,6 +37,8 @@ public class Fraccion {
   /**
    * Devuelve una fracción invertida. Lo que antes era el numerador
    * ahora será el denominador y viceversa.
+   * 
+   * @return fracción invertida
    */
   public Fraccion invierte() {
     return new Fraccion(this.signo * this.denominador, this.numerador);
@@ -51,30 +53,79 @@ public class Fraccion {
    * original.
    * El numerador se obtiene multiplicando <code>n</code> por el
    * numerador de la fracción original.
+   * 
+   * @param n escalar por el que se multiplica la fracción original
+   * @return  fracción multiplicada por <code>n</code>
    */
   public Fraccion multiplica(int n) {
     return new Fraccion(this.signo * this.numerador * n, this.denominador);
   }
 
-  // multiplicación por una fracción
+  /**
+   * Devuelve una fracción que es el resultado de multiplicar la
+   * fracción original por otra fracción que se pasa como parámetro.
+   * <p>
+   * Cuando se multiplican dos fracciones, el numerador de la fracción
+   * resultante es el resultado de multiplicar los numeradores de las
+   * dos fracciones. El denominador de la fracción resultante se calcula
+   * de forma análoga.
+   * 
+   * @param f fracción por la que se multiplica la fracción original
+   * @return  resultado de multiplicar la fracción original por la
+   *          fracción que se pasa como parámetro
+   */
   public Fraccion multiplica(Fraccion f) {
     return new Fraccion(this.signo * this.numerador * f.getNumerador(), this.denominador * f.getDenominador());
   }
 
-  // división entre un escalar
+  /**
+   * Devuelve una fracción dividida entre un escalar (un número) <code>n
+   * </code>.
+   * <p>
+   * Cuando una fracción se divide entre un número <code>n</code>, el
+   * resultado es otra fracción con el mismo numerador que la original.
+   * El denominador se obtiene multiplicando <code>n</code> por el
+   * denominador de la fracción original.
+   * 
+   * @param n escalar entre el que se divide la fracción original
+   * @return  fracción dividida entre <code>n</code>
+   */
   public Fraccion divide(int n) {
     return new Fraccion(this.signo * this.numerador, this.denominador * n);
   }
 
-  // división entre una fracción
+  /**
+   * Devuelve una fracción que es el resultado de dividir la fracción
+   * original entre otra fracción que se pasa como parámetro.
+   * <p>
+   * Para obtener la división de dos fracciones, el numerador de una
+   * fracción se multiplica por el denominador de otra y viceversa.
+   * 
+   * @param f fracción entre la que se quiere dividir la fracción
+   *          original
+   * @return  resultado de dividir la fracción original entre la
+   *          fracción que se pasa como parámetro
+   */
   public Fraccion divide(Fraccion f) {
     return new Fraccion(this.signo * this.numerador * f.getDenominador(), denominador * f.getNumerador());
   }
 
-  // simplifica una fracción
-  // los valores del numerador y denominador de la fracción que se simplifica quedan cambiados
+  /**
+   * Devuelve una fracción que es el resultado de simplificar la
+   * fracción original.
+   * <p>
+   * Para simplificar una fracción, se comprueba si numerador y
+   * denominador son divisibles entre el mismo número. En tal caso, los
+   * dos se dividen. Se repite el proceso hasta que la fracción que se
+   * obtiene es irreducible (no se puede simplificar más).
+   * 
+   * @return  resultado de simplificar (si se puede) la fracción
+   *          original, o la misma fracción en caso de que la original
+   *          sea irreducible
+   */
   public Fraccion simplifica() {
     
+    int s = this.signo;
     int n = this.numerador;
     int d = this.denominador;
       
@@ -84,10 +135,7 @@ public class Fraccion {
         d /= i;
       }
     }
-        
-    this.numerador = n;
-    this.denominador = d;
-        
-    return this;
+
+    return new Fraccion(s * n, d);
   }
 }
