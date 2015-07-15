@@ -3,7 +3,6 @@
  * 
  * @author Luis José Sánchez
  */
-
 public class Zona {
   
   private int entradasPorVender;
@@ -18,6 +17,7 @@ public class Zona {
   
   /**
    * Vende un número de entradas.
+   * <p>
    * Comprueba si quedan entradas libres antes de realizar la venta.
    * 
    * @param n número de entradas a vender
@@ -27,7 +27,8 @@ public class Zona {
     if (this.entradasPorVender == 0) {
       System.out.println("Lo siento, las entradas para esa zona están agotadas.");
     } else if (this.entradasPorVender < n) {
-      System.out.println("Sólo me quedan " + this.entradasPorVender + " entradas para esa zona.");
+      System.out.println("Sólo me quedan " + this.entradasPorVender
+                          + " entradas para esa zona.");
     }
     
     if (this.entradasPorVender >= n) {
