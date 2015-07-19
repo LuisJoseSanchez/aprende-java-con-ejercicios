@@ -97,15 +97,9 @@ public class GestisimalMejorado {
           a.add(new Articulo(codigoIntro, descripcionIntro, precioDeCompraIntro, precioDeVentaIntro, stockIntro));
           
           break;
-          
-
-        /////////////////////////////////////////////////////////////////////////////
-        // BAJA /////////////////////////////////////////////////////////////////////
-        /////////////////////////////////////////////////////////////////////////////
-            
-        case 3:
+ 
+        case 3: // Baja ////////////////////////////////////////////////
           System.out.println("\nBAJA\n====");
-          
           System.out.print("Por favor, introduzca el código del artículo que desea dar de baja: ");
           codigoIntro = System.console().readLine();
       
@@ -117,17 +111,11 @@ public class GestisimalMejorado {
           }
           
           break;
-          
-          
-        /////////////////////////////////////////////////////////////////////////////
-        // MODIFICACIÓN /////////////////////////////////////////////////////////////
-        /////////////////////////////////////////////////////////////////////////////
-          
-        case 4:
+
+        case 4: // Modificación ////////////////////////////////////////
           System.out.println("\nMODIFICACIÓN\n============");
-          
           System.out.print("Por favor, introduzca el código del artículo cuyos datos desea cambiar: ");
-                    
+
           do {
             codigoIntro = System.console().readLine();
             if (posicion(codigoIntro) != -1) {
@@ -136,7 +124,7 @@ public class GestisimalMejorado {
           } while  (posicion(codigoIntro) == -1);
           
           i = posicion(codigoIntro);
-                    
+
           System.out.println("Introduzca los nuevos datos del artículo o INTRO para dejarlos igual.");
     
           System.out.println("Código: " + a.get(i).getCodigo());
@@ -152,38 +140,32 @@ public class GestisimalMejorado {
           if (!descripcionIntro.equals("")) {
             a.get(i).setDescripcion(descripcionIntro);
           }
-          
+
           System.out.println("Precio de compra: " + a.get(i).getPrecioDeCompra());
           System.out.print("Nuevo precio de compra: ");
           precioDeCompraIntroString = System.console().readLine();
           if (!precioDeCompraIntroString.equals("")) {
             a.get(i).setPrecioDeCompra(Double.parseDouble(precioDeCompraIntroString));
           }
-          
+
           System.out.println("Precio de venta: " + a.get(i).getPrecioDeVenta());
           System.out.print("Nuevo precio de venta: ");
           precioDeVentaIntroString = System.console().readLine();
           if (!precioDeVentaIntroString.equals("")) {
             a.get(i).setPrecioDeVenta(Double.parseDouble(precioDeVentaIntroString));
           }
-          
+
           System.out.println("Stock: " + a.get(i).getStock());
           System.out.print("Nuevo stock: ");
           stockIntroString = System.console().readLine();
           if (!stockIntroString.equals("")) {
             a.get(i).setStock(Integer.parseInt(stockIntroString));
           }
-          
+
           break;
-  
-          
-          /////////////////////////////////////////////////////////////////////////////
-          // ENTRADA DE MERCANCÍA /////////////////////////////////////////////////////
-          /////////////////////////////////////////////////////////////////////////////
-              
-          case 5:
+
+          case 5: // Entrada de mercancía //////////////////////////////
             System.out.println("\nENTRADA DE MERCANCÍA\n====================");
-            
             System.out.print("Por favor, introduzca el código del artículo: ");
             codigoIntro = System.console().readLine();
       
@@ -203,112 +185,98 @@ public class GestisimalMejorado {
             a.get(i).setStock(stockIntro + a.get(i).getStock());
             System.out.println("La mercancía ha entrado en el almacén.");  
 
-            
             break;
 
-            
-            /////////////////////////////////////////////////////////////////////////////
-            // VENTA ////////////////////////////////////////////////////////////////////
-            /////////////////////////////////////////////////////////////////////////////
-                    
-            case 6:
-                System.out.println("\nVENTA\n=====");
-                
-                do {
-                    System.out.println("\n1. Añadir artículo");
-                    System.out.println("2. Generar factura");
-                    System.out.println("3. Cancelar");
-                    System.out.print("Introduzca una opción: ");
-                    opcion2 = Integer.parseInt(System.console().readLine());
-                    
-                    switch (opcion2) {
+            case 6: // Venta
+              System.out.println("\nVENTA\n=====");
+              
+              do {
+                  System.out.println("\n1. Añadir artículo");
+                  System.out.println("2. Generar factura");
+                  System.out.println("3. Cancelar");
+                  System.out.print("Introduzca una opción: ");
+                  opcion2 = Integer.parseInt(System.console().readLine());
 
-                      // AÑADIR LÍNEA ////////////////////////////////////////////////
+                  switch (opcion2) {
 
-                      case 1:
-                        
-                        System.out.print("Por favor, introduzca el código del artículo: ");
-                        codigoIntro = System.console().readLine();
-                        i = posicion(codigoIntro);
-                        
-                        if (i == -1) {
-                          System.out.println("No hay ningún artículo con ese código.");
+                    case 1: // Añadir línea ////////////////////////////
+                      System.out.print("Por favor, introduzca el código del artículo: ");
+                      codigoIntro = System.console().readLine();
+                      i = posicion(codigoIntro);
+                      
+                      if (i == -1) {
+                        System.out.println("No hay ningún artículo con ese código.");
+                      } else {
+                        System.out.println(a.get(i));
+                  
+                        if (lineasFra.containsKey(codigoIntro)) {
+                          unidadesEnFactura = lineasFra.get(codigoIntro);
                         } else {
-                          System.out.println(a.get(i));
-                    
-                          if (lineasFra.containsKey(codigoIntro)) {
-                            unidadesEnFactura = lineasFra.get(codigoIntro);
-                          } else {
-                            unidadesEnFactura = 0;
-                          }
-
-                          System.out.println("Unidades en la factura provisional: " + unidadesEnFactura);
-           
-                          System.out.print("Unidades que quiere incorporar a la factura: ");
-                          unidades = Integer.parseInt(System.console().readLine());
-
-                          if ((a.get(i).getStock()) - unidadesEnFactura < unidades) {
-                            System.out.println("No hay suficiente stock. Puede añadir a la venta un máximo de " + (a.get(i).getStock() - unidadesEnFactura) + " unidades de ese producto.");
-                          } else if (lineasFra.containsKey(codigoIntro)) {
-                            lineasFra.put(codigoIntro, lineasFra.get(codigoIntro) + unidades);
-                          } else {
-                            lineasFra.put(codigoIntro, unidades);
-                          }
-                        
+                          unidadesEnFactura = 0;
                         }
 
-                        // Muestra las líneas
-                        System.out.println("\n\n CÓDIGO |    DESCRIPCIÓN    | UNIDADES | PRECIO UNID. | SUBTOTAL");
-                        System.out.println("------------------------------------------------------------------");
+                        System.out.println("Unidades en la factura provisional: " + unidadesEnFactura);
+         
+                        System.out.print("Unidades que quiere incorporar a la factura: ");
+                        unidades = Integer.parseInt(System.console().readLine());
+
+                        if ((a.get(i).getStock()) - unidadesEnFactura < unidades) {
+                          System.out.println("No hay suficiente stock. Puede añadir a la venta un máximo de " + (a.get(i).getStock() - unidadesEnFactura) + " unidades de ese producto.");
+                        } else if (lineasFra.containsKey(codigoIntro)) {
+                          lineasFra.put(codigoIntro, lineasFra.get(codigoIntro) + unidades);
+                        } else {
+                          lineasFra.put(codigoIntro, unidades);
+                        }
+                      }
+
+                      // Muestra las líneas
+                      System.out.println("\n\n CÓDIGO |    DESCRIPCIÓN    | UNIDADES | PRECIO UNID. | SUBTOTAL");
+                      System.out.println("------------------------------------------------------------------");
+                      for (Map.Entry pareja: lineasFra.entrySet()) {
+                        codigo = pareja.getKey().toString();
+                        i = posicion(codigo);
+                        unidades = Integer.parseInt(pareja.getValue().toString());
+                        subtotal = unidades * a.get(i).getPrecioDeVenta();
+                        System.out.printf(" %6s | %17s | %8d | %12.2f | %8.2f\n", codigo, a.get(i).getDescripcion(), unidades, a.get(i).getPrecioDeVenta(), subtotal);
+                      }
+                      
+                      break;
+
+                      case 2: // Genera la factura ///////////////////////
+                        baseImponible = 0;
+                        System.out.println("\n\n CÓDIGO |   DESCRIPCIÓN   | UNIDADES | PRECIO UNID. | SUBTOTAL");
+                        System.out.println("----------------------------------------------------------------");
                         for (Map.Entry pareja: lineasFra.entrySet()) {
                           codigo = pareja.getKey().toString();
                           i = posicion(codigo);
                           unidades = Integer.parseInt(pareja.getValue().toString());
                           subtotal = unidades * a.get(i).getPrecioDeVenta();
-                          System.out.printf(" %6s | %17s | %8d | %12.2f | %8.2f\n", codigo, a.get(i).getDescripcion(), unidades, a.get(i).getPrecioDeVenta(), subtotal);
+                          System.out.printf(" %6s | %15s | %8d | %12.2f | %8.2f\n", codigo, a.get(i).getDescripcion(), unidades, a.get(i).getPrecioDeVenta(), subtotal);
+                          baseImponible += subtotal;
+                          a.get(i).setStock(a.get(i).getStock() - unidades); // decrementa el stock
                         }
+
+                        System.out.println("----------------------------------------------------------------");
+                        System.out.printf("                                      BASE IMPONIBLE: %8.2f \n", baseImponible);
+                        System.out.printf("                                           IVA (21%%): %8.2f \n", baseImponible * 0.21);
+                        System.out.printf("                                               TOTAL: %8.2f \n", baseImponible * 1.21);
+                        
+                        System.out.println("\n\nFactura generada.\nPulse INTRO para volver al menú principal.");
+                        System.console().readLine();
                         
                         break;
-                                    
-                                    
-                        // GENERAR FACTURA ////////////////////////////////////////////////
-
-                        case 2:  
-
-                          baseImponible = 0;
-                          System.out.println("\n\n CÓDIGO |   DESCRIPCIÓN   | UNIDADES | PRECIO UNID. | SUBTOTAL");
-                          System.out.println("----------------------------------------------------------------");
-                          for (Map.Entry pareja: lineasFra.entrySet()) {
-                            codigo = pareja.getKey().toString();
-                            i = posicion(codigo);
-                            unidades = Integer.parseInt(pareja.getValue().toString());
-                            subtotal = unidades * a.get(i).getPrecioDeVenta();
-                            System.out.printf(" %6s | %15s | %8d | %12.2f | %8.2f\n", codigo, a.get(i).getDescripcion(), unidades, a.get(i).getPrecioDeVenta(), subtotal);
-                            baseImponible += subtotal;
-                            a.get(i).setStock(a.get(i).getStock() - unidades); // decrementa el stock
-                          }                               
-                                    
-                          System.out.println("----------------------------------------------------------------");
-                          System.out.printf("                                      BASE IMPONIBLE: %8.2f \n", baseImponible);
-                          System.out.printf("                                           IVA (21%%): %8.2f \n", baseImponible * 0.21);
-                          System.out.printf("                                               TOTAL: %8.2f \n", baseImponible * 1.21);
-                          
-                          System.out.println("\n\nFactura generada.\nPulse INTRO para volver al menú principal.");
-                          System.console().readLine();
-                          
-                          break;
             } // switch (venta)
-                            
+
           } while (opcion2 == 1);
-              
+
           break;
-                    
+
       } // switch (menú principal)
-    
+
     } while (opcion != 7);
-    
+
   } // main
-    
+
   /**
   /* Devuelve la posición de un artículo en el <code>ArrayList</code> o
    * <code>-1</code> si no existe.
