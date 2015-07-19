@@ -8,7 +8,6 @@
  *         
  * @author Luis José Sánchez
  */
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -200,9 +199,9 @@ public class ColeccionDeDiscosConArrayList {
         System.out.print("Por favor, introduzca el código del disco que desea borrar: ");
         codigoIntroducido = s.nextLine();
 
-        if (!album.contains(new Disco(codigoIntroducido,"", "", "", 0)))
+        if (!album.contains(new Disco(codigoIntroducido,"", "", "", 0))) {
           System.out.println("Lo siento, el código introducido no existe.");
-        else {
+        } else {
           album.remove(album.indexOf(new Disco(codigoIntroducido,"", "", "", 0)));
           System.out.println("Album borrado.");
         }
