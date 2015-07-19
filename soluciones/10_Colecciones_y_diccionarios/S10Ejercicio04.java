@@ -4,7 +4,6 @@
  *
  * @author Luis José Sánchez
  */
- 
 import java.util.ArrayList;
 import java.util.Collections;
 
