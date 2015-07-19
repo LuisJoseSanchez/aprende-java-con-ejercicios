@@ -7,7 +7,6 @@
  *    
  *    @author Luis José Sánchez
  */
-
 import java.util.HashMap;
 import java.util.ArrayList;
 
@@ -44,18 +43,18 @@ public class S10Ejercicio11 {
 
     // guarda las claves en un Array de String
     String[] a = m.keySet().toArray(new String[0]);
-        
+
     // genera 5 números aleatorios que no se repiten
     ArrayList<Integer> n = new ArrayList<Integer>();
     n.add((int)(Math.random()*22));
-    
+
     for (i = 0; i < 4; i++) {
       do {
         numero = (int)(Math.random()*22);
       } while (n.contains(numero));
       n.add(numero);
     }
-          
+
     // muestra las palabras en español y pregunta por su traducción
     int puntos = 0;
     System.out.println("Mostraré la palabra en español y usted tendrá que traducirla al inglés.");
