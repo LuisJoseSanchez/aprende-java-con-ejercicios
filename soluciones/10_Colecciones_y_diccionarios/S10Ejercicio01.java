@@ -6,15 +6,13 @@
  *
  * @author Luis José Sánchez
  */
-
 import java.util.ArrayList;
 
 public class S10Ejercicio01 {
-
   public static void main(String[] args) {
     
     ArrayList<String> a = new ArrayList<String>();
-        
+
     a.add("José Manuel");
     a.add("Salvador");
     a.add("Rubén");
