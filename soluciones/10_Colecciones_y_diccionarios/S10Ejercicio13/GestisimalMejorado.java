@@ -11,7 +11,7 @@
  *          emitir la factura correspondiente. Se debe preguntar por los
  *          códigos y las cantidades de cada artículo que se quiere
  *          comprar. Aplica un 21% de IVA.
- *      </lu>
+ *      </ul>
  *    
  *  @author Luis José Sánchez
  */
