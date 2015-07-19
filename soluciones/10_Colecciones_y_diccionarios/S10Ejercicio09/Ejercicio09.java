@@ -6,7 +6,6 @@
  *    
  *    @author Luis José Sánchez
  */
-
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -22,27 +21,15 @@ public class Ejercicio09 {
     for (int i = 0; i < 9; i++) {
       do {
         cartaAux = new Carta();      
-      } while (existeCarta(cartaAux, c));
+      } while (c.contains(cartaAux));
       
       c.add(cartaAux);
     }
     
     Collections.sort(c);
     
-    for (Carta miCarta: c)  System.out.println(miCarta);
-    
-  } // main /////////////////////////////////////////////////////////
-  
-  
-  // Comprueba si existe una determinada carta dentro de un ArrayList
-  // de cartas
-  public static boolean existeCarta(Carta c, ArrayList<Carta> cartas) {
-    for (Carta car : cartas) {
-      if ( (c.getNumero() == car.getNumero()) && (c.getPalo().equals(car.getPalo())) ) {
-        return true;
-      }
+    for (Carta miCarta: c) {
+      System.out.println(miCarta);
     }
-         
-    return false;
   }
 }
