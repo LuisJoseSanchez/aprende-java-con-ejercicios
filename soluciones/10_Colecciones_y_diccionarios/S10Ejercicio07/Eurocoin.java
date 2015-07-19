@@ -1,4 +1,4 @@
-/*
+/**
  * 7. La máquina Eurocoin genera una moneda de curso legal cada vez que
  *    se pulsa un botón siguiendo la siguiente pauta: o bien coincide el
  *    valor con la moneda anteriormente generada - 1 céntimo, 2 céntimos,
