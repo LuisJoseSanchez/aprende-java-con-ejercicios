@@ -1,10 +1,11 @@
 /**
  * 10. Crea un mini-diccionario español-inglés que contenga, al menos,
  *     20 palabras (con su traducción).
- *     Utiliza un objeto de la clase HashMap para almacenar las parejas
- *     de palabras. El programa pedirá una palabra en español y dará la *     correspondiente traducción en inglés.
+ *     <p>
+ *     Utiliza un objeto de la clase <code>HashMap</code> para almacenar
+ *     las parejas de palabras. El programa pedirá una palabra en
+ *     español y dará la correspondiente traducción en inglés.
  */
-
 import java.util.HashMap;
 
 public class S10Ejercicio10 {
@@ -34,10 +35,10 @@ public class S10Ejercicio10 {
     m.put("cacerola", "pan");
     m.put("pastel", "pie");
     m.put("membrillo", "quince");
-        
+
     System.out.print("Introduzca una palabra en español: ");
     String palabraIntro = System.console().readLine();
-        
+
     if (m.containsKey(palabraIntro)) {
       System.out.println(palabraIntro + " en inglés es " + m.get(palabraIntro));
     } else {
