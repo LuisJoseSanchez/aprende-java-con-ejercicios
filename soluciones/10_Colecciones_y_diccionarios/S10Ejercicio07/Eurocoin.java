@@ -17,7 +17,6 @@
  *    
  *    @author Luis José Sánchez
  */
-
 import java.util.ArrayList;
 
 public class Eurocoin {
