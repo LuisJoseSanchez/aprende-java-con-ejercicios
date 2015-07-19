@@ -20,7 +20,9 @@ class S11Ejercicio01 {
       }
       bw.close();
 
-    } catch (IOException ioe) { System.out.println("Error de escritura."); }
+    } catch (IOException ioe) {
+        System.out.println("Error de escritura.");
+    }
   }
 
   /**
