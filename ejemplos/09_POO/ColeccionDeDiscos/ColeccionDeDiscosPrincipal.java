@@ -1,9 +1,8 @@
 /**
  * ColeccionDeDiscosPrincipal.java
- * Gestión de una colección de discos
+ * Gestión de una colección de discos.
  * @author Luis José Sánchez
  */
- 
 public class ColeccionDeDiscosPrincipal {
 
   // N determina el tamaño del array
@@ -16,8 +15,9 @@ public class ColeccionDeDiscosPrincipal {
 
     // Crea todos los discos que van en cada una de
     // las celdas del array
-    for(int i = 0; i < N; i++)
+    for(int i = 0; i < N; i++) {
       album[i] = new Disco();
+    }
 
     int opcion;
     String codigoIntroducido;

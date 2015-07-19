@@ -1,6 +1,6 @@
 /**
- * Disco.java
  * Definición de la clase Disco
+ * 
  * @author Luis José Sánchez
  */
 
@@ -59,7 +59,7 @@ public class Disco {
         cadena += "\nGénero: " + this.genero;
         cadena += "\nDuración: " + this.duracion;
         cadena += "\n------------------------------------------";
-        
+
     return cadena;
   }
 }
