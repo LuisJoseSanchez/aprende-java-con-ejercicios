@@ -1,4 +1,4 @@
-/*
+/**
  * 13. Modifica el programa Gestisimal realizado anteriormente añadiendo
  *     las siguientes mejoras:
  *     • Utiliza una lista en lugar de un array para el almacenamiento de
@@ -11,7 +11,6 @@
  *       de cada artículo que se quiere comprar. Aplica un 21% de IVA.
  *    
  *    @author Luis José Sánchez
- *    
  */
 
 import java.util.ArrayList;
