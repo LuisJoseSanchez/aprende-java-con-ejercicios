@@ -1,22 +1,23 @@
 /**
  * 13. Modifica el programa Gestisimal realizado anteriormente añadiendo
  *     las siguientes mejoras:
- *     • Utiliza una lista en lugar de un array para el almacenamiento de
- *       los datos.
- *     • Comprueba la existencia del código en el alta, la baja y la
- *       modificación de artículos para evitar errores.
- *     • Cambia la opción "Salida de stock" por "Venta". Esta nueva opción
- *       permitirá hacer una venta de varios artículos y emitir la factura
- *       correspondiente. Se debe preguntar por los códigos y las cantidades
- *       de cada artículo que se quiere comprar. Aplica un 21% de IVA.
+ *     <ul>
+ *      <li>Utiliza una lista en lugar de un array para el
+ *          almacenamiento de los datos.
+ *      <li>Comprueba la existencia del código en el alta, la baja y la
+ *          modificación de artículos para evitar errores.
+ *      <li>Cambia la opción "Salida de stock" por "Venta". Esta nueva
+ *          opción permitirá hacer una venta de varios artículos y
+ *          emitir la factura correspondiente. Se debe preguntar por los
+ *          códigos y las cantidades de cada artículo que se quiere
+ *          comprar. Aplica un 21% de IVA.
+ *      </lu>
  *    
- *    @author Luis José Sánchez
+ *  @author Luis José Sánchez
  */
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
-
 
 public class GestisimalMejorado {
   
@@ -26,11 +27,25 @@ public class GestisimalMejorado {
 
     HashMap<String, Integer> lineasFra = new HashMap<String, Integer>();
 
-    int opcion, opcion2, i, stockIntro, unidades = 0, unidadesEnFactura = 0;
-    double precioDeCompraIntro, precioDeVentaIntro, subtotal, baseImponible, totalFactura;
-    String codigo, codigoIntro = "", descripcionIntro, precioDeCompraIntroString, precioDeVentaIntroString, stockIntroString;
+    int opcion;
+    int opcion2;
+    int i;
+    int stockIntro;
+    int unidades = 0;
+    int unidadesEnFactura = 0;
+    double precioDeCompraIntro;
+    double precioDeVentaIntro;
+    double subtotal;
+    double baseImponible;
+    double totalFactura;
+    String codigo;
+    String codigoIntro = "";
+    String descripcionIntro;
+    String precioDeCompraIntroString;
+    String precioDeVentaIntroString;
+    String stockIntroString;
     
-    // Menu
+    // Menu ////////////////////////////////////////////////////////////
     do {
       System.out.println("\n\nG E S T I S I M A L");
       System.out.println("===================");
@@ -45,12 +60,8 @@ public class GestisimalMejorado {
       opcion = Integer.parseInt(System.console().readLine());
       
       switch (opcion) {
-      
-        /////////////////////////////////////////////////////////////////////////////
-        // LISTADO //////////////////////////////////////////////////////////////////
-        /////////////////////////////////////////////////////////////////////////////
-  
-        case 1:
+
+        case 1: // Listado /////////////////////////////////////////////
           System.out.println("\nLISTADO\n=======");
           
           for(Articulo aux : a) {
@@ -58,12 +69,7 @@ public class GestisimalMejorado {
           }
           break;
           
-          
-        /////////////////////////////////////////////////////////////////////////////
-        // ALTA /////////////////////////////////////////////////////////////////////
-        /////////////////////////////////////////////////////////////////////////////
-          
-        case 2:
+        case 2: // Alta ////////////////////////////////////////////////
           System.out.println("\nNUEVO ARTÍCULO\n==============");
             
           System.out.println("Por favor, introduzca los datos del artículo.");  
@@ -301,15 +307,17 @@ public class GestisimalMejorado {
     
     } while (opcion != 7);
     
-  } // main ////////////////////////////////////////////////////////////////////////////
+  } // main
     
-    
-  //////////////////////////////////////////////////////////////////////////////////////   
-  // FUNCIONES /////////////////////////////////////////////////////////////////////////
-  //////////////////////////////////////////////////////////////////////////////////////
-    
-  // Devuelve la posición de un artículo en el ArrayList o -1 si no existe.
-  
+  /**
+  /* Devuelve la posición de un artículo en el <code>ArrayList</code> o
+   * <code>-1</code> si no existe.
+   * 
+   * @param  codigo código del artículo que se buscará dentro del <code>
+   *                ArrayList</code> que contiene todos los artículos
+   * @return        posición que ocupa el artículo dentro del <code>
+   *                ArrayList</code> o <code>-1</code> si no existe
+   */
   static public int posicion(String codigo) {
     int i = -1;
     for (Articulo aux : a) {
