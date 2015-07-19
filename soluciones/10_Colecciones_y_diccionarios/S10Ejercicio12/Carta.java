@@ -1,3 +1,4 @@
+import java.util.Objects;
 
 public class Carta implements Comparable<Carta>{
 
@@ -24,10 +25,30 @@ public class Carta implements Comparable<Carta>{
     return palo;
   }
 
+  @Override
   public String toString() {
     return n[numero] + " de " + palo;
   }
+  
+  @Override
+  public boolean equals(Object obj) {
+    if (obj == null) {
+      return false;
+    }
+    if (getClass() != obj.getClass()) {
+      return false;
+    }
+    final Carta other = (Carta) obj;
+    if (!Objects.equals(this.numero, other.numero)) {
+      return false;
+    }
+    if (!Objects.equals(this.palo, other.palo)) {
+      return false;
+    }
+    return true;
+  }
 
+  @Override
   public int compareTo(Carta c) {
     if (palo.equals(c.getPalo())) {
       return numero.compareTo(c.getNumero());

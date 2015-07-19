@@ -1,12 +1,18 @@
-/*
+/**
  * 12. Escribe un programa que genere una secuencia de 5 cartas de la
- *     baraja española y que sume los puntos según el juego de la brisca.
- *     El valor de las cartas se debe guardar en una estructura HashMap
- *     que debe contener parejas (figura, valor), por ejemplo ("caballo", 3).
- *     La secuencia de cartas debe ser una estructura de la clase ArrayList
- *     que contiene objetos de la clase Carta. El valor de las cartas es
- *     el siguiente: as → 11, tres → 10, sota → 2, caballo → 3, rey → 4;
- *     el resto de cartas no vale nada.
+ *     baraja española y que sume los puntos según el juego de la
+ *     brisca. El valor de las cartas se debe guardar en una estructura
+ *     <code>HashMap</code> que debe contener parejas (figura, valor),
+ *     por ejemplo ("caballo", 3).
+ *     <p>    
+ *     La secuencia de cartas debe ser una estructura de la clase <code>
+ *     ArrayList</code> que contiene objetos de la clase <code>Carta
+ *     </code>. El valor de las cartas es el siguiente: as → 11, tres →
+ *     10, sota → 2, caballo → 3, rey → 4; el resto de cartas no vale
+ *     nada.
+ *     <p>
+ *     <code>
+ *     <pre>
  *     Ejemplo:
  *     as de oros
  *     cinco de bastos
@@ -14,15 +20,14 @@
  *     sota de copas
  *     tres de oros
  *     Tienes 26 puntos
- *    
+ *     </pre>
+ *     </code>
  *    @author Luis José Sánchez
  */
-
 import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Ejercicio12 {
-
   public static void main(String[] args) {
     
     ArrayList<Carta> c = new ArrayList<Carta>();
@@ -46,7 +51,7 @@ public class Ejercicio12 {
     for (int i = 0; i < 5; i++) {
       do {
         cartaAux = new Carta();      
-      } while (existeCarta(cartaAux, c));
+      } while (c.contains(cartaAux));
       
       c.add(cartaAux);
     }
@@ -58,17 +63,5 @@ public class Ejercicio12 {
     }
     
     System.out.println("Tienes " + puntos + " puntos.");
-  } // main /////////////////////////////////////////////////////////
-  
-  
-  // Comprueba si existe una determinada carta dentro de un ArrayList
-  // de cartas
-  public static boolean existeCarta(Carta c, ArrayList<Carta> cartas) {
-    for (Carta car : cartas) {
-      if ( (c.getNumero() == car.getNumero()) && (c.getPalo().equals(car.getPalo())) ) {
-         return true;
-      }
-    }
-    return false;
   }
 }

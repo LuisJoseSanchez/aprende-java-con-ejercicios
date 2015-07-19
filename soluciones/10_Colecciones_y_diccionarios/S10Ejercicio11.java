@@ -1,4 +1,4 @@
-/*
+/**
  * 11. Realiza un programa que escoja al azar 5 palabras en español del
  *     minidiccionario del ejercicio anterior. El programa irá pidiendo
  *     que el usuario teclee la traducción al inglés de cada una de las
