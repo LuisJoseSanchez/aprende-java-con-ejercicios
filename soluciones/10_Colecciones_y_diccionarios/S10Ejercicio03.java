@@ -4,7 +4,6 @@
  *
  * @author Luis José Sánchez
  */
-
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -25,7 +24,8 @@ public class S10Ejercicio03 {
 
     System.out.println("Lista ordenada de menor a mayor: " + a);
 
-    // Descomentar el siguiente bloque para ordenar la lista de mayor a menor
+    // Descomenta el siguiente bloque para ordenar la lista de mayor a
+    // menor
     /*
       ArrayList<Integer> b = new ArrayList<Integer>();
 
