@@ -9,7 +9,6 @@ import java.io.FileReader;
 import java.io.IOException;
 
 class S11Ejercicio02 {
-
   public static void main(String[] args) {
     try {  
       BufferedReader br = new BufferedReader(new FileReader("primos.dat"));
@@ -22,6 +21,8 @@ class S11Ejercicio02 {
       System.out.println();
       br.close();
       
-    } catch (IOException e) { System.out.println("Error de lectura."); }
+    } catch (IOException e) {
+      System.out.println("Error de lectura.");
+    }
   }
 }
