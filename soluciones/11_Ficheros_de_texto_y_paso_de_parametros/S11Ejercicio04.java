@@ -46,7 +46,7 @@ class S11Ejercicio04 {
       for (String s: v) {
         bw.write(s + "\n");
       }
-          
+
       bw.close();
     } catch (IOException ioe) {
       System.err.println(ioe.getMessage());
