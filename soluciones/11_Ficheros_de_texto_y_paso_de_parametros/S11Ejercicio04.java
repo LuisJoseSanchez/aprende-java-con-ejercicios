@@ -18,6 +18,7 @@ import java.util.Vector;
 
 class S11Ejercicio04 {
   public static void main(String[] args) {
+    
     if (args.length != 1) {
       System.out.println("Uso del programa: S11Ejercicio04 FICHERO.TXT");
       System.exit(-1);
