@@ -14,9 +14,9 @@
   </head>
   <body>
     <form method="post" action="saludo.jsp">
-        ¿Cómo te llamas? 
-        <input type="text" name="nombre">
-        <input type="submit" value="OK">
+      ¿Cómo te llamas? 
+      <input type="text" name="nombre">
+      <input type="submit" value="OK">
     </form>
   </body>
 </html>
