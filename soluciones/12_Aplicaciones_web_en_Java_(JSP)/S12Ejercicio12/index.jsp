@@ -1,7 +1,7 @@
 <%-- 
-12. Mejora la aplicación anterior de tal forma que no haga falta introducir el día
-    de la semana en que cae el día 1 y el número de días que tiene el mes. El
-    programa debe deducir estos datos del mes y el año.
+12. Mejora la aplicación anterior de tal forma que no haga falta introducir el
+    día de la semana en que cae el día 1 y el número de días que tiene el mes.
+    El programa debe deducir estos datos del mes y el año.
     Pista: puedes usar la clase Calendar (java.util.Calendar).
 --%>
 
@@ -31,7 +31,7 @@
         <option value="11">noviembre</option>
         <option value="12">diciembre</option>
       </select> 
-      &nbsp;año <input type="text" name="anio" size="4"> 
+      &nbsp;año <input type="number" name="anio" size="4"> 
       &nbsp;<input type="submit" value="Aceptar">
     </form>
   </body>

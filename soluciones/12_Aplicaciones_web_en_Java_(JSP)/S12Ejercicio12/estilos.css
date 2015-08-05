@@ -1,4 +1,4 @@
-root { 
+root {
   display: block;
 }
 
@@ -25,9 +25,9 @@ h2 {
 
 form {
   background-color: #abcdef;
-  width: 400px;
+  width: 460px;
   margin: auto;
-  padding: 60px;
+  padding: 60px 10px 60px 10px;
   box-shadow: #242424 4px 4px 4px;
   border-radius: 6px;
   text-align: center;
