@@ -14,7 +14,7 @@
         int puntos = 0;
 
         for (Integer i = 1; i < 11; i++) {
-            puntos += Integer.parseInt(request.getParameter("p" + i.toString()));
+          puntos += Integer.parseInt(request.getParameter("p" + i.toString()));
         }
 
         out.print(puntos);
