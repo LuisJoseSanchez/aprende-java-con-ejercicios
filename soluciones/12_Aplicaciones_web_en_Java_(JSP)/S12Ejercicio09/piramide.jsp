@@ -14,7 +14,7 @@
 
       while (altura <= alturaTotal) {
 
-        // inserta espacios
+        // inserta espacios (imagenes en blanco)
         for (i = 1; i <= espacios; i++) {
           out.print("<img src=\"blanco.jpg\">");
         }
