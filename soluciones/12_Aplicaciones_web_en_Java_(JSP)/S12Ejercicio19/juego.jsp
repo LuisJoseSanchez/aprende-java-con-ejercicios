@@ -27,7 +27,7 @@
           dinero = 0;
         }
       %>
-        
+
         <p>
           <img src="img/<%= imagen[jugada] %>"><br>
           <h2><%= mensaje[jugada] %></h2>
@@ -53,11 +53,7 @@
             <input type="submit" value="Volver a jugar">
           </form>
       <%
-        } // if
-      
+        } // if     
       %>
-      
-      
-
     </div>
 </html>

@@ -1,4 +1,4 @@
-root { 
+root {
   display: block;
 }
 
@@ -24,12 +24,6 @@ h2 {
 }
 
 form {
-  //background-color: #abcdef;
-  //width: 100px;
-  //margin: auto;
-  //padding: 60px;
-  //box-shadow: #242424 4px 4px 4px;
-  //border-radius: 6px;
   text-align: center;
 }
 
