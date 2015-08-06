@@ -1,8 +1,9 @@
-<%-- 
-  20. Crea una aplicación que dibuje un tablero de ajedrez mediante una tabla HTML generada
-      con bucles usando JSP y que sitúe dentro del tablero un alfil y un caballo en posiciones
-      aleatorias. Las dos figuras no pueden estar colocadas en la misma casilla. Las filas y las
-      columnas del tablero deben estar etiquetadas correctamente.
+<%--
+  20. Crea una aplicación que dibuje un tablero de ajedrez mediante una tabla
+      HTML generada con bucles usando JSP y que sitúe dentro del tablero un
+      alfil y un caballo en posiciones aleatorias. Las dos figuras no pueden
+      estar colocadas en la misma casilla. Las filas y las columnas del tablero
+      deben estar etiquetadas correctamente.
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -48,7 +49,7 @@
           if ((((fila % 2) + (columna % 2)) % 2) == 0) {
             color = "blanco";
           } else {
-            color = "negro";           
+            color = "negro";
           }
           
           // Determina la imagen que se inserta en la casilla
@@ -59,7 +60,7 @@
           } else {
             imagen = "transparente.png";
           }
-          
+
           out.print("<td class=\""+ color + "\"><img src=\"img/" + imagen + "\"</td>");
         }
         out.print("<td>" + fila + "</td></tr>");
