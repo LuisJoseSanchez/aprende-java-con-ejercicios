@@ -37,7 +37,7 @@
       mensaje = "<p>Lo siento, acceso denegado.</p>";
       enlace = "index.jsp";
     } else if (request.getParameter("usuario").equals("admin")) {
-      icono = "<i class=\"mdi-communication-vpn-key large\"></i>";
+      icono = "<i class=\"mdi-action-supervisor-account teal-text large\"></i>";
       mensaje = "<p>Tiene acceso al área de gestión de usuarios.</p>"; // candado abierto
       enlace = "gestionUsuarios.jsp";
     } else {

@@ -8,6 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
   
@@ -23,11 +24,11 @@
                         + request.getParameter("usuario") + "'";
       ResultSet listado = s.executeQuery(consulta);
     %>
-    <div class="container">
+    <div class="container center">
       <div class="row"></div>
       <div class="row">
-        <div class="col l2">&nbsp;</div>
-        <div class="col l8">
+        <div class="col s2">&nbsp;</div>
+        <div class="col s8">
           <span>Como usuario <b><%=request.getParameter("usuario") %></b> puede ejecutar los siguientes ejercicios:</span>
           <div class="collection">
             <%
@@ -38,6 +39,12 @@
               }
             %>
           </div>
+          <p class="center">
+            <a href="index.jsp" class="btn waves-effect waves-light center">
+              <i class="fa fa-home"></i>
+              Página principal
+            </a>
+          </p>
         </div>
       </div>
     </div>
