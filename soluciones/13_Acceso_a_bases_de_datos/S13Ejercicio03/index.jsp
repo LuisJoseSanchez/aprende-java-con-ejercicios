@@ -1,12 +1,13 @@
 <%-- 
-2. Mejora el programa anterior de tal forma que se puedan dar de alta nuevos
-   usuarios para acceder a la aplicación. Si se introduce un nombre de usuario
-   que no sea el administrador (admin) y una contraseña correcta, la aplicación
-   funcionará exactamente igual que el ejercicio anterior. Si se introduce el
-   usuario "admin" y la contraseña correcta, la aplicación entra en la gestión
-   de usuarios donde se podrán dar de alta nuevos usuarios indicando nombre de
-   usuario y contraseña. No puede haber dos nombres de usuario iguales aunque sí
-   puede haber claves repetidas.
+  3. Amplía el programa anterior para que se pueda asignar o quitar permiso para
+     ejecutar las aplicaciones de la relación anterior a los distintos usuarios.
+     Por ejemplo, que se pueda especificar que el usuario "jaimito" pueda
+     ejecutar los ejercicios 2, 3 y 5. Para ello, en la base de datos deberá
+     existir una tabla con las parejas (usuario, nº ejercicio). Por ejemplo, si
+     el usuario “jaimito” tiene acceso a los ejercicios 2, 3 y 5; en la tabla
+     correspondiente estarán las parejas (jaimito, 2), (jaimito, 3) y (jaimito, 5).
+     Lo ideal es que la asignación de permisos se haga mediante el marcado de
+     múltiples "checkbox".
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
