@@ -1,13 +1,12 @@
 /**
-* Lectura de datos desde teclado
-* Para IDEs como Eclipse, Netbeans o JavaEdit
+* Lectura de datos desde teclado usando la clase Scanner
 *
 * @author Luis J. Sánchez
 */
 
 import java.util.Scanner;
 
-public class LeeDatosIDE {
+public class LeeDatosScanner01 {
   public static void main(String[] args) {
     Scanner s = new Scanner(System.in);
 
