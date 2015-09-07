@@ -1,3 +1,10 @@
+<%--
+  4. Crea una aplicación web que permita hacer listado, alta, baja y
+     modificación sobre la tabla cliente de la base de datos banco. Un cliente
+     tiene su identificador, nombre completo, dirección, teléfono y fecha de
+     nacimiento.
+--%>
+
 <%@page import="java.sql.ResultSet"%>
 <%@page import="java.sql.Statement"%>
 <%@page import="java.sql.DriverManager"%>
