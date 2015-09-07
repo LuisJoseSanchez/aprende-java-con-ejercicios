@@ -33,7 +33,7 @@ public class Varias {
    * 
    * @param x un número entero
    * @return  la cantidad de dígitos que contiene el número
-   */  
+   */
   public static int digitos(int x) {
     
     if (x == 0) {
