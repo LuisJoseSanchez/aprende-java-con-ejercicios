@@ -7,9 +7,8 @@
 import matematicas.Varias;
 
 public class ArrayBiFunciones {
-  
   public static void main(String[] args) {
-    
+
     int[][] n = new int[6][9];
 
     for(int i = 0; i < 6; i++) {
@@ -30,9 +29,8 @@ public class ArrayBiFunciones {
    * 
    * @param x un array bidimensional de números enteros
    * @return  número de filas del array
-   */    
+   */
   public static int filasArrayIntBi(int x[][]) {
-    
     return x.length;
   }
   
@@ -43,9 +41,8 @@ public class ArrayBiFunciones {
    * 
    * @param x un array bidimensional de números enteros
    * @return  número de columnas del array
-   */    
+   */  
   public static int columnasArrayIntBi(int x[][]) {
-    
     return x[0].length;
   }
 
@@ -58,7 +55,7 @@ public class ArrayBiFunciones {
    * @return  el valor máximo encontrado en el array
    */  
   public static int maximoArrayIntBi(int x[][]) {
-    
+  
     int maximo = Integer.MIN_VALUE;
     
     for (int f = 0; f < filasArrayIntBi(x); f++) {
@@ -68,19 +65,19 @@ public class ArrayBiFunciones {
         }
       }
     }
-          
+
     return maximo;
   }
-  
+
 
   /**
    * Muestra por pantalla el contenido de un array bidimensional
    * de números enteros.
    * 
    * @param x un array bidimensional de números enteros
-   */    
+   */  
   public static void muestraArrayIntBi(int x[][]) {
-    
+  
     String formatoNumero = "%" + matematicas.Varias.digitos(maximoArrayIntBi(x)) + "d";
 
     for (int f = 0; f < filasArrayIntBi(x); f++) {
