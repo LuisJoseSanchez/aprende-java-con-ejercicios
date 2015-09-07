@@ -10,10 +10,9 @@ import java.io.IOException;
  * @author Luis José Sánchez
  */
 public class EjemploProcesamiento10 {
-
   public static void main(String[] args) {
   
-		for (int i = 0; i < args.length; i++) {
+    for (int i = 0; i < args.length; i++) {
       
       System.out.print("Procesando el archivo " + args[i] + "...");
       
