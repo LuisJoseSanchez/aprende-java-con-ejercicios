@@ -35,8 +35,7 @@ public class Perro extends Animal implements Mascota {
 
   /**
    * Hace que el Perro coma.
-   * A los Perros les gusta el pescado, si le damos otra comida
-   * la rechazará.
+   * A los Perros les gusta la carne, si le damos otra comida la rechazará.
    * 
    * @param comida la comida que se le ofrece al Perro
    */
