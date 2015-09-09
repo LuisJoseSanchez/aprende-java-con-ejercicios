@@ -1,88 +1,63 @@
 /**
- * Gato.java
- * Definición de la clase Gato
+ * Perro.java
+ * Definición de la clase Perro
+ * 
  * @author Luis José Sánchez
  */
-
-public class Gato extends Animal inplements Mascota {
+public class Perro extends Animal implements Mascota {
   
-  private String raza;
+  private String codigo;
   
-
-  public Gato (Sexo s, String r) {
+  public Perro (Sexo s, String c) {
     super(s);
-    this.raza = r;
-  }
-  
-  public Gato (Sexo s) {
-    super(s);
-    raza = "siamés";
+    this.codigo = c;
   }
 
-  public Gato (String r) {
-    super(Sexo.HEMBRA);
-    raza = r;
-  }
-  
-  public Gato () {
-    super(Sexo.HEMBRA);
-    raza = "siamés";
-  }
-  
-  public String toString() {
-    return super.toString()
-            + "Raza: " + this.raza
-            + "\n*************************\n";
-  }
-  
   /**
-   * Hace que el gato maulle.
+   * Hace que el Perro emita sonidos.
    */
-  public void maulla() {
-    System.out.println("Miauuuu");
+  @Override
+  public void hazRuido() {
+    this.ladra();
   }
 
   /**
-   * Hace que el gato ronronee
-   */ 
-  public void ronronea() {
-    System.out.println("mrrrrrr");
+   * Hace que el Perro ladre.
+   */
+  public void ladra() {
+    System.out.println("Guau guau");
   }
 
   /**
-   * Hace que el gato coma.
-   * A los gatos les gusta el pescado, si le damos otra comida
+   * Hace que el Perro coma.
+   * A los Perros les gusta el pescado, si le damos otra comida
    * la rechazará.
    * 
-   * @param comida la comida que se le ofrece al gato
+   * @param comida la comida que se le ofrece al Perro
    */
+  @Override
   public void come(String comida) {
     
-    if (comida.equals("pescado")) {
-      super();
-      //super.come();
+    if (comida.equals("carne")) {
+      super.come();
       System.out.println("Hmmmm, gracias");
     } else {
-      
-      System.out.println("Lo siento, yo solo como pescado");
+      System.out.println("Lo siento, yo solo como carne");
     }
   }
 
   /**
-   * Pone a pelear dos gatos.
-   * Solo se van a pelear dos machos entre sí.
+   * Pone a pelear el perro contra otro animal.
+   * Solo se van a pelear si los dos son perros.
    * 
-   * @param contrincante es el gato contra el que pelear
+   * @param contrincante es el animal contra el que pelear
    */
-  public void peleaCon(Gato contrincante) {
-    if (this.getSexo() == Sexo.HEMBRA) {
-      System.out.println("no me gusta pelear");
+  @Override
+  public void peleaCon(Animal contrincante) {
+    if (contrincante.getClass().equals("Perro")) {
+      System.out.println("ven aquí que te vas a enterar");
     } else {
-      if (contrincante.getSexo() == Sexo.HEMBRA) {
-        System.out.println("no peleo contra gatitas");
-      } else {
-        System.out.println("ven aquí que te vas a enterar");
-      }
+      System.out.println("no me gusta pelear");
     }
   }
 }

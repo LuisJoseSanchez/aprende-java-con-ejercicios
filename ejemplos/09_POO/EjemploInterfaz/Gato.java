@@ -1,40 +1,27 @@
 /**
  * Gato.java
  * Definición de la clase Gato
+ * 
  * @author Luis José Sánchez
  */
-
-public class Gato extends Animal inplements Mascota {
+public class Gato extends Animal implements Mascota {
   
-  private String raza;
+  private String codigo;
   
-
-  public Gato (Sexo s, String r) {
+  public Gato (Sexo s, String c) {
     super(s);
-    this.raza = r;
-  }
-  
-  public Gato (Sexo s) {
-    super(s);
-    raza = "siamés";
+    this.codigo = c;
   }
 
-  public Gato (String r) {
-    super(Sexo.HEMBRA);
-    raza = r;
+  /**
+   * Hace que el gato emita sonidos.
+   */
+  @Override
+  public void hazRuido() {
+    this.maulla();
+    this.ronronea();
   }
-  
-  public Gato () {
-    super(Sexo.HEMBRA);
-    raza = "siamés";
-  }
-  
-  public String toString() {
-    return super.toString()
-            + "Raza: " + this.raza
-            + "\n*************************\n";
-  }
-  
+
   /**
    * Hace que el gato maulle.
    */
@@ -56,30 +43,30 @@ public class Gato extends Animal inplements Mascota {
    * 
    * @param comida la comida que se le ofrece al gato
    */
+  @Override
   public void come(String comida) {
     
     if (comida.equals("pescado")) {
-      super();
-      //super.come();
+      super.come();
       System.out.println("Hmmmm, gracias");
     } else {
-      
       System.out.println("Lo siento, yo solo como pescado");
     }
   }
 
   /**
-   * Pone a pelear dos gatos.
+   * Pone a pelear al gato contra otro animal.
    * Solo se van a pelear dos machos entre sí.
    * 
-   * @param contrincante es el gato contra el que pelear
+   * @param contrincante es el animal contra el que pelear
    */
-  public void peleaCon(Gato contrincante) {
+  @Override
+  public void peleaCon(Animal contrincante) {
     if (this.getSexo() == Sexo.HEMBRA) {
       System.out.println("no me gusta pelear");
     } else {
       if (contrincante.getSexo() == Sexo.HEMBRA) {
-        System.out.println("no peleo contra gatitas");
+        System.out.println("no peleo contra hembras");
       } else {
         System.out.println("ven aquí que te vas a enterar");
       }

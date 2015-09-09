@@ -1,34 +1,21 @@
 /**
  * PruebaMascota.java
- * Programa que prueba la interfaz Mascotas
+ * Programa que prueba la interfaz Mascota
  * 
  * @author Luis José Sánchez
  */
 public class PruebaMascota {
   public static void main(String[] args) {
     
-    Gato garfield = new Gato(Sexo.MACHO, "romano");
-    Gato tom = new Gato(Sexo.MACHO);
-    Gato lisa = new Gato(Sexo.HEMBRA);
-    Gato silvestre = new Gato();
+    Mascota garfield = new Gato(Sexo.MACHO, "34569");
+    Mascota lisa = new Gato(Sexo.HEMBRA, "96059");
+    Mascota kuki = new Perro(Sexo.HEMBRA, "234678");
+    Mascota ayo = new Perro(Sexo.MACHO, "778950");
     
-    System.out.println(garfield);
-    System.out.println(tom);
-    System.out.println(lisa);
-    System.out.println(silvestre);
-    
-    silvestre.come();
-    silvestre.come("pescado");
-    
-    Ave miLoro = new Ave();
-    miLoro.aseate();
-    miLoro.vuela();
-    miLoro.come("hamburguesa");
-    miLoro.come();
-    
-    Pinguino pingu = new Pinguino(Sexo.HEMBRA);
-    pingu.aseate();
-    pingu.vuela();
-     
+    garfield.come("pescado");
+    lisa.come("hamburguesa");
+    kuki.come("pescado");
+    lisa.peleaCon((Gato)garfield);
+    ayo.peleaCon((Perro)kuki);
   }
 }
