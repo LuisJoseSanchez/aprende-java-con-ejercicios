@@ -54,7 +54,7 @@ public class Perro extends Animal implements Mascota {
    */
   @Override
   public void peleaCon(Animal contrincante) {
-    if (contrincante.getClass().equals("Perro")) {
+    if (contrincante.getClass().getSimpleName().equals("Perro")) {
       System.out.println("ven aquí que te vas a enterar");
     } else {
       System.out.println("no me gusta pelear");
