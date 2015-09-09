@@ -13,6 +13,11 @@ public class Perro extends Animal implements Mascota {
     this.codigo = c;
   }
 
+  @Override
+  public String getCodigo() {
+    return this.codigo;
+  }
+
   /**
    * Hace que el Perro emita sonidos.
    */
