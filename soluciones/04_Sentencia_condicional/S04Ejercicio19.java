@@ -14,7 +14,7 @@ public class S04Ejercicio19 {
     int n, digitos = 0;
     
     System.out.print("Por favor, introduzca un número entero (de 5 cifras como máximo): ");
-    n = Integer.parseInt(System.console().readLine());
+    n = Math.abs(Integer.parseInt(System.console().readLine()));
     
     if ( n < 10 ) {
       digitos = 1;
