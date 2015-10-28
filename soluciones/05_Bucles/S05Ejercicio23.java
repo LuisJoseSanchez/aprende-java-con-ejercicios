@@ -8,7 +8,6 @@
  * 
  * @author Luis José Sánchez
  */
-
 public class S05Ejercicio23 {
 
   public static void main(String[] args) {

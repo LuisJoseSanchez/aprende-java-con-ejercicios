@@ -43,7 +43,7 @@ public class S05Ejercicio26 {
       volteado /= 10;
       posicion++;
     } // while
-    
+
     System.out.println();
   }
 }

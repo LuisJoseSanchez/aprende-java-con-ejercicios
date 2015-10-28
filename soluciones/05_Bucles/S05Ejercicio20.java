@@ -6,7 +6,6 @@
  * 
  * @author Luis José Sánchez
  */
-
 public class S05Ejercicio20 {
 
   public static void main(String[] args) {
@@ -49,6 +48,5 @@ public class S05Ejercicio20 {
     for (i = 1; i < altura*2; i++) {
       System.out.print(relleno);
     }
-
   }
 }

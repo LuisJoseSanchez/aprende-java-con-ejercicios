@@ -22,7 +22,7 @@ public class S05Ejercicio22 {
       for (i = 2; i < n; i++) {
         if (n%i == 0) esPrimo = false;
       }
-      
+
       // si n es primo, se muestra por pantalla
       if (esPrimo) {
         System.out.print(n + " ");

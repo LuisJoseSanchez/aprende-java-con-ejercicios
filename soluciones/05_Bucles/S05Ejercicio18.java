@@ -39,6 +39,5 @@ public class S05Ejercicio18 {
     }
     
     System.out.println();
-
   }
 }
