@@ -30,7 +30,9 @@ public class S71Ejercicio11 {
       // Comprueba si el número es o no primo.
       esPrimo = true;
       for (j = 2; j < n[i] - 1; j++) {
-        if (n[i] % j == 0) esPrimo = false;
+        if (n[i] % j == 0) {
+          esPrimo = false;
+        }
       }
       
       // Si el número es primo, se mete en un array y si
