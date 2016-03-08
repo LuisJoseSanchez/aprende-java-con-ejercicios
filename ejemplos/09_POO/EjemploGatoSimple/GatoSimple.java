@@ -3,7 +3,6 @@
  * Definición de la clase GatoSimple
  * @author Luis José Sánchez
  */
-
 public class GatoSimple {
 
   // atributos /////////////////////////////
