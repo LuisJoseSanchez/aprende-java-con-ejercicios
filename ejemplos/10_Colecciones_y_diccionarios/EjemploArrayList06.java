@@ -25,7 +25,7 @@ public class EjemploArrayList06 {
 
     a.add(1, "turquesa");
 
-    System.out.println("Contenido del vector después de insertar en la posición 1: ");
+    System.out.println("Contenido de la lista después de insertar en la posición 1: ");
 
     for(String color: a) {
       System.out.println(color);
