@@ -19,8 +19,9 @@ public class EjemploArrayList05 {
 
     System.out.println("Contenido del vector: ");
 
-    for(String color: a)
-    System.out.println(color);
+    for(String color: a) {
+      System.out.println(color);
+    }
 
     a.set(2, "turquesa");  
 
