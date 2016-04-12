@@ -19,7 +19,7 @@ public class EjemploArrayList07 {
     System.out.println("\nDatos de los gatos:\n");
 
     for (Gato gatoAux: g) {
-      System.out.println(gatoAux+"\n");
+      System.out.println(g);
     }
   }
 }

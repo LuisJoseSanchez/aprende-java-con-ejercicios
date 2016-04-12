@@ -19,16 +19,12 @@ public class EjemploArrayList05 {
 
     System.out.println("Contenido del vector: ");
 
-    for(String color: a) {
-      System.out.println(color);
-    }
+    System.out.println(a);
 
     a.set(2, "turquesa");  
 
     System.out.println("Contenido del vector después de machacar la posición 2: ");
 
-    for(String color: a) {
-      System.out.println(color);
-    }
+    System.out.println(a);
   }
 }

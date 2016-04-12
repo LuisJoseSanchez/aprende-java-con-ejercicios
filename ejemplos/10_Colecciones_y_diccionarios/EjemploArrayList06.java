@@ -19,16 +19,12 @@ public class EjemploArrayList06 {
 
     System.out.println("Contenido de la lista: ");
 
-    for(String color: a) {
-      System.out.println(color);
-    }
+    System.out.println(a);
 
     a.add(1, "turquesa");
 
     System.out.println("Contenido de la lista después de insertar en la posición 1: ");
 
-    for(String color: a) {
-      System.out.println(color);
-    }
+    System.out.println(a);
   }
 }
