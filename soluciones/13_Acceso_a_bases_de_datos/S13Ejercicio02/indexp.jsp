@@ -11,6 +11,7 @@ imagen.
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <!-- Materialize -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
   <body>
     <div class="container">
@@ -26,7 +27,7 @@ imagen.
             </div>
             <p class="center"><button class="btn waves-effect waves-light center" type="submit" name="aceptar">
               Aceptar
-              <i class="mdi-action-check-circle"></i>
+              <i class="material-icons">check_circle</i>
             </button></p>
             <br>
           </form>
