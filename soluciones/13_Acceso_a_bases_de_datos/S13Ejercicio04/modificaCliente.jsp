@@ -7,9 +7,10 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link rel="stylesheet" href="css/materialize.css">
+    <!-- Materialize -->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
   <body>
     <% request.setCharacterEncoding("UTF-8"); %>
@@ -21,34 +22,34 @@
           <h5 class="center">Datos del cliente</h5>
           <form method="post" action="grabaCliente.jsp">
             <div class="input-field blue-text">
-              <i class="mdi-action-label-outline prefix"></i>
+              <i class="material-icons prefix">label_outline</i>
               <input type="number" name="clienteid" id="clienteid" value="<%=request.getParameter("clienteid") %>" readonly>
               <label for="clienteid">código</label>
             </div>
             <div class="input-field">
-              <i class="mdi-action-perm-identity prefix"></i>
+              <i class="material-icons prefix">perm_identity</i>
               <input type="text" name="nombre" id="nombre" value="<%=request.getParameter("nombre") %>" required>
               <label for="nombre">nombre</label>
             </div>
             <div class="input-field">
-              <i class="mdi-communication-location-on prefix"></i>
+              <i class="material-icons prefix">location_on</i>
               <input type="text" name="direccion" id="direccion" value="<%=request.getParameter("direccion") %>" required>
               <label for="direccion">dirección</label>
             </div>
             <div class="input-field">
-              <i class="mdi-communication-call prefix"></i>
+              <i class="material-icons prefix">call</i>
               <input type="text" name="telefono" id="telefono" value="<%=request.getParameter("telefono") %>" required>
               <label for="telefono">teléfono</label>
             </div>
             <div class="input-field">
-              <i class="fa fa-birthday-cake prefix"></i>
+              <i class="fa fa-birthday-cake prefix" style="color: #009688"></i>
               <input type="date" class="datepicker" name="nacimiento" id="nacimiento" value="<%=request.getParameter("nacimiento") %>" required>
               <label for="nacimiento">fecha de nacim.</label>
             </div>
             <p class="center">
               <button class="btn waves-effect waves-light center" type="submit" name="aceptar">
               Aceptar
-              <i class="mdi-action-check-circle"></i>
+              <i class="material-icons">check_circle</i>
               </button>
               <a href="index.jsp" class="btn waves-effect waves-light center red">
               Cancelar
@@ -62,8 +63,10 @@
     </div>
 
     <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!-- Materialize -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+
     <script>
       $('.datepicker').pickadate({
         // The title label to use for the month nav buttons

@@ -14,8 +14,9 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link rel="stylesheet" href="css/materialize.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- Materialize -->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
     <title>Gestibank</title>
   </head>
   
@@ -105,7 +106,7 @@
                   <td>
                     <button class="btn waves-effect waves-light center" type="submit" name="aceptar">
                       Añadir
-                      <i class="mdi-action-check-circle"></i>
+                      <i class="material-icons">check_circle</i>
                     </button>
                   </td>
                 </tr>
@@ -118,9 +119,10 @@
     <%
       conexion.close();
     %>
-    <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!-- Materialize -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+
     <script>
       $('.datepicker').pickadate({
         // The title label to use for the month nav buttons
