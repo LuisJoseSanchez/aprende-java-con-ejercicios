@@ -7,9 +7,12 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link rel="stylesheet" href="css/materialize.css">
+    <!-- Materialize -->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
     <title>Gestibank</title>
   </head>
   <body>
@@ -32,30 +35,30 @@
         <div class="col m6 card-panel grey lighten-5">
           <h5 class="center"><%=listado.getString("nombre") %></h5>
             <p>
-              <i class="mdi-action-label-outline teal-text"> Código: </i>
+              <i class="material-icons teal-text">label_outline</i> Código: 
               <b><%=listado.getString("clienteid") %></b>
             </p>
             <p>
-              <i class="mdi-action-perm-identity teal-text"> Nombre: </i>
+              <i class="material-icons teal-text">perm_identity</i> Nombre: 
               <b><%=listado.getString("nombre") %></b>
             </p>
             <p>
-              <i class="mdi-communication-location-on teal-text"> Dirección: </i>
+              <i class="material-icons teal-text">location_on</i> Dirección: 
               <b><%=listado.getString("direccion") %></b>
             </p>
             <p>
-              <i class="mdi-communication-call teal-text"> Teléfono: </i>
+              <i class="material-icons teal-text">call</i> Teléfono: 
               <b><%=listado.getString("telefono") %></b>
             </p>
             <p>
-              <i class="fa fa-birthday-cake teal-text"> Fecha de nacimiento: </i>
+              <i class="fa fa-birthday-cake teal-text" style="color: #009688"> Fecha de nacimiento: </i>
               <b><%=listado.getString("nacimiento") %></b>
             </p>
             <br>
             <p class="center">
               <a href="index.jsp" class="btn waves-effect waves-light center">
                 Aceptar
-                <i class="mdi-action-check-circle"></i>
+                <i class="material-icons">check_circle</i>
               </a>
             </p>
             <br>
@@ -65,8 +68,9 @@
     </div>
     <% conexion.close(); %>
 
-    <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!-- Materialize -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+
   </body>
 </html>
