@@ -15,8 +15,10 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link rel="stylesheet" href="css/materialize.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- Materialize -->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
   <body>
     <div class="container">
@@ -27,18 +29,18 @@
           <h5 class="center">Control de acceso</h5>
           <form method="post" action="acceso.jsp">
             <div class="input-field">
-              <i class="mdi-action-account-circle prefix"></i>
+              <i class="material-icons prefix">account_circle</i>
               <input type="text" name="usuario" id="usuario" required>
               <label for="usuario">Usuario</label>
             </div>
             <div class="input-field">
-              <i class="mdi-action-lock prefix"></i>
+              <i class="material-icons prefix">lock</i>
               <input type="password" name="clave" id="clave" required>
               <label for="clave">Contraseña</label>
             </div>
             <p class="center"><button class="btn waves-effect waves-light center" type="submit" name="aceptar">
               Aceptar
-              <i class="mdi-action-check-circle"></i>
+              <i class="material-icons">check_circle</i>
             </button></p>
             <br>
           </form>
@@ -46,8 +48,8 @@
       </div>
     </div>
   
-    <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!-- Materialize -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
   </body>
 </html>
