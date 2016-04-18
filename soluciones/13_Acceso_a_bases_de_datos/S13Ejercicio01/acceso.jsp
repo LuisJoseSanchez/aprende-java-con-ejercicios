@@ -10,8 +10,7 @@
 
     <!-- Materialize -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
   
   <body>
@@ -36,13 +35,13 @@
     String enlace;
     
     if (coincidencias.getInt(1) == 0) {
-      icono = "<i class=\"mdi-action-lock red-text large\"></i>"; // candado cerrado
+      icono = "<i class=\"material-icons red-text large\">lock</i>"; // candado cerrado
       mensaje = "<p>Lo siento, acceso denegado.</p>";
       enlace = "index.jsp";
       //out.print("<script type=\"text/javascript\">alert(\"Lo siento, acceso denegado\");</script>");
       //out.print("<script>document.location = \"index.jsp\"</script>");
     } else {
-      icono = "<i class=\"mdi-action-lock-open teal-text large\"></i>";
+      icono = "<i class=\"material-icons teal-text large\">lock_open</i>";
       mensaje = "<p>Acceso permitido a la aplicación.</p>"; // candado abierto
       enlace = "indexp.jsp";
       //out.print("<script type=\"text/javascript\">alert(\"Acceso permitido a la aplicación\");</script>");
@@ -60,7 +59,7 @@
           <p class="center">
             <a href="<%=enlace %>" class="btn waves-effect waves-light center">
               Aceptar
-              <i class="mdi-action-check-circle"></i>
+              <i class="material-icons">check_circle</i>
             </a>
           </p>
           <br>
