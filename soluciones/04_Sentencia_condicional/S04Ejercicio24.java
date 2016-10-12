@@ -18,30 +18,30 @@ public class S04Ejercicio24 {
     
     System.out.print("¿Cuántos días ha estado de viaje visitando clientes? ");
     int diasVisita = Integer.parseInt(System.console().readLine());
-    
+
     System.out.print("Introduzca su estado civil (1 - Soltero, 2 - Casado): ");
     int estadoCivil = Integer.parseInt(System.console().readLine());
-    
-    // Calcula el IVA y el precio antes del descuento
-    
+
     double sueldoBase = 0;
-    
+
     switch(cargo) {
       case 1: // Programador junior
         sueldoBase = 950;
         break;
       case 2: // Programador senior
-        tipoIVANumerico = 10;
+        sueldoBase = 1200;
         break;
-      case "superreducido":
-        tipoIVANumerico = 4;
+      case 3: // jefe de proyecto
+        sueldoBase = 1600;
         break;
       default:
-        System.out.print("El tipo de IVA introducido no es correcto.");
+        System.out.println("No ha elegido correctamente el sueldo base.");
     }
-    
-    double iva = baseImponible * tipoIVANumerico / 100;
-    double precioSinDescuento = baseImponible + iva;
+
+    double sueldoDietas = diasVisita * 30;
+
+    double irpf = 
+
     
     // Calcula el descuento
     
