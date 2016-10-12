@@ -18,7 +18,6 @@ public class S05Ejercicio32 {
     long numero = numeroIntroducido;
     long volteado = 0;
     int longitud = 0;
-    int posicion = 1;
     
     if (numero == 0) {
       longitud = 1;
