@@ -40,37 +40,27 @@ public class S04Ejercicio24 {
 
     double sueldoDietas = diasVisita * 30;
 
-    double irpf = 
+    double sueldoBruto = sueldoBase + sueldoDietas;
 
-    
-    // Calcula el descuento
-    
-    double descuento = 0;
-    
-    switch(codigoPromocional) {
-      case "nopro":
-        break;
-      case "mitad": // el precio se reduce a la mitad
-        descuento = precioSinDescuento / 2;
-        break;
-      case "meno5": // se descuentan 5 euros
-        descuento = 5;
-        break;
-      case "5porc": // se descuenta el 5%
-        descuento = precioSinDescuento * 0.05;
-        break;
-      default:
-        System.out.print("El código promocional introducido no es correcto.");
+    double irpf = 0;
+
+    if (estadoCivil == 1) { // Soltero
+      irpf = sueldoBruto * 0.25;
+    } else if (estadoCivil == 2) { // Casado
+      irpf = sueldoBruto * 0.20;
+    } else {
+      System.out.println("No ha elegido correctamente el estado civil.");
     }
-    
-    // Muestra el precio final del producto desglosado
-    
-    double total = precioSinDescuento - descuento;
-    
-    System.out.printf("Base imponible       %6.2f\n", baseImponible);
-    System.out.printf("IVA (%2d%%)            %6.2f\n", tipoIVANumerico, iva);
-    System.out.printf("Precio con IVA       %6.2f\n", precioSinDescuento);
-    System.out.printf("Cód. promo. (%s) -%6.2f\n", codigoPromocional, descuento);
-    System.out.printf("TOTAL                %6.2f", total);
+
+    // Muestra la nómina desglosada
+    System.out.println("┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓");
+    System.out.printf("┃ Sueldo base      %7.2f ┃\n", sueldoBase);
+    System.out.printf("┃ Dietas           %7.2f ┃\n", sueldoDietas);
+    System.out.println("┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫");
+    System.out.printf("┃ Sueldo bruto     %7.2f ┃\n", sueldoBruto);
+    System.out.printf("┃ Retención IRPF (   %7.2f ┃\n", irpf);
+    System.out.println("┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫");
+    System.out.printf("┃ Sueldo neto      %7.2f ┃\n", sueldoBruto - irpf);
+    System.out.println("┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛");
   }
 }
