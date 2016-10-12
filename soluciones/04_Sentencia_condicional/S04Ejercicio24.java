@@ -45,22 +45,22 @@ public class S04Ejercicio24 {
     double irpf = 0;
 
     if (estadoCivil == 1) { // Soltero
-      irpf = sueldoBruto * 0.25;
+      irpf = 25;
     } else if (estadoCivil == 2) { // Casado
-      irpf = sueldoBruto * 0.20;
+      irpf = 20;
     } else {
       System.out.println("No ha elegido correctamente el estado civil.");
     }
 
     // Muestra la nómina desglosada
-    System.out.println("┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓");
-    System.out.printf("┃ Sueldo base      %7.2f ┃\n", sueldoBase);
-    System.out.printf("┃ Dietas           %7.2f ┃\n", sueldoDietas);
-    System.out.println("┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫");
-    System.out.printf("┃ Sueldo bruto     %7.2f ┃\n", sueldoBruto);
-    System.out.printf("┃ Retención IRPF (   %7.2f ┃\n", irpf);
-    System.out.println("┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫");
-    System.out.printf("┃ Sueldo neto      %7.2f ┃\n", sueldoBruto - irpf);
-    System.out.println("┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛");
+    System.out.println("┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓");
+    System.out.printf("┃ Sueldo base            %7.2f ┃\n", sueldoBase);
+    System.out.printf("┃ Dietas (%2d viajes)     %7.2f ┃\n", diasVisita, sueldoDietas);
+    System.out.println("┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫");
+    System.out.printf("┃ Sueldo bruto           %7.2f ┃\n", sueldoBruto);
+    System.out.printf("┃ Retención IRPF (%.0f%%)   %7.2f ┃\n", irpf, (sueldoBruto * irpf) / 100);
+    System.out.println("┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫");
+    System.out.printf("┃ Sueldo neto            %7.2f ┃\n", sueldoBruto - irpf);
+    System.out.println("┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛");
   }
 }
