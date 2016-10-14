@@ -1,8 +1,9 @@
 /**
- * 5. Bucles
+ * Aprende Java con Ejercicios (https://leanpub.com/aprendejava)
  * 
- * 28. Escribe  un  programa que calcule el factorial de un  número
- *     entero leído por teclado.
+ * Capítulo 5. Bucles.
+ * 
+ * Ejercicio 28
  * 
  * @author Luis José Sánchez
  */
@@ -14,7 +15,7 @@ public class S05Ejercicio28 {
     
     // Lee un número mayor o igual que 0
     do {
-      System.out.print("Introduzca un número entero mayor o igual que 0: ");
+      System.out.print("Por favor, introduzca un número entero: ");
       numeroIntroducido = Integer.parseInt(System.console().readLine());
       
       if (numeroIntroducido < 0) {
@@ -31,7 +32,7 @@ public class S05Ejercicio28 {
         factorial *= i;
       }
 
-      System.out.println("El factorial del " + numeroIntroducido + " es " + factorial);
+      System.out.println(numeroIntroducido + "! = " + factorial);
     }
   }
 }
