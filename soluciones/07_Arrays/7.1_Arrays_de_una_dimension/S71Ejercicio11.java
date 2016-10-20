@@ -10,7 +10,6 @@
  * @author Luis José Sánchez
  */
 public class S71Ejercicio11 {
-
   public static void main(String[] args) {
   
     int[] n = new int[10];
