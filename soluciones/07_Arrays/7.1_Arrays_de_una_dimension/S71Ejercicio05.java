@@ -1,16 +1,14 @@
 /**
- * 7.1 Arrays
+ * Aprende Java con Ejercicios (https://leanpub.com/aprendejava)
  * 
- * 5. Escribe un programa que pida 10 números por teclado y que luego muestre los
- *    números introducidos junto con las palabras “máximo” y “mínimo” al lado del
- *    máximo y del mínimo respectivamente.
+ * Capítulo 7. Arrays
  *
  * @author Luis José Sánchez
  */
 public class S71Ejercicio05 {
 
-	public static void main(String[] args) {
-		
+  public static void main(String[] args) {
+    
     int[] numero = new int[10];
     int maximo = Integer.MIN_VALUE;
     int minimo = Integer.MAX_VALUE;
@@ -25,7 +23,7 @@ public class S71Ejercicio05 {
         minimo = numero[i];
       }
       
-      if (numero[i] > maximo)	{
+      if (numero[i] > maximo)  {
         maximo = numero[i];
       }
     }
@@ -43,5 +41,5 @@ public class S71Ejercicio05 {
       }
       System.out.println();
     }
-	}
+  }
 }
