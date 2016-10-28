@@ -21,7 +21,7 @@ public class S71Ejercicio16 {
     System.out.print("(1 – los múltiplos de 5, 2 – los múltiplos de 7): ");
     int opcion = Integer.parseInt(System.console().readLine());
 
-    int multiplo = (opcion == 1) ? 5 : 7; // número que se va a destacar del resto
+    int multiplo = (opcion == 1) ? 5 : 7;
 
     // Muestra el resultado.
     for (int elemento : n) {
