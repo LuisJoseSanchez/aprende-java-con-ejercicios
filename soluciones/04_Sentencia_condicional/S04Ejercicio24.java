@@ -51,6 +51,8 @@ public class S04Ejercicio24 {
     } else {
       System.out.println("No ha elegido correctamente el estado civil.");
     }
+    
+    double cuantiaIrpf = (sueldoBruto * irpf) / 100;
 
     // Muestra la nómina desglosada
     System.out.println("┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓");
@@ -58,9 +60,9 @@ public class S04Ejercicio24 {
     System.out.printf("┃ Dietas (%2d viajes)     %7.2f ┃\n", diasVisita, sueldoDietas);
     System.out.println("┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫");
     System.out.printf("┃ Sueldo bruto           %7.2f ┃\n", sueldoBruto);
-    System.out.printf("┃ Retención IRPF (%.0f%%)   %7.2f ┃\n", irpf, (sueldoBruto * irpf) / 100);
+    System.out.printf("┃ Retención IRPF (%.0f%%)   %7.2f ┃\n", irpf, cuantiaIrpf);
     System.out.println("┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫");
-    System.out.printf("┃ Sueldo neto            %7.2f ┃\n", sueldoBruto - irpf);
+    System.out.printf("┃ Sueldo neto            %7.2f ┃\n", sueldoBruto - cuantiaIrpf);
     System.out.println("┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛");
   }
 }
