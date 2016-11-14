@@ -29,12 +29,15 @@ public class S05Ejercicio46 {
       }
       
       // Parte intermedia //////////////////////////////////////////////////////
-      System.out.print("\n*");
-      for (int espacios = 2; espacios < anchura; espacios++) {
-        System.out.print(" ");
+      for (int i = 2; i < altura; i ++) {
+        System.out.print("\n*");
+        for (int espacios = 2; espacios < anchura; espacios++) {
+          System.out.print(" ");
+        }
+        System.out.print("*");
       }
-      System.out.println("*");
-
+      System.out.println();
+      
       // Línea inferior ////////////////////////////////////////////////////////
       for (int i = 1; i <= anchura; i++) {
         System.out.print("*");
