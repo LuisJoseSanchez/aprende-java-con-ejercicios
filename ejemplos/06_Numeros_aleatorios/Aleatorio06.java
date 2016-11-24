@@ -10,9 +10,7 @@ public class Aleatorio06 {
 
     System.out.println("Genera al azar piedra, papel o tijera:");
     
-    int mano = (int)(Math.random()*3); // genera un número al azar
-                                       // entre 0 y 2 ambos incluidos
-    switch(mano) {
+    switch((int)(Math.random()*3)) {
       case 0:
         System.out.println("piedra");
         break;
