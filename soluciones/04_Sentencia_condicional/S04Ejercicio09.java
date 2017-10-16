@@ -62,8 +62,8 @@ public class S04Ejercicio09 {
 			if (discriminante < 0) {
 					System.out.println("La ecuación no tiene soluciones reales");
 			}	else {
-        System.out.println("x1 = " + (-b + Math.sqrt(discriminante))/(4 * a * c));
-        System.out.println("x2 = " + (-b - Math.sqrt(discriminante))/(4 * a * c));
+        System.out.println("x1 = " + (-b + Math.sqrt(discriminante))/(2 * a));
+        System.out.println("x2 = " + (-b - Math.sqrt(discriminante))/(2 * a));
       }
     }
 					
