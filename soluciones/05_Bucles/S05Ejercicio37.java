@@ -8,35 +8,48 @@
  * @author Luis José Sánchez
  */
 public class S05Ejercicio37 {
-
-  public static void main(String[] args) {
-
-    System.out.print("Por favor, introduzca un número entero positivo: ");
-    long numeroIntroducido = Long.parseLong(System.console().readLine());
-
-    // Voltea el número introducido ////////////////////////////////////////////
-    long numero = numeroIntroducido;
-    long volteado = 0;
-
-    while (numero > 0) {
-      volteado = (volteado * 10) + (numero % 10);
-      numero /= 10;
-    } // while
-
-    // Pinta el número con palotes /////////////////////////////////////////////
-    int palotes;
+  public static void main (String[] args) {
+    long num;
+    do {
+      System.out.print("Introduce un número entero positivo: ");
+      num = Integer.parseInt(System.console().readLine());
+    } while (num < 1);
+    System.out.print(num + " = ");
     
-    while (volteado > 0) {
-      palotes = (int)(volteado % 10); // último dígito de volteado
-      // Pinta el dígito con palotes. Por ej. si es un 3, pinta 3 palotes.
-      for (int i = 0; i < palotes; i++) {
+    //comprobar si acababa en cero. Si acaba, se le suma 1
+    boolean acabaEnCero = false;
+    long aux = num%10;
+    if (aux == 0){
+      num += 1;
+      acabaEnCero = true;
+    }
+    
+    //vuelta
+    long vuelta = 0;
+    while (num > 0){
+      vuelta = vuelta*10 + num%10;
+      num /= 10;
+    }
+ 
+    aux = vuelta;
+    int ultimaCifra; //límite del bucle while
+    if (acabaEnCero){
+      ultimaCifra = 1;
+    } else{
+        ultimaCifra = 0;
+    }
+    
+    while (vuelta != ultimaCifra){
+      aux = vuelta%10;
+      for (int i = 0; i < aux; i++){
         System.out.print("|");
       }
-      if (volteado > 10) { // para no pintar el último guión
-        System.out.print(" - "); // separador de dígitos
+      vuelta /= 10;
+      if (vuelta != 0){
+        System.out.print("-");
       }
-      volteado = volteado / 10; // quita el último dígito a volteado
-    } // while    
+      
+    }    
   }
 }
 
