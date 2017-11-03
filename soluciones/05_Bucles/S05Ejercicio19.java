@@ -17,26 +17,27 @@ public class S05Ejercicio19 {
     System.out.print("Introduzca el carácter de relleno: ");
     String relleno = System.console().readLine();
     
-    int altura = 1;
-    int i = 0;
+    int planta = 1;
+    int longitudDeLinea = 1;
     int espacios = alturaIntroducida-1;
     
-    while (altura <= alturaIntroducida) {
+    while (planta <= alturaIntroducida) {
       
       // inserta espacios
-      for (i = 1; i <= espacios; i++) {
+      for (int i = 1; i <= espacios; i++) {
         System.out.print(" ");
       }
 
       // pinta la línea
-      for (i = 1; i < altura * 2; i++) {
+      for (int i = 1; i <= longitudDeLinea; i++) {
         System.out.print(relleno);
       }
 
       System.out.println();
 
-      altura++;
+      planta++;
       espacios--;
+      longitudDeLinea += 2;
     }
   }
 }
