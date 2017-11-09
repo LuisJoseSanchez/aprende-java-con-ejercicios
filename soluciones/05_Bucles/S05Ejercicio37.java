@@ -16,40 +16,27 @@ public class S05Ejercicio37 {
     } while (num < 1);
     System.out.print(num + " = ");
     
-    //comprobar si acababa en cero. Si acaba, se le suma 1
-    boolean acabaEnCero = false;
-    long aux = num%10;
-    if (aux == 0){
-      num += 1;
-      acabaEnCero = true;
+    // Cuenta los números y calcula el reves
+    int aux = num;
+    int numDig = 0;
+    int numReves = 0;
+    while (aux > 0){
+      numReves = ((numReves*10) + (aux % 10));
+      aux /=10;
+      numDig++;
     }
-    
-    //vuelta
-    long vuelta = 0;
-    while (num > 0){
-      vuelta = vuelta*10 + num%10;
-      num /= 10;
-    }
- 
-    aux = vuelta;
-    int ultimaCifra; //límite del bucle while
-    if (acabaEnCero){
-      ultimaCifra = 1;
-    } else{
-        ultimaCifra = 0;
-    }
-    
-    while (vuelta != ultimaCifra){
-      aux = vuelta%10;
-      for (int i = 0; i < aux; i++){
+    int cifra = 0;
+    // Separa las cifras y escribe los palitos
+    for (int i = 0; i < numDig; i++){
+      cifra = numReves%10;
+      numReves /= 10;
+      for (int j = 0; j < cifra; j++){
         System.out.print("|");
       }
-      vuelta /= 10;
-      if (vuelta != 0){
+      if (i < numDig-1){
         System.out.print("-");
       }
-      
-    }    
+    }
   }
 }
 
