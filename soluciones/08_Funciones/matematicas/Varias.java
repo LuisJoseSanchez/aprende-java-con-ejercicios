@@ -36,23 +36,43 @@ public class Varias {
    * Devuelve verdadero si el número que se pasa como parámetro es primo y falso
    * en caso contrario.
    * <p>
-   * Un número es primo cuando es divisible únicamente entre el mismo y entre 1.
+   * Un número primo es un número natural mayor que 1 y divisible únicamente
+   * entre el mismo y entre 1.
    *
    * @param x número del que se quiere saber si es primo
    * @return  verdadero si el número que se pasa como parámetro es primo y falso
    *          en caso contrario
    */
-  public static boolean esPrimo(int x) {
-    for (int i = 2; i < x; i++) {
-      if ((x % i) == 0) {
-        return false;
+  public static Boolean esPrimo(long n) {
+    if (n < 2) {
+      return false;
+    } else {
+      for (long i = n / 2; i >= 2; i--) {
+        if (n % i == 0) {
+          return false;
+        }
       }
     }
     return true;
   }
 
   /**
-  /* Devuelve el menor primo que es mayor al número que se pasa como parámetro.
+   * Devuelve verdadero si el número que se pasa como parámetro es primo y falso
+   * en caso contrario.
+   * <p>
+   * Un número primo es un número natural mayor que 1 y divisible únicamente
+   * entre el mismo y entre 1.
+   *
+   * @param x número del que se quiere saber si es primo
+   * @return  verdadero si el número que se pasa como parámetro es primo y falso
+   *          en caso contrario
+   */
+  public static Boolean esPrimo(int n) {
+    return esPrimo((long) n);
+  }
+  
+  /**
+   * Devuelve el menor primo que es mayor al número que se pasa como parámetro.
    *
    * @param x un número entero
    * @return  el menor primo que es mayor al número que se pasa como parámetro
