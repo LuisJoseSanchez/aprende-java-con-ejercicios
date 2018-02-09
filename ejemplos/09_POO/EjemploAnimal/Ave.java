@@ -3,7 +3,6 @@
  * Definición de la clase Ave
  * @author Luis José Sánchez
  */
-
 public class Ave extends Animal {
   
   public Ave(Sexo s) {

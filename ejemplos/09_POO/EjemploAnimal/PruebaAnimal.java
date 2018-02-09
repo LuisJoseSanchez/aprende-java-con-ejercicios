@@ -3,7 +3,6 @@
  * Programa que prueba la clase Animal y sus subclases
  * @author Luis José Sánchez
  */
-
 public class PruebaAnimal {
   public static void main(String[] args) {
     
@@ -29,6 +28,5 @@ public class PruebaAnimal {
     Pinguino pingu = new Pinguino(Sexo.HEMBRA);
     pingu.aseate();
     pingu.vuela();
-     
   }
 }

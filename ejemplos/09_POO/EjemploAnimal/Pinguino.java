@@ -3,7 +3,6 @@
  * Definición de la clase Pinguino
  * @author Luis José Sánchez
  */
-
 public class Pinguino extends Ave {
 
   public Pinguino() {

@@ -3,11 +3,9 @@
  * Definición de la clase Gato
  * @author Luis José Sánchez
  */
-
 public class Gato extends Animal {
   
   private String raza;
-  
 
   public Gato (Sexo s, String r) {
     super(s);
@@ -21,12 +19,12 @@ public class Gato extends Animal {
 
   public Gato (String r) {
     super(Sexo.HEMBRA);
-    raza = r;
+    this.raza = r;
   }
   
   public Gato () {
     super(Sexo.HEMBRA);
-    raza = "siamés";
+    this.raza = "siamés";
   }
   
   public String toString() {
@@ -56,14 +54,13 @@ public class Gato extends Animal {
    * 
    * @param comida la comida que se le ofrece al gato
    */
+  @Override
   public void come(String comida) {
     
     if (comida.equals("pescado")) {
-      super();
-      //super.come();
+      super.come(); // ejecuta el método come de la clase Animal
       System.out.println("Hmmmm, gracias");
     } else {
-      
       System.out.println("Lo siento, yo solo como pescado");
     }
   }
