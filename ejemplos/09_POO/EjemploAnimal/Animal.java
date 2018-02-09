@@ -3,21 +3,20 @@
  * Definición de la clase Animal
  * @author Luis José Sánchez
  */
-
 public abstract class Animal {
 
   private Sexo sexo;
 
   public Animal() {
-    sexo = Sexo.MACHO;
+    this.sexo = Sexo.MACHO;
   }
 
   public Animal (Sexo x) {
-    sexo = x;
+    this.sexo = x;
   }
 
   public Sexo getSexo() {
-    return sexo;
+    return this.sexo;
   }
 
   public String toString() {
@@ -38,5 +37,4 @@ public abstract class Animal {
   public void come(String comida) {
     System.out.println("¡Qué rico, me gusta comer " + comida + "!");
   }
-  
 }
