@@ -3,21 +3,20 @@
  * Definición de la clase Cubo
  * @author Luis José Sánchez
  */
-
 public class Cubo {
 
   // atributos ////////////////////////////
-  
+
   int capacidad; // capacidad máxima en litros
   int contenido; // contenido actual en litros
-  
+
   // métodos //////////////////////////////
-  
+
   // constructor
   Cubo (int c) {
     this.capacidad = c;
   }
-  
+
   // métodos getter  
   int getCapacidad() {
     return this.capacidad;
@@ -26,12 +25,12 @@ public class Cubo {
   int getContenido() {
     return this.contenido;
   }
-  
+
   // método setter
   void setContenido(int litros) {
     this.contenido = litros;
   }
-  
+
   // otros métodos
   void vacia() {
     this.contenido = 0;
@@ -43,7 +42,7 @@ public class Cubo {
   void llena() {
     this.contenido = this.capacidad;
   }
-  
+
   /**
    * Pinta el cubo en la pantalla.
    * Se muestran los bordes del cubo con el carácter # y el

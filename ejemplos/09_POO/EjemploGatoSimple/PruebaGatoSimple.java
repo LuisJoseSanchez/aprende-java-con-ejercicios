@@ -3,7 +3,6 @@
  * Programa que prueba la clase GatoSimple
  * @author Luis José Sánchez
  */
-
 public class PruebaGatoSimple {
   public static void main(String[] args) {
     
@@ -31,6 +30,5 @@ public class PruebaGatoSimple {
     garfield.peleaCon(lisa);
     lisa.peleaCon(tom);
     tom.peleaCon(garfield);
-    
   }
 }

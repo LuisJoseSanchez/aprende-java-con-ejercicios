@@ -3,10 +3,9 @@
  * Definición de la clase Cuadrado
  * @author Luis José Sánchez
  */
-
 public class Cuadrado {
   
-  int lado;
+  private int lado;
     
   public Cuadrado(int l) {
     this.lado = l;

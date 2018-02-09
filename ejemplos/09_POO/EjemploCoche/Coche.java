@@ -3,7 +3,6 @@
  * Definición de la clase Coche
  * @author Luis José Sánchez
  */
-
 public class Coche {
 
   // atributo de clase
