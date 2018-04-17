@@ -9,7 +9,7 @@ import java.util.HashMap;
 public class EjemploHashMap011 {
   public static void main(String[] args) {
 
-    HashMap<Integer, String> m = new HashMap<Integer, String>();
+    HashMap<Integer, String> m = new HashMap<>();
 
     m.put(924, "Amalia Núñez");
     m.put(921, "Cindy Nero");
