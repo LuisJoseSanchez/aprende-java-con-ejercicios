@@ -5,7 +5,6 @@
  *
  * @author Luis José Sánchez
  */
-
 public class S03Ejercicio05 {
   public static void main(String[] args) {
 
@@ -14,6 +13,6 @@ public class S03Ejercicio05 {
     double base = Double.parseDouble(System.console().readLine());
     System.out.print("Introduzca la altura (cm): ");
     double altura = Double.parseDouble(System.console().readLine());
-    System.out.println("El área del rectángulo es " + (base * altura) + " cm2");
+    System.out.println("El área del rectángulo es " + (base * altura) + " cm²");
   }
 }

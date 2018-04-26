@@ -5,7 +5,6 @@
  *
  * @author Luis José Sánchez
  */
-
 public class S03Ejercicio06 {
   public static void main(String[] args) {
 
@@ -14,6 +13,6 @@ public class S03Ejercicio06 {
     double base = Double.parseDouble(System.console().readLine());
     System.out.print("Inroduzca la altura (cm): ");
     double altura = Double.parseDouble(System.console().readLine());
-    System.out.println("El área del triángulo es " + (base * altura)/2 + " cm2");
+    System.out.println("El área del triángulo es " + (base * altura)/2 + " cm²");
   }
 }
