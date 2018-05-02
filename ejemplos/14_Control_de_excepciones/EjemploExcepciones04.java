@@ -13,8 +13,8 @@ public class EjemploExcepciones04 {
     System.out.print("Introduzca el número de líneas que quiere pintar: ");
     int lineas = Integer.parseInt(s.nextLine());
 
-    int longitud = (int)Math.ceil((double)asteriscos / lineas);
-    System.out.println("longitud: " + longitud);
+    int longitud = (asteriscos % lineas) == 0 ? asteriscos / lineas : (int)Math.ceil((double)asteriscos / lineas);
+    
     int cuentaAsteriscos = 0;
 
     for (int i = 1; i <= lineas; i++) {
