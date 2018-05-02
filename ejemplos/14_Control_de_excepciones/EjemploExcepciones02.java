@@ -22,6 +22,10 @@ public class EjemploExcepciones02 {
       System.out.print("No se puede calcular la media. ");
       System.out.println("Los datos introducidos no son correctos.");
 
+    } finally {
+      
+      System.out.println("Gracias por utilizar este programa ¡hasta la próxima!");
+
     }
 
   }
