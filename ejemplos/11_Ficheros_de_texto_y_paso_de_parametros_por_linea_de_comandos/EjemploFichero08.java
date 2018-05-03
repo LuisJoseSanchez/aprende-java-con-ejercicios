@@ -17,7 +17,7 @@ class EjemploFichero08 {
     System.out.print("Introduzca el nombre del archivo donde se encuentran los números: ");
     String nombreFichero = System.console().readLine();
       
-    try {    
+    try {
       BufferedReader br = new BufferedReader(new FileReader(nombreFichero));
       
       String linea = "0";

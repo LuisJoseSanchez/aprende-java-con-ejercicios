@@ -16,16 +16,16 @@ class EjemploFichero03 {
   public static void main(String[] args) {
     
     try {  
-      BufferedReader bf1 = new BufferedReader(new FileReader("fichero1.txt"));
-      BufferedReader bf2 = new BufferedReader(new FileReader("fichero2.txt"));
+      BufferedReader br1 = new BufferedReader(new FileReader("fichero1.txt"));
+      BufferedReader br2 = new BufferedReader(new FileReader("fichero2.txt"));
       BufferedWriter bw = new BufferedWriter(new FileWriter("mezcla.txt"));
     
       String linea1 = "";
       String linea2 = "";
       
       while ( (linea1 != null) || (linea2 != null) ) {
-        linea1 = bf1.readLine();
-        linea2 = bf2.readLine();
+        linea1 = br1.readLine();
+        linea2 = br2.readLine();
         if (linea1 != null) {
           bw.write(linea1 + "\n");
         }
@@ -34,10 +34,12 @@ class EjemploFichero03 {
         }
       } 
     
-      bf1.close();
-      bf2.close();
+      br1.close();
+      br2.close();
       bw.close();
     
+      System.out.println("Archivo mezcla.txt creado satisfactoriamente.");
+
     } catch (IOException ioe) {
       System.out.println("Se ha producido un error de lectura/escritura");
       System.err.println(ioe.getMessage());      
