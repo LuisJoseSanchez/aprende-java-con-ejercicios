@@ -15,21 +15,25 @@ class EjemploFichero01 {
   public static void main(String[] args) {
     
     try {  
-      BufferedReader bf = new BufferedReader(new FileReader("malaga.txt"));
+      BufferedReader br = new BufferedReader(new FileReader("malaga.txt"));
       
       String linea = "";
       
       while (linea != null) {
         System.out.println(linea);
-        linea = bf.readLine();
+        linea = br.readLine();
       } 
     
-      bf.close();
+      br.close();
       
-    } catch (FileNotFoundException e) { // qué hacer si no se encuentra el fichero
+    } catch (FileNotFoundException fnfe) { // qué hacer si no se encuentra el fichero
+ 
       System.out.println("No se encuentra el fichero malaga.txt");
-    } catch (IOException e) { // qué hacer si hay un error en la lectura del fichero
+ 
+    } catch (IOException ioe) { // qué hacer si hay un error en la lectura del fichero
+ 
       System.out.println("No se puede leer el fichero malaga.txt");
+ 
     }
   }
 }
