@@ -15,7 +15,7 @@ class EjemploFichero03 {
 
   public static void main(String[] args) {
     
-    try {  
+    try {
       BufferedReader br1 = new BufferedReader(new FileReader("fichero1.txt"));
       BufferedReader br2 = new BufferedReader(new FileReader("fichero2.txt"));
       BufferedWriter bw = new BufferedWriter(new FileWriter("mezcla.txt"));
@@ -42,7 +42,7 @@ class EjemploFichero03 {
 
     } catch (IOException ioe) {
       System.out.println("Se ha producido un error de lectura/escritura");
-      System.err.println(ioe.getMessage());      
+      System.err.println(ioe.getMessage());
     }
   }
 }
