@@ -18,7 +18,7 @@ class EjemploFichero08 {
     String nombreFichero = System.console().readLine();
       
     try {    
-      BufferedReader bf = new BufferedReader(new FileReader(nombreFichero));
+      BufferedReader br = new BufferedReader(new FileReader(nombreFichero));
       
       String linea = "0";
       int i = 0;
@@ -27,16 +27,16 @@ class EjemploFichero08 {
       while (linea != null) {
         i++;
         suma += Double.parseDouble(linea);
-        linea = bf.readLine();          
+        linea = br.readLine();          
       }
       i--;
       
-      bf.close();
+      br.close();
 
       System.out.println("La media es " + suma / (double)i);
 
-    } catch (IOException e) {
-      System.out.println(e.getMessage());
+    } catch (IOException ioe) {
+      System.out.println(ioe.getMessage());
     }
   }
 }
