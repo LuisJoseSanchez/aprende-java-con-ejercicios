@@ -11,12 +11,12 @@ class EjemploFichero04 {
 
   public static void main(String[] args) {
 
-    File fichero = new File(".");  // se indica la ruta entre comillas
+    File f = new File(".");  // se indica la ruta entre comillas
                 // el punto (.) es el directorio actual
 
-    String[] listaArchivos = fichero.list();
-    for(String f : listaArchivos){
-      System.out.println(f);
-    }  
+    String[] listaArchivos = f.list();
+    for(String nombreArchivo : listaArchivos) {
+      System.out.println(nombreArchivo);
+    }
   }
 }
