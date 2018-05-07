@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class EjemploExcepciones02v2 {
+public class EjemploExcepciones02V2 {
 
   public static void main(String[] args) {
 

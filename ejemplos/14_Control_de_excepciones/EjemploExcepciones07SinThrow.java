@@ -1,4 +1,4 @@
-public class EjemploExcepciones07sinthrow {
+public class EjemploExcepciones07SinThrow {
 
   public static void main(String[] args) {
     System.out.println("Inicio");
