@@ -16,19 +16,19 @@
  * 
  */
 
-public class S72Exercise08 {
+public class S72Exercise08ConDibujoTablero {
 
   public static void main(String[] args) {
 
-  // se definen constantes para representar el
-  // contenido de las celdas
-  final String RESET = "\033[0m";
-  final String INVERSO = "\033[7m";
-  final String BLANCA = "  ";
-  final String NEGRA = INVERSO + BLANCA + RESET;
-  final String ALFIL = "♝ ";  // ∆♝۩♗
-  final String MOVIMIENTOBLANCO = "• "; // ●
-  final String MOVIMIENTONEGRO = INVERSO + MOVIMIENTOBLANCO + RESET;
+    // se definen constantes para representar el
+    // contenido de las celdas
+    final String RESET = "\033[0m";
+    final String INVERSO = "\033[7m";
+    final String BLANCA = "  ";
+    final String NEGRA = INVERSO + BLANCA + RESET;
+    final String ALFIL = "♝ ";  // ∆♝۩♗
+    final String MOVIMIENTOBLANCO = "• "; // ●
+    final String MOVIMIENTONEGRO = INVERSO + MOVIMIENTOBLANCO + RESET;
   
     String[][] tablero = new String[9][9]; // la fila 0 y la columna 0 no se utilizan
     int fila;
@@ -36,7 +36,7 @@ public class S72Exercise08 {
     String casilla;
 
     // pinta el tablero vacío
-    System.out.println("  ░░░░░░░░░░░░░░░░░░░░");
+    System.out.println("\n  ░░░░░░░░░░░░░░░░░░░░");
     casilla = BLANCA;
     for(fila = 8; fila >= 1; fila--) {
       System.out.print( fila + " ░░");
@@ -68,10 +68,6 @@ public class S72Exercise08 {
     int columnaAlfil = (int)(posicionAlfil.charAt(0)) - 96;
     int filaAlfil = (int)(posicionAlfil.charAt(1)) - 48;
     
-    System.out.println(posicionAlfil.charAt(0));
-    System.out.println(columnaAlfil);
-    System.out.println(filaAlfil);
-    
     if ((((filaAlfil % 2) + (columnaAlfil % 2)) % 2) == 0) {
       tablero[filaAlfil][columnaAlfil] = ALFIL;
     } else {
@@ -79,7 +75,7 @@ public class S72Exercise08 {
     }
     
     // pinta el tablero con el alfil y las posiciones hacia donde puede moverse
-    System.out.println("  ░░░░░░░░░░░░░░░░░░░░");
+    System.out.println("\n  ░░░░░░░░░░░░░░░░░░░░");
     for(fila = 8; fila >= 1; fila--) {
       System.out.print( fila + " ░░");
       for(columna = 1; columna <= 8; columna++) {
@@ -97,7 +93,19 @@ public class S72Exercise08 {
     }
     System.out.println("  ░░░░░░░░░░░░░░░░░░░░");
     System.out.println("     a b c d e f g h");
+    
+    System.out.println("\nEl alfil puede moverse a las siguientes posiciones:");
+    
+    for(fila = 8; fila >= 1; fila--) {
+      for(columna = 1; columna <= 8; columna++) {
+        if ((Math.abs(filaAlfil - fila) == Math.abs(columnaAlfil - columna))
+              && (! ((filaAlfil == fila) && (columnaAlfil == columna)))) {
+          System.out.print((char)(columna + 96) + "" + fila + " ");
+        }
+      }
+    }
+    
+    
+    
   }
-  
-  El álfil puede moverse a las siguientes posiciones:
 }
