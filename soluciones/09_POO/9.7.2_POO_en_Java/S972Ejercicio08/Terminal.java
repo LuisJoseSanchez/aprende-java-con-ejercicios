@@ -1,5 +1,3 @@
-package ejercicio2;
-
 class Terminal {
 
   private String numero;
@@ -35,6 +33,5 @@ class Terminal {
     this.tiempoDeConversacion += segundosDeLlamada;
     t.tiempoDeConversacion += segundosDeLlamada;
   }
-
 
 }
