@@ -3,7 +3,7 @@
  * 
  * Capítulo 5. Bucles.
  * 
- * Ejercicio 31
+ * Ejercicio 33
  *
  * @author Luis José Sánchez
  */
