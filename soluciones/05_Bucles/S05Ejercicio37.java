@@ -39,5 +39,3 @@ public class S05Ejercicio37 {
     }
   }
 }
-
-

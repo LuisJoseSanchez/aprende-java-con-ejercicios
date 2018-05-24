@@ -75,4 +75,3 @@ public class S05Ejercicio34 {
     System.out.println("El número formado por los dígitos impares es: " + resultadoImpares);
   }
 }
-

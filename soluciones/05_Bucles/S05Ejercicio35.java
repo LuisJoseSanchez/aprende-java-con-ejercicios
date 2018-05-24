@@ -72,5 +72,3 @@ public class S05Ejercicio35 {
     } // else
   }
 }
-
-
