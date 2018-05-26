@@ -4,7 +4,7 @@
  * 
  * 7.2 Arrays bidimensionales
  * 
- * Ejercicio 9 
+ * Ejercicio 11
  * 
  * @author Luis José Sánchez
  * 
