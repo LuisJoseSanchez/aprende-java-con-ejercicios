@@ -72,6 +72,6 @@ public class ExpocochesCampanillas {
           default:
         }
       }
-    } while (opcion < 3); // menú principal  
+    } while (opcion < 3); // menú principal
   }
 }

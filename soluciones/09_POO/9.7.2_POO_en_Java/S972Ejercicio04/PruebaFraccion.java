@@ -17,6 +17,6 @@ public class PruebaFraccion {
     System.out.println(f1 + " : " + f2 + " = " + f1.divide(f2));
         
     Fraccion f3 = new Fraccion(910, -350);
-    System.out.println(f3 + " = " + f3.simplifica());      
+    System.out.println(f3 + " = " + f3.simplifica());
   }
 }

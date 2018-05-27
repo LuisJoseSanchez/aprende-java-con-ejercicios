@@ -47,8 +47,8 @@ public class Articulo {
 
   public String toString() {
     String cadena = "------------------------------------------";
-    cadena += "\nCódigo: " + this.codigo;  
-    cadena += "\nDescripción: " + this.descripcion;    
+    cadena += "\nCódigo: " + this.codigo;
+    cadena += "\nDescripción: " + this.descripcion;
     cadena += "\nPrecio de compra: " + this.precioDeCompra;
     cadena += "\nPrecio de venta: " + this.precioDeVenta;
     cadena += "\nStock: " + this.stock + " unidades";
