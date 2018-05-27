@@ -68,7 +68,7 @@ public class S05Ejercicio35 {
         altura++;
         espaciosPorDelante--;
         espaciosInternos+=2;
-      } // while parte de abajo ///////////////////////      
+      } // while parte de abajo ///////////////////////
     } // else
   }
 }

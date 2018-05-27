@@ -38,7 +38,7 @@ public class S05Ejercicio12 {
             System.out.print(" " + f2);
             n--;
         }
-    }    
+    }
     System.out.println();
   }
 }

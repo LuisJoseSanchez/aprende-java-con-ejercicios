@@ -47,6 +47,6 @@ public class S05Ejercicio51 {
       System.out.println(" se queda en " + volteado);
     } else {
       System.out.println("El gusano numérico no se ha comido ningún dígito.");
-    }  
+    }
   }
 }

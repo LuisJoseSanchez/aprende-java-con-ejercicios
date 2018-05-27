@@ -22,7 +22,7 @@ public class S05Ejercicio40 {
       
       int altura = 1;
       
-      // parte de arriba /////////////////////////////////////      
+      // parte de arriba /////////////////////////////////////
       while (altura <= alturaIntroducida / 2 + 1) {
 
         // inserta espacios delante
@@ -72,7 +72,7 @@ public class S05Ejercicio40 {
         altura++;
         espaciosPorDelante++;
         espaciosInternos -= 2;
-      } // while parte de abajo ///////////////////////      
+      } // while parte de abajo ///////////////////////
     } // else
   }
 }
