@@ -14,7 +14,7 @@ public class S01Ejercicio07 {
 
     System.out.println("\033[34m"); // pintamos en azul
     
-    System.out.println("    *");    
+    System.out.println("    *");
     System.out.println("   * *");
     System.out.println("  *   *");
     System.out.println(" *     *");
