@@ -23,7 +23,7 @@ class S11Ejercicio03 {
       System.out.println("Uso del programa: S11Ejercicio03 FICHERO1 FICHERO2 MEZCLA");
       System.exit(-1); // sale del programa
     }
-    try {  
+    try {
       BufferedReader bf1 = new BufferedReader(new FileReader(args[0]));
       BufferedReader bf2 = new BufferedReader(new FileReader(args[1]));
       BufferedWriter bw = new BufferedWriter(new FileWriter(args[2]));
@@ -50,7 +50,7 @@ class S11Ejercicio03 {
     
     } catch (IOException ioe) {
       System.out.println("Se ha producido un error de lectura/escritura");
-      System.err.println(ioe.getMessage());      
+      System.err.println(ioe.getMessage());
     }
   }
 }

@@ -10,7 +10,7 @@ import java.io.IOException;
 
 class S11Ejercicio02 {
   public static void main(String[] args) {
-    try {  
+    try {
       BufferedReader br = new BufferedReader(new FileReader("primos.dat"));
       
       String linea = "";

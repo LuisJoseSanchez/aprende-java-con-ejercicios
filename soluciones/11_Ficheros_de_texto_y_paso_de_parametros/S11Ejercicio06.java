@@ -36,7 +36,7 @@ class FichEjercicio06 {
       
       System.out.println("La palabra " + palabra + " aparece " + repeticiones + " veces en el fichero.");
 
-    } catch (IOException ioe) {  
+    } catch (IOException ioe) {
       System.err.println(ioe.getMessage());
     }
   }

@@ -10,7 +10,7 @@ import java.io.IOException;
 
 class S11Ejercicio01 {
   public static void main(String[] args) {
-    try {  
+    try {
       BufferedWriter bw = new BufferedWriter(new FileWriter("primos.dat"));
 
       for (int i = 1; i < 501; i++) {
