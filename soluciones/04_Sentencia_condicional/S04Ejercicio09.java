@@ -55,7 +55,7 @@ public class S04Ejercicio09 {
 
     // ax^2 + bx + c = 0  con a, b y c distintos de 0
     
-    if ((a != 0) && (b != 0) && (c != 0)) {  
+    if ((a != 0) && (b != 0) && (c != 0)) {
         
       double discriminante = b*b - (4 * a * c);
       
@@ -66,6 +66,6 @@ public class S04Ejercicio09 {
         System.out.println("x2 = " + (-b - Math.sqrt(discriminante))/(2 * a));
       }
     }
-          
+
   }
 }
