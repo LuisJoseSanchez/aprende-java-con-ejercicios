@@ -24,14 +24,14 @@ public class S71Ejercicio12 {
       n[i] = Integer.parseInt(System.console().readLine());
     }
     
-    // Muestra el array original.  
+    // Muestra el array original.
     System.out.println("\n\nArray original:");
     System.out.println("\n┌────────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┐");
     System.out.print("│ Índice ");
     for (i = 0; i < 10; i++) {
       System.out.printf("│%4d ", i);
     }
-    System.out.println("│\n├────────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤");    
+    System.out.println("│\n├────────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤");
     System.out.print("│ Valor  ");
     for (i = 0; i < 10; i++) {
       System.out.printf("│%4d ", n[i]);
@@ -69,7 +69,7 @@ public class S71Ejercicio12 {
     for (i = 0; i < 10; i++) {
       System.out.printf("│%4d ", i);
     }
-    System.out.println("│\n├────────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤");    
+    System.out.println("│\n├────────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤");
     System.out.print("│ Valor  ");
     for (i = 0; i < 10; i++) {
       System.out.printf("│%4d ", n[i]);

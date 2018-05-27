@@ -15,7 +15,7 @@ public class S06Ejercicio20 {
 
     // Rellena la cuba con unos litros aleatorios
     // teniendo en cuenta no pasarse de la capacidad.
-    int litros = (int)(Math.random() * (capacidad + 1));  
+    int litros = (int)(Math.random() * (capacidad + 1));
         
     for (int i = 0; i < capacidad; i++) {
       if (i < (capacidad - litros)) {

@@ -17,14 +17,14 @@ public class S71Ejercicio17 {
       n[i] = (int)(Math.random() * 381) + 20;
     }
 
-    // Muestra el array original.  
+    // Muestra el array original.
     System.out.println("\n\nArray original:");
     System.out.println("\n┌────────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┐");
     System.out.print("│ Índice ");
     for (int i = 0; i < 10; i++) {
       System.out.printf("│%4d ", i);
     }
-    System.out.println("│\n├────────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤");    
+    System.out.println("│\n├────────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤");
     System.out.print("│ Valor  ");
     for (int i = 0; i < 10; i++) {
       System.out.printf("│%4d ", n[i]);
@@ -67,7 +67,7 @@ public class S71Ejercicio17 {
     for (int i = 0; i < 10; i++) {
       System.out.printf("│%4d ", i);
     }
-    System.out.println("│\n├────────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤");    
+    System.out.println("│\n├────────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤");
     System.out.print("│ Valor  ");
     for (int i = 0; i < 10; i++) {
       System.out.printf("│%4d ", n[i]);

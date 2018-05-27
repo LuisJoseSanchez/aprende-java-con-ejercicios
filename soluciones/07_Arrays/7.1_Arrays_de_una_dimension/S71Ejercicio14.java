@@ -47,7 +47,7 @@ public class S71Ejercicio14 {
       }
     }
 
-    // Muestra el array original.  
+    // Muestra el array original.
     System.out.println("\n\nArray original:");
     System.out.println("\n┌────────┬────────┬────────┬────────┬────────┬────────┬────────┬────────┐");
     for (int i = 0; i < 8; i++) {
@@ -60,7 +60,7 @@ public class S71Ejercicio14 {
     }
     System.out.println("│\n└────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┘");
 
-    // Muestra el array resultado.  
+    // Muestra el array resultado.
     System.out.println("\n\nArray resultado:");
     System.out.println("\n┌────────┬────────┬────────┬────────┬────────┬────────┬────────┬────────┐");
     for (int i = 0; i < 8; i++) {

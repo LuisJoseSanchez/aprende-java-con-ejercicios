@@ -24,7 +24,7 @@ public class S06Ejercicio17 {
     for(int i = 0; i < ancho; i++) {
       System.out.print("*");
     }
-    System.out.println();  
+    System.out.println();
 
     // Pinta la parte central //////////////////////////////////////////////////
     for(int i = 2; i < alto; i++) {
