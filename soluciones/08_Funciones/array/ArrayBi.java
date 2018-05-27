@@ -98,7 +98,7 @@ public class ArrayBi {
     }
           
     return f;
-  }  
+  }
 
   /**
    * Devuelve una columna (array unidimensional) de un array
@@ -119,7 +119,7 @@ public class ArrayBi {
 
     return c;
   }
- 
+
   /**
    * Devuelve la fila y la columna (en un array con dos elementos) de la
    * primera ocurrencia de un número dentro de un array bidimensional.
@@ -131,7 +131,7 @@ public class ArrayBi {
    *          y la columna donde se encuentra <code>n</code> o <code>
    *          {-1, -1}</code> en caso de que <code>n</code> no se
    *          encuentre en <code>x</code>
-   */  
+   */
   public static int[] coordenadasEnArrayBiInt(int x[][], int n) {
     for (int f = 0; f < x.length; f++) {
       for (int c = 0; c < x[0].length; c++) {
@@ -141,7 +141,7 @@ public class ArrayBi {
         }
       }
     }
-    int[] coordenadas = {-1, -1};      
+    int[] coordenadas = {-1, -1};
     return coordenadas;
   }
 
@@ -203,12 +203,12 @@ public class ArrayBi {
         }
       }
     }
-            
+
     int[] diagonal = new int[elementos];
     for (j = 0; j < elementos; j++) {
       diagonal[j] = diagonalAux[j];
     }
-      
+
     return diagonal;
   }
 }
