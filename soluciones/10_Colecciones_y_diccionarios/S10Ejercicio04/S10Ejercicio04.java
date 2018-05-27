@@ -15,7 +15,7 @@ public class S10Ejercicio04 {
   System.out.println("Introduzca 10 palabras: ");
   for (int i = 0; i < 10; i++) {
     a.add(System.console().readLine());
-  }   
+  }
 
   System.out.println("\nLista original:\n" + a);
 

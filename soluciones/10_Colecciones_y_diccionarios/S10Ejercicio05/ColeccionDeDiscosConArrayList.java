@@ -140,7 +140,7 @@ public class ColeccionDeDiscosConArrayList {
         
         break;
         
-      // MODIFICAR ////////////////////////////////////////////////////////////////      
+      // MODIFICAR ////////////////////////////////////////////////////////////////
       case 3:
         System.out.println("\nMODIFICAR\n===========");
         
@@ -192,7 +192,7 @@ public class ColeccionDeDiscosConArrayList {
         
         break;
 
-      // BORRAR ///////////////////////////////////////////////////////////////////      
+      // BORRAR ///////////////////////////////////////////////////////////////////
       case 4:
         System.out.println("\nBORRAR\n======");
         
@@ -205,7 +205,7 @@ public class ColeccionDeDiscosConArrayList {
           album.remove(album.indexOf(new Disco(codigoIntroducido,"", "", "", 0)));
           System.out.println("Album borrado.");
         }
-      } // switch    
+      } // switch
     } while (opcion != 5);
   }
 }

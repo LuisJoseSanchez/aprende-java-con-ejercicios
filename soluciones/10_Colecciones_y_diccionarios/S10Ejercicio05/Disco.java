@@ -56,8 +56,8 @@ public class Disco {
   @Override
   public String toString() {
     String cadena = "\n------------------------------------------";
-    cadena += "\nCódigo: " + this.codigo;  
-    cadena += "\nAutor: " + this.autor;    
+    cadena += "\nCódigo: " + this.codigo;
+    cadena += "\nAutor: " + this.autor;
     cadena += "\nTítulo: " + this.titulo;
     cadena += "\nGénero: " + this.genero;
     cadena += "\nDuración: " + this.duracion;

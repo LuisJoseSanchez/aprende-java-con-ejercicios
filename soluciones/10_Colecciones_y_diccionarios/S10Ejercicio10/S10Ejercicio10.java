@@ -14,7 +14,7 @@ public class S10Ejercicio10 {
     HashMap<String, String> m = new HashMap<String, String>();
 
     m.put("ordenador", "computer");
-    m.put("gato", "cat");      
+    m.put("gato", "cat");
     m.put("rojo", "red");
     m.put("árbol", "tree");
     m.put("pingüino", "penguin");

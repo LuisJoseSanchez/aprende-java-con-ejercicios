@@ -16,7 +16,7 @@ public class S10Ejercicio03 {
     
     for (int i = 0; i < 10; i++) {
       a.add(Integer.parseInt(System.console().readLine()));
-    }   
+    }
 
     System.out.println("Lista original: " + a);
 

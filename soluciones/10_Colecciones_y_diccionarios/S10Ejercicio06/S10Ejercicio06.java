@@ -16,14 +16,14 @@ public class S10Ejercicio06 {
   public static void main(String[] args) {
 
     HashMap<String, String> m = new HashMap<String, String>();
-        
+
     String usuario;
     String clave;
     boolean entra = false;
     int oportunidades = 3;
 
     m.put("admin", "224477");
-    m.put("maria", "ztf99");      
+    m.put("maria", "ztf99");
     m.put("pepe", "zxcvb");
 
     System.out.println("Por favor, introduzca nombre de usuario y "
@@ -32,10 +32,10 @@ public class S10Ejercicio06 {
 
     do {
       System.out.print("Usuario: ");
-      usuario = System.console().readLine();    
+      usuario = System.console().readLine();
       System.out.print("Contraseña: ");
       clave = System.console().readLine();
-      
+
       if (m.containsKey(usuario)) { // el usuario existe
         if (m.get(usuario).equals(clave)) {
           System.out.println("Ha accedido al área restringida");
@@ -46,13 +46,13 @@ public class S10Ejercicio06 {
       } else { // el usuario no existe
         System.out.println("El usuario introducido no existe");
       }
-      
+
       oportunidades--;
-      
+
       if (!entra && (oportunidades > 0)) {
         System.out.println("Le quedan " + (oportunidades) + " oportunidades");
       }
-      
+
     } while ((!entra) && (oportunidades > 0));
 
     if (!entra){

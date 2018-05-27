@@ -4,7 +4,7 @@
  *     brisca. El valor de las cartas se debe guardar en una estructura
  *     <code>HashMap</code> que debe contener parejas (figura, valor),
  *     por ejemplo ("caballo", 3).
- *     <p>    
+ *     <p>
  *     La secuencia de cartas debe ser una estructura de la clase <code>
  *     ArrayList</code> que contiene objetos de la clase <code>Carta
  *     </code>. El valor de las cartas es el siguiente: as → 11, tres →

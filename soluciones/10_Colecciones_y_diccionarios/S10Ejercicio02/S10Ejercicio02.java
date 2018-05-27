@@ -25,8 +25,8 @@ public class S10Ejercicio02 {
 
     System.out.println("Lista generada: " + a);
 
-    for(int n : a) {       
-      suma += n;        
+    for(int n : a) {
+      suma += n;
       
       if(n < minimo) {
         minimo = n;
@@ -40,6 +40,6 @@ public class S10Ejercicio02 {
     System.out.println("La suma total es : " + suma);
     System.out.println("La media es : " + suma / tamano);
     System.out.println("El mínimo es : " + minimo);
-    System.out.println("El máximo es : " + maximo);         
+    System.out.println("El máximo es : " + maximo);
   }
 }
