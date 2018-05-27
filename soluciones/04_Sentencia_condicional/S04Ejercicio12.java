@@ -22,7 +22,7 @@ public class S04Ejercicio12 {
     System.out.println("1. ¿Cuál de los siguientes tipos de datos de Java tiene más precisión?");
     System.out.println("a) int\nb) double\nc) float"); 
     System.out.print("=> ");
-    respuesta = System.console().readLine();  
+    respuesta = System.console().readLine();
     if (respuesta.equals("b")) {
       puntos++;
     }
@@ -38,7 +38,7 @@ public class S04Ejercicio12 {
     System.out.println("3. Para insertar un hiperenlace en una página se utiliza la etiqueta...");
     System.out.println("a) href\nb) a\nc) link"); 
     System.out.print("=> ");
-    respuesta = System.console().readLine();  
+    respuesta = System.console().readLine();
     if (respuesta.equals("b")) {
       puntos++;
     }
@@ -46,7 +46,7 @@ public class S04Ejercicio12 {
     System.out.println("4. ¿En qué directorio se encuentran los archivos de configuración de Linux?");
     System.out.println("a) /etc\nb) /config\nc) /cfg"); 
     System.out.print("=> ");
-    respuesta = System.console().readLine();  
+    respuesta = System.console().readLine();
     if (respuesta.equals("a")) {
       puntos++;
     }
@@ -54,11 +54,11 @@ public class S04Ejercicio12 {
     System.out.println("5. ¿Cuál de las siguientes memorias es volátil?");
     System.out.println("a) RAM\nb) EPROM\nc) ROM"); 
     System.out.print("=> ");
-    respuesta = System.console().readLine();  
+    respuesta = System.console().readLine();
     if (respuesta.equals("a")) {
       puntos++;
     }
-    
+
     System.out.println("\nHa obtenido " + puntos + " puntos.");
   }
 }

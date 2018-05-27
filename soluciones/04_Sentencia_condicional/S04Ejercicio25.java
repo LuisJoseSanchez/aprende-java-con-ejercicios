@@ -38,7 +38,5 @@ public class S04Ejercicio25 {
     System.out.printf("%s:           %5.2f €\n", escudoCadena, precioEscudo);
     System.out.printf("Gastos de envío:      %5.2f €\n", 3.25);
     System.out.printf("Total:                %5.2f €\n", (float)anchura * altura / 100 + precioEscudo + 3.25);
-
-
   }
 }
