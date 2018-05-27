@@ -15,7 +15,6 @@
  * @author Luis José Sánchez
  * 
  */
-
 public class S72Exercise08ConDibujoTablero {
 
   public static void main(String[] args) {
@@ -62,7 +61,7 @@ public class S72Exercise08ConDibujoTablero {
     System.out.println("  ░░░░░░░░░░░░░░░░░░░░");
     System.out.println("     a b c d e f g h");
         
-    // pide las coordenadas  
+    // pide las coordenadas
     System.out.print("\nIntroduzca la posición del alfil, por ejemplo d5: ");
     String posicionAlfil = System.console().readLine();
     int columnaAlfil = (int)(posicionAlfil.charAt(0)) - 96;
@@ -104,8 +103,5 @@ public class S72Exercise08ConDibujoTablero {
         }
       }
     }
-    
-    
-    
   }
 }

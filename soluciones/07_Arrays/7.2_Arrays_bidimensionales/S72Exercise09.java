@@ -46,7 +46,7 @@ public class S72Exercise09 {
         n[capa][i] = n[capa][i - 1];
       }
         
-      // rota por la derecha      
+      // rota por la derecha
       aux2 = n[11 - capa][11 - capa];
       for (i = 11 - capa; i > capa + 1; i--) {
         n[i][11 - capa] = n[i - 1][11 - capa];

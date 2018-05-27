@@ -84,10 +84,10 @@ public class S72Exercise10 {
           (tablero[0][0] == ORDENADOR) && (tablero[1][1] == ORDENADOR) && (tablero[2][2] == ORDENADOR) ||
           (tablero[0][2] == ORDENADOR) && (tablero[1][1] == ORDENADOR) && (tablero[2][0] == ORDENADOR)
         );
-      }  
-      
+      }
+
     } while (!jugadorGana && !ordenadorGana && (movimientos < 9));
-    
+
     // pinta el tablero
     System.out.println("  ░░░░░░░░░░░░░░░");
     for(i = 0; i < 3; i++) {
@@ -99,7 +99,7 @@ public class S72Exercise10 {
       System.out.println("  ░░░░░░░░░░░░░░░");
     }
     System.out.println("     1   2   3\n");
-    
+
     if (jugadorGana) {
       System.out.println("¡Enhorabuena! ¡Has ganado!");
     } else if (ordenadorGana) {

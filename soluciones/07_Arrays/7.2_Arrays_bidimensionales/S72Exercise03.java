@@ -22,11 +22,11 @@ public class S72Exercise03 {
     // Muestra los datos y las sumas parciales de las filas
     int sumaFila;
     for(fila = 0; fila < 4; fila++) {
-      sumaFila = 0;  
+      sumaFila = 0;
       for(columna = 0; columna < 5; columna++) {
         System.out.printf("%7d   ", num[fila][columna]);
         sumaFila += num[fila][columna];
-      }  
+      }
       System.out.printf("|%7d\n", sumaFila);
     }
     

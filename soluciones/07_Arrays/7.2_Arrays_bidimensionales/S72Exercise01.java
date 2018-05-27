@@ -44,7 +44,7 @@ public class S72Exercise01 {
       for(columna = 0; columna < 6; columna++) {
         System.out.printf("%9d   ", num[fila][columna]);
         Thread.sleep(500); // retardo de medio segundo
-      }   
+      }
     }
   }
 }

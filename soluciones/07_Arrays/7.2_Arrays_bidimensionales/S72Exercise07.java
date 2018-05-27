@@ -69,7 +69,7 @@ public class S72Exercise07 {
       }
       System.out.println("  ----------\n  0 1 2 3 4\n");
       
-      // Pide las coordenadas  
+      // Pide las coordenadas
       System.out.print("Coordenada x: ");
       x = Integer.parseInt(System.console().readLine());
       System.out.print("Coordenada y: ");
@@ -95,7 +95,7 @@ public class S72Exercise07 {
 
     // Pinta el cuadrante
     for(y = 3; y >= 0; y--) {
-      System.out.print(y + " ");  
+      System.out.print(y + " ");
       for(x = 0; x < 5; x++) {
         switch(cuadrante[x][y]) {
           case VACIO:
@@ -109,11 +109,11 @@ public class S72Exercise07 {
             break;
           case INTENTO:
             c = "x ";
-            break;            
+            break;
         }
         System.out.print(c);
       }      
-      System.out.println();    
+      System.out.println();
     }
     System.out.println("  ----------\n  0 1 2 3 4\n");
   }
