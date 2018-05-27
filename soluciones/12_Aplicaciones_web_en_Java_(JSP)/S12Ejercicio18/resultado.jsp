@@ -11,7 +11,7 @@
     <%
       int bolita = (int)(Math.random() * 3);
       int cubilete = Integer.parseInt(request.getParameter("cubilete"));
-      
+
       String imagen[] = {"cubilete_sin_bola.png", "cubilete_sin_bola.png", "cubilete_sin_bola.png"};
       imagen[bolita] = "cubilete_con_1bola.png";
       
@@ -21,8 +21,8 @@
       } else {
         mensaje = "Lo siento, has perdido.";
       }
-      
-    %>  
+
+    %>
     <table>
       <tr>
         <td><img src="<%= imagen[0] %>"></td>
@@ -32,6 +32,6 @@
     </table>
       <p><%= mensaje %></p>
       <p><a href="index.jsp"><button>Volver a jugar</button></a></p>
-      
+
   </body>
 </html>

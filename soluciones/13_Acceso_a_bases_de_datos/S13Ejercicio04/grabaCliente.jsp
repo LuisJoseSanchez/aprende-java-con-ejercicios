@@ -10,7 +10,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   </head>
   <body>
-    <%  
+    <%
       Class.forName("com.mysql.jdbc.Driver");
       Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/banco","root", "root");
       Statement s = conexion.createStatement();

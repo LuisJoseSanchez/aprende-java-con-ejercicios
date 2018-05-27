@@ -19,9 +19,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
     <title>Gestibank</title>
   </head>
-  
+
   <body>
-    <%  
+    <%
       Class.forName("com.mysql.jdbc.Driver");
       Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/banco","root", "root");
       Statement s = conexion.createStatement();
@@ -115,7 +115,7 @@
           </div>
       </div>
     </div>
-              
+
     <%
       conexion.close();
     %>

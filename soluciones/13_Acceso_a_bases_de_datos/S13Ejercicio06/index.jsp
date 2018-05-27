@@ -26,7 +26,7 @@
     <title>Gestisimal</title>
   </head>
   <body>
-    <%  
+    <%
       Class.forName("com.mysql.jdbc.Driver");
       Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/gestisimal","root", "root");
       Statement s = conexion.createStatement();
@@ -132,7 +132,7 @@
         </div>
       </div>
     </div>
-              
+
     <%
       conexion.close();
     %>

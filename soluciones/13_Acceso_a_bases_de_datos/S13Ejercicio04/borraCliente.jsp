@@ -15,7 +15,7 @@
       Statement s = conexion.createStatement();
 
       s.execute("DELETE FROM cliente WHERE clienteid=" + request.getParameter("clienteid"));
-    %>  
+    %>
     <script>document.location = "index.jsp"</script> 
   </body>
 </html>
