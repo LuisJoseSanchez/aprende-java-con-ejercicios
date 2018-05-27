@@ -26,10 +26,10 @@ public class S01Ejercicio09 {
     System.out.println("                     ████████  ██");
     System.out.println("                     ████████████");
     System.out.println("                     ████████");
-    System.out.println("░░░░░░░░░░░░░░░░░░░░░████████░░░░░░░░");  
+    System.out.println("░░░░░░░░░░░░░░░░░░░░░████████░░░░░░░░");
     System.out.println("░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░");
     System.out.println("░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░");
     
-    System.out.println("\033[37m"); // volvemos al blanco      
+    System.out.println("\033[37m"); // volvemos al blanco
   }
 }
