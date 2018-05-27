@@ -16,7 +16,7 @@ public class S08Ejercicio20a28 {
     
     int[] a = array.Array.generaArrayInt(20, 0, 100);
     
-    array.Array.muestraArrayInt(a);    
+    array.Array.muestraArrayInt(a);
     System.out.println("Mínimo: " + array.Array.minimoArrayInt(a));
     System.out.println("Máximo: " + array.Array.maximoArrayInt(a));
     System.out.println("Media: " + array.Array.mediaArrayInt(a));
