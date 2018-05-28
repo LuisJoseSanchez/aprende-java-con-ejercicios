@@ -1,7 +1,7 @@
 <%-- 
   17. Realiza un configurador del interior de un vehículo. El usuario puede
       elegir, mediante un formulario, el color de la tapicería – blanco, negro
-      o berengena - y el material de las molduras – madera o carbono. Se debe
+      o berenjena - y el material de las molduras – madera o carbono. Se debe
       mostrar el interior del coche tal y como lo quiere el usuario.
 --%>
 
@@ -19,7 +19,7 @@
       Tapicería:
       <select name="tapiceria">
         <option value="negro" selected="selected">Cuero negro</option>
-        <option value="berengena">Color berengena</option>
+        <option value="berenjena">Color berenjena</option>
         <option value="blanco">Blanco marfil</option>
       </select>
       <br>
