@@ -31,16 +31,16 @@ public class BuscaTesoro {
       }
     }
     // coloca la mina
-    int minaX = (int)(Math.random()*4);
-    int minaY = (int)(Math.random()*3);
+    int minaX = (int)(Math.random() * 5);
+    int minaY = (int)(Math.random() * 4);
     cuadrante[minaX][minaY] = MINA;
     
     // coloca el tesoro
     int tesoroX;
     int tesoroY;
     do {
-      tesoroX = (int)(Math.random()*4);
-      tesoroY = (int)(Math.random()*3);
+      tesoroX = (int)(Math.random() * 5);
+      tesoroY = (int)(Math.random() * 4);
     } while ((minaX == tesoroX) && (minaY == tesoroY));
     cuadrante[tesoroX][tesoroY] = TESORO;
     
@@ -79,7 +79,7 @@ public class BuscaTesoro {
           salir = true;
           break;
         case TESORO:
-          System.out.println("Enhorabuena, has encontrado el tesoro."); 
+          System.out.println("¡Enhorabuena! ¡Has encontrado el tesoro!"); 
           salir = true;
           break;
         default:
@@ -101,7 +101,7 @@ public class BuscaTesoro {
             c = "€ ";
             break;
           case INTENTO:
-            c = "x ";
+            c = "X ";
             break;
           default:
         }
