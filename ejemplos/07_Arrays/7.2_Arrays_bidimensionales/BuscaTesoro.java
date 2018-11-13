@@ -59,10 +59,10 @@ public class BuscaTesoro {
             System.out.print("  ");
           }
         }
-        System.out.println();   
+        System.out.println();
       }
       System.out.println("  ----------\n  0 1 2 3 4\n");
-      
+
       // pide las coordenadas  
       System.out.print("Coordenada x: ");
       x = Integer.parseInt(System.console().readLine());
@@ -88,7 +88,7 @@ public class BuscaTesoro {
 
     // pinta el cuadrante
     for(y = 3; y >= 0; y--) {
-      System.out.print(y + " ");  
+      System.out.print(y + " ");
       for(x = 0; x < 5; x++) {
         switch(cuadrante[x][y]) {
           case VACIO:
@@ -106,7 +106,7 @@ public class BuscaTesoro {
           default:
         }
         System.out.print(c);
-      }      
+      }
       System.out.println();    
     }
     System.out.println("  ----------\n  0 1 2 3 4\n");
