@@ -10,14 +10,15 @@
 
 public class BuscaTesoro {
 
-  // se definen constantes para representar el
-  // contenido de las celdas
-  static final int VACIO = 0;
-  static final int MINA = 1;
-  static final int TESORO = 2;
-  static final int INTENTO = 3;
-  
   public static void main(String[] args) {
+    
+    // se definen constantes para representar el
+    // contenido de las celdas
+    final int VACIO = 0;
+    final int MINA = 1;
+    final int TESORO = 2;
+    final int INTENTO = 3;
+    
     
     int x;
     int y;
