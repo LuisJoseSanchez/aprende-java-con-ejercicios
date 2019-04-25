@@ -16,5 +16,6 @@
     <img src="user.png">
     <p>Usuario: <%= session.getAttribute("usuario") %></p>
     <p>Página de perfil con toda la información de usuario.</p>
+    <a href="index.jsp">Página principal</a>
   </body>
 </html>
