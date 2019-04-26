@@ -13,9 +13,18 @@
       }
     %> 
     <h1>Perfil de usuario</h1>
-    <img src="user.png">
-    <p>Usuario: <%= session.getAttribute("usuario") %></p>
-    <p>Página de perfil con toda la información de usuario.</p>
-    <a href="index.jsp">Página principal</a>
+
+    <table>
+      <tr>
+        <td>
+          <img src="user.png"></td>
+        <td>
+          Usuario: <%= session.getAttribute("usuario")%><br>
+          Página de perfil con información del usuario.<br>
+          <a href="index.jsp">Página principal</a>
+        </td>
+      </tr>
+    </table>
+
   </body>
 </html>
