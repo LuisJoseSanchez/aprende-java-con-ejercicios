@@ -1,7 +1,6 @@
 import static matematicas.Varias.digitoN;
 import static matematicas.Varias.digitos;
 
-
 public class S08Ejercicio35 {
 
   public static void main(String[] args) {
