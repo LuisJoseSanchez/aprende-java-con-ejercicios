@@ -1,5 +1,3 @@
-package s04ejercicio27;
-
 import java.util.Scanner;
 
 public class S04Ejercicio27 {
