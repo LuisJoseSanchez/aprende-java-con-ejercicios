@@ -29,13 +29,13 @@ public class S05Ejercicio59 {
       }
 
       // pinta la línea
-      System.out.print("#");
+      System.out.print("^");
       for (int i = 1; i < espaciosInternos; i++) {
         System.out.print(" ");
       }
 
       if (altura > 2) {
-        System.out.print("#");
+        System.out.print("^");
       }
 
       System.out.println();
@@ -46,7 +46,7 @@ public class S05Ejercicio59 {
 
     // base de la pirámide
     for (int i = 1; i < altura * 2 - 2; i++) {
-      System.out.print("#");
+      System.out.print("^");
     }
     System.out.println();
 
@@ -56,7 +56,7 @@ public class S05Ejercicio59 {
     for (int i = 1; i <= espaciosPorDelante; i++) {
       System.out.print(" ");
     }
-    System.out.println("#");
+    System.out.println("Y");
   }
   
 }
