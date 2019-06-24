@@ -51,7 +51,7 @@ public class S05Ejercicio63 {
       // Pirámide 2
       
       if (i > alturaP2) {
-        // Si la pirámide 1 queda por debajo, pinta el hueco.
+        // Si la pirámide 2 queda por debajo, pinta el hueco.
         for (int j = 0; j < baseP2; j++) {
           System.out.print(" ");
         }
