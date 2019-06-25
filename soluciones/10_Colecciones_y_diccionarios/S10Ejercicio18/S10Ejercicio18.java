@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class S10Ejercicio16 {
+public class S10Ejercicio18 {
 
   public static void main(String[] args) {
     Carrito miCarrito = new Carrito();

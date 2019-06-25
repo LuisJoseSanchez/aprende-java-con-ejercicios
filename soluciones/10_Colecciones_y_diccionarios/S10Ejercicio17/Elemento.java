@@ -37,7 +37,8 @@ public class Elemento {
 
   @Override
   public String toString() {
-    return this.producto + " PVP: " + this.precio + " Unidades: " + this.cantidad
+    return this.producto + " PVP: " + String.format("%.2f", this.precio)
+      + " Unidades: " + this.cantidad
       + " Subtotal: " + String.format("%.2f", this.precio * this.cantidad);
   }
 
