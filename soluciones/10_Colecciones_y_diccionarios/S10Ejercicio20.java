@@ -1,11 +1,9 @@
-package sinonimosmejorado;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class SinonimosMejorado {
+public class S10Ejercicio20 {
 
   public static void main(String[] args) {
     HashMap<String, String> diccionario = new HashMap<String, String>();
