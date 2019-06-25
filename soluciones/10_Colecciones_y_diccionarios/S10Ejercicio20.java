@@ -1,9 +1,11 @@
+package sinonimosmejorado;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class S10Ejercicio19 {
+public class SinonimosMejorado {
 
   public static void main(String[] args) {
     HashMap<String, String> diccionario = new HashMap<String, String>();
@@ -21,18 +23,29 @@ public class S10Ejercicio19 {
     String palabraIntroducida = "";
 
     do {
-      System.out.print("\nIntroduzca una palabra y le daré los sinónimos: ");
+      System.out.print("Introduzca una palabra y le daré los sinónimos: ");
       palabraIntroducida = s.nextLine();
 
       if (!palabraIntroducida.equals("salir")) {
         // Comprueba si la palabra existe en el diccionario
         if (!diccionario.containsKey(palabraIntroducida)) {
-          System.out.print("No conozco esa palabra");
-          // Comprueba si tiene sinónimos
+          System.out.print("No conozco esa palabra ¿quiere añadirla al diccionario? (s/n):");
+          if (s.nextLine().equals("s")) {
+            System.out.print("Introduzca la traducción de " + palabraIntroducida + " en inglés: ");
+            String traduccion = s.nextLine();
+            diccionario.put(palabraIntroducida, traduccion);
+          }
+        // Comprueba si tiene sinónimos
         } else if (!tieneSinonimos(palabraIntroducida, diccionario)) {
-          System.out.print("No conozco sinónimos de esa palabra");
-          // Muestra los sinónimos
+          System.out.print("No conozco sinónimos de esa palabra ¿quiere añadir alguno? (s/n): ");
+          if (s.nextLine().equals("s")) {
+            System.out.print("Introduzca un sinónimo de " + palabraIntroducida + ": ");
+            String sinonimo = s.nextLine();
+            diccionario.put(sinonimo, diccionario.get(palabraIntroducida));
+            System.out.println("Gracias por enseñarme nuevos sinónimos.");
+          }
         } else {
+          // Muestra los sinónimos
           String significado = diccionario.get(palabraIntroducida);
           System.out.print("Sinónimos de " + palabraIntroducida + ": ");
 
@@ -49,7 +62,7 @@ public class S10Ejercicio19 {
         }
       }
     } while (!palabraIntroducida.equals("salir"));
-  }
+  } // main
 
   /**
    * Me dice si una palabra tiene sinónimos dentro de un diccionario.
@@ -79,5 +92,7 @@ public class S10Ejercicio19 {
         System.out.print(", ");
       }
     }
+    System.out.println("");
   }
+
 }
