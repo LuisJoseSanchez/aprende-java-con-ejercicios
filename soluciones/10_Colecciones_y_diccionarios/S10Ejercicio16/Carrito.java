@@ -6,18 +6,7 @@ public class Carrito {
   ArrayList<Elemento> a = new ArrayList<>();
 
   public void agrega(Elemento e) {
-    boolean encontrado = false;
-    
-    for (Elemento elemento : a) {
-
-      if (elemento.getProducto().equals(e.getProducto())) {
-        elemento.setCantidad(elemento.getCantidad() + e.getCantidad());
-        encontrado = true;
-      }
-    }
-    if (!encontrado) {
-      a.add(e);
-    }
+    a.add(e);
   }
 
   public int numeroDeElementos() {
@@ -27,9 +16,7 @@ public class Carrito {
   public double importeTotal() {
     double total = 0;
     for (Elemento e : a) {
-
       total += e.getPrecio() * e.getCantidad();
-
     }
     return total;
   }
