@@ -1,5 +1,3 @@
-package s10ejercicio16;
-
 import java.util.HashMap;
 import java.util.Scanner;
 
