@@ -25,8 +25,6 @@ public class S06Ejercicio28 {
       System.out.printf("%5d", a[i]);
     }
     
-    
-    
     int[] r = new int[n];
     int izquierda = 0;
     int derecha = n - 1;
