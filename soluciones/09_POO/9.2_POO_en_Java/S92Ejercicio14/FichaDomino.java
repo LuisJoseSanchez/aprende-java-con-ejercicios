@@ -18,6 +18,6 @@ public class FichaDomino {
 
   @Override
   public String toString() {
-    return "[" + lado1 + " | " + (lado2 == 0 ? " " : lado2) + ']';
+    return "[" + (lado1 == 0 ? " " : lado1) + "|" + (lado2 == 0 ? " " : lado2) + ']';
   }
 }
