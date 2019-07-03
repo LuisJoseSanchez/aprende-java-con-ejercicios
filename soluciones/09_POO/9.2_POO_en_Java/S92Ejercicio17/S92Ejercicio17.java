@@ -1,5 +1,3 @@
-package s09ejercicio17;
-
 public class S92Ejercicio17 {
 
   public static void main(String[] args) {
