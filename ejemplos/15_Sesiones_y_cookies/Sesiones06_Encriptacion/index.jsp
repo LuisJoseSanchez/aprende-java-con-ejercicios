@@ -22,7 +22,9 @@
       out.print("A la cadena \"latarara\" le corresponde el hash: " + hash + "<br>");
  
       // Comprueba si la clave es correcta
-      out.print(MessageDigest.isEqual(hash.getBytes(), "26056A29E1E3A2E813EE5575A774B9B0".getBytes()));
+      out.print(
+        MessageDigest.isEqual(hash.getBytes(), "26056A29E1E3A2E813EE5575A774B9B0".getBytes())
+      );
     %>
   </body>
 </html>
