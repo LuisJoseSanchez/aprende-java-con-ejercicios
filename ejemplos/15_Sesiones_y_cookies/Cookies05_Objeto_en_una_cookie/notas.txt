@@ -1,0 +1,4 @@
+* La clase "Persona" se debe definir dentro del paquete "clases". No va en la carpeta "web" junto con las páginas jsp.
+* Hay que añadir a las librerías del proyecto los tres archivos jar de la carpeta "jackson_jar_files".
+
+
