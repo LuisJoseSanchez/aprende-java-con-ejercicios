@@ -8,7 +8,6 @@
   </head>
   <body>
     <%
-
       String nombre = request.getParameter("nombre");
 
       Cookie cookie = dameCookie(request, nombre);
