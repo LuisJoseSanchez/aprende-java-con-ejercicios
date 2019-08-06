@@ -3,7 +3,7 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Capítulo 15 - Ejercicio 1</title>
+    <title>Capítulo 15 - Ejercicio 2</title>
   </head>
   <body>
     <%
