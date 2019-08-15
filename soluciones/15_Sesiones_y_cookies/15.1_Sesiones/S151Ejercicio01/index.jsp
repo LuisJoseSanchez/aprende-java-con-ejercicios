@@ -7,7 +7,8 @@
   </head>
   <body>
     <%
-      session.setAttribute("n", session.getAttribute("n") == null ? 1 : (Integer)session.getAttribute("n") + 1);
+      session.setAttribute("n", session.getAttribute("n") == null ?
+          1 : (Integer)session.getAttribute("n") + 1);
     %>
     <h1><%= session.getAttribute("n") %></h1>
     <a href="reset.jsp">Reinicia la cuenta</a>
