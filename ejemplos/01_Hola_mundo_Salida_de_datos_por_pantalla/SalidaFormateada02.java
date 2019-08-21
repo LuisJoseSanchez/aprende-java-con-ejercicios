@@ -3,7 +3,6 @@
  *
  * @author Luis J. Sánchez
  */
-
 public class SalidaFormateada02 {
   public static void main(String[] args) {
     System.out.println("  Artículo      Precio/caja    Nº cajas");
