@@ -5,7 +5,6 @@
  *
  * @author Luis José Sánchez
  */
-
 public class TablaDeColores {
   public static void main(String[] args) {
     System.out.println("┌────────┬───────────┬────────┬────────────────┐");
