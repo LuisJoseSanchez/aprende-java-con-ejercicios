@@ -3,7 +3,6 @@
  *
  * @author Luis J. Sánchez
  */
-
 public class VariablesConDecimales {
   public static void main(String[] args) {
     double x; // Se declaran las variables x e y
