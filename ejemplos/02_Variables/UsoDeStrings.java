@@ -3,7 +3,6 @@
  *
  * @author Luis J. Sánchez
  */
-
 public class UsoDeStrings {
   public static void main(String[] args) {
     String miPalabra = "cerveza";
