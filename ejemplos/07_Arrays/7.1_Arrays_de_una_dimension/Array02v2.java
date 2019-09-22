@@ -3,7 +3,6 @@
  *
  * Ejemplo de uso de arrays
  */
-
 public class Array02v2 {
   public static void main(String[] args) {
         

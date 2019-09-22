@@ -3,12 +3,11 @@
  * 
  * @author Luis José Sánchez
  */
-
 public class Array03 {
   public static void main(String[] args) {
-        
+
     int[] num = new int[10];
-                
+
     num[0] = 8;
     num[1] = 33;
     num[2] = 200;

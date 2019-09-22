@@ -3,11 +3,9 @@
  * 
  * @author Luis José Sánchez
  */
-
 public class Array05 {
-
   public static void main(String[] args) {
-        
+
     double[] nota = new double[4];
  
     System.out.println("Para calcular la nota media necesito saber la ");
@@ -26,7 +24,7 @@ public class Array05 {
       System.out.print(nota[i] + "  ");
       suma += nota[i];
     }
-        
+
     System.out.println("\nLa media es " + suma / 4);
   }
 }

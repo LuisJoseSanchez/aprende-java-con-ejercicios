@@ -1,13 +1,11 @@
+import java.util.Scanner;
+
 /**
  * Ejemplo de uso de arrays
  * 
  * @author Luis José Sánchez
  */
- 
-import java.util.Scanner;
-
 public class Array06GeneradorAleatorioDeBanderas {
-
   public static void main(String[] args) {
     String[] color = {"rojo", "amarillo", "verde", "blanco", "azul", "negro"};
     
