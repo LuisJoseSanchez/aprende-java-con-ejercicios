@@ -2,7 +2,7 @@ import matematicas.Geometria;
 import matematicas.Varias;
 
 /**
- * Dice si un número es o no es primo usando una función
+ * Prueba varias funciones
  * 
  * @author Luis José Sánchez
  */

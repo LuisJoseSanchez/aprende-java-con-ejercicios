@@ -1,11 +1,10 @@
+import matematicas.Varias;
+
 /**
  * Paso de un array bidimensional como parámetro
  * 
  * @author Luis José Sánchez
  */
-
-import matematicas.Varias;
-
 public class ArrayBiFunciones {
   public static void main(String[] args) {
 
