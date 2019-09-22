@@ -3,7 +3,6 @@
  * 
  * @author
  */
- 
 public class Gato implements Comparable<Gato> {
   private String nombre;
   private String color;

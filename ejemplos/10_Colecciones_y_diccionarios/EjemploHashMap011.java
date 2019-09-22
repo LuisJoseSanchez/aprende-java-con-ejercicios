@@ -1,11 +1,10 @@
+import java.util.HashMap;
+
 /**
  * Ejemplo de uso de la clase HasMap
  *
  * @author Luis José Sánchez
  */
-
-import java.util.HashMap;
-
 public class EjemploHashMap011 {
   public static void main(String[] args) {
 
