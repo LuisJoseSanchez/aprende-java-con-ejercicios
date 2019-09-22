@@ -3,7 +3,6 @@
  * 
  * @author Luis José Sánchez
  */
- 
 public class NumeroPrimoConFuncion {
   
   // Programa principal //////////////////////////////////////
