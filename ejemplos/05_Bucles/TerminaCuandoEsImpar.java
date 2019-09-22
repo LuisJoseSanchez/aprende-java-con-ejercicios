@@ -4,11 +4,8 @@
  *
  * @author Luis José Sánchez
  */
-
 public class TerminaCuandoEsImpar {
-    
   public static void main(String[] args) {
-        
     int numero;
       
     do {
