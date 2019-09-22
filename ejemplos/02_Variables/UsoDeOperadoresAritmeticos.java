@@ -3,7 +3,6 @@
  *
  * @author Luis J. Sánchez
  */
-
 public class UsoDeOperadoresAritmeticos {
   public static void main(String[] args) {
     int x;
