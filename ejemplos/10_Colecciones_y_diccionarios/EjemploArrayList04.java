@@ -1,11 +1,10 @@
+import java.util.ArrayList;
+
 /**
  * Ejemplo de uso de la clase ArrayList
  * 
  * @author Luis José Sánchez
  */
-
-import java.util.ArrayList;
-
 public class EjemploArrayList04 {
   public static void main(String[] args) {
 
