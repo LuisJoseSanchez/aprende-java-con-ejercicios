@@ -1,11 +1,10 @@
+import java.util.ArrayList;
+
 /**
  * Uso de un ArrayList de objetos
  * 
  * @author Luis José Sánchez
  */
-
-import java.util.ArrayList;
-
 public class EjemploArrayList07 {
   public static void main(String[] args) {
 

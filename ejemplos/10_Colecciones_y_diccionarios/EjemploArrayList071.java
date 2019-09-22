@@ -1,12 +1,11 @@
+import java.util.ArrayList;
+import java.util.Collections;
+
 /**
  * Ordenación de un ArrayList
  * 
  * @author Luis José Sánchez
  */
-
-import java.util.Collections;
-import java.util.ArrayList;
-
 public class EjemploArrayList071 {
   public static void main(String[] args) {
 
