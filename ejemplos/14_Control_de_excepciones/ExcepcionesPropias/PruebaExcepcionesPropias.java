@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 public class PruebaExcepcionesPropias {
-
   public static void main(String[] args) {
     Scanner s = new Scanner(System.in);
     
@@ -45,5 +44,4 @@ public class PruebaExcepcionesPropias {
     }
 
   }
-  
 }
