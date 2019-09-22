@@ -1,11 +1,10 @@
+package matematicas;
+
 /**
  * Funciones geométricas
  * 
  * @author Luis José Sánchez
  */
-
-package matematicas;
-
 public class Geometria {
 
   /**

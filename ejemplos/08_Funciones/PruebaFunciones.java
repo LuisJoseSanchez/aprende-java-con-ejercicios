@@ -1,12 +1,11 @@
+import matematicas.Geometria;
+import matematicas.Varias;
+
 /**
  * Dice si un número es o no es primo usando una función
  * 
  * @author Luis José Sánchez
  */
-
-import matematicas.Varias;
-import matematicas.Geometria;
-
 public class PruebaFunciones {
   public static void main(String[] args) {
 

@@ -1,11 +1,10 @@
+package matematicas;
+
 /**
  * Funciones matemáticas de propósito general
  * 
  * @author Luis José Sánchez
  */
-
-package matematicas;
-
 public class Varias {
 
   /**
