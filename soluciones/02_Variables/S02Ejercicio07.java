@@ -4,6 +4,6 @@ public class S02Ejercicio07 {
     char ultimaLetra = 'z';
     String palabra = "abecedario";
     
-    System.out.println(palabra + primeraLetra + ultimaLetra);
+    System.out.println(primeraLetra + ultimaLetra + palabra);
   }
 }
