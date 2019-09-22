@@ -1,9 +1,8 @@
 /**
-* Lectura de datos desde teclado
-*
-* @author Luis J. Sanchez
-*/
-
+ * Lectura de datos desde teclado
+ *
+ * @author Luis J. Sanchez
+ */
 public class DimeTuNombre {
   public static void main(String[] args) {
     String nombre;
