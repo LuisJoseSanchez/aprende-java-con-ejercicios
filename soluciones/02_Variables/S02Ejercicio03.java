@@ -1,5 +1,4 @@
 /**
- *
  * 2. Variables
  *
  * 3. Crea las variables nombre, direccion y telefono y asígnale los
@@ -9,7 +8,6 @@
  *
  * @author Luis José Sánchez
  */
-
 public class S02Ejercicio03 {
   public static void main(String[] args) {
     String nombre = "Luis José Sánchez González";

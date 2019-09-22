@@ -6,10 +6,8 @@
  *
  * @author Luis José Sánchez
  */
-
 public class S02Ejercicio05 {
   public static void main(String[] args) {
-    
     int pesetas = 10000;
     double euros = pesetas / 166.386;
     

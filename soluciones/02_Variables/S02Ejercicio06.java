@@ -7,10 +7,8 @@
  *
  * @author Luis José Sánchez
  */
-
 public class S02Ejercicio06 {
   public static void main(String[] args) {
-
     double baseImponible = 22.75;
 
     System.out.printf("Base imponible %8.2f\n", baseImponible);

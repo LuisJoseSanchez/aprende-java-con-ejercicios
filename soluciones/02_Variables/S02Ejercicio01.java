@@ -1,5 +1,4 @@
 /**
- *
  * 2. Variables
  *
  * 1. Escribe un programa en el que se declaren las variables enteras x
@@ -9,7 +8,6 @@
  *
  * @author Luis José Sánchez
  */
-
 public class S02Ejercicio01 {
   public static void main(String[] args) {
     int x = 144;
