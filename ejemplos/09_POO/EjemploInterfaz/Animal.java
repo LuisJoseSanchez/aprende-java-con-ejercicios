@@ -3,7 +3,6 @@
  * Definición de la clase Animal
  * @author Luis José Sánchez
  */
-
 public abstract class Animal {
 
   private Sexo sexo;
