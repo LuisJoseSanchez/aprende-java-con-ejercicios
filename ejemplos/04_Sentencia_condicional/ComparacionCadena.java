@@ -12,5 +12,5 @@ public class ComparacionCadena {
     } else {
       System.out.println("distintas");
     }
-	}
+  }
 }
