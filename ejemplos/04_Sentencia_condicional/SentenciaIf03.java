@@ -2,7 +2,6 @@
  * Sentencia if
  *
  * @author Luis J. Sánchez
- *
  */
 public class SentenciaIf03 {
   public static void main(String[] args) {
