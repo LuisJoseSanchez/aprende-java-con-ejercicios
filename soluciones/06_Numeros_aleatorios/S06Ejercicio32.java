@@ -17,7 +17,7 @@ public class S06Ejercicio32 {
       }
 
       // Borde izquierdo del sendero
-      System.out.print('#');
+      System.out.print('|');
 
       // Parte interior del sendero
       int posicionObstaculo = -1;
@@ -35,7 +35,7 @@ public class S06Ejercicio32 {
       }
 
       // Borde derecho del sendero
-      System.out.println('#');
+      System.out.println('|');
 
       espaciosPorDelante += (int) (Math.random() * 3) - 1;
     }
