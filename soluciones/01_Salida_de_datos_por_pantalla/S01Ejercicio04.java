@@ -1,5 +1,4 @@
 /**
- * 
  * 1. Salida por pantalla
  *
  * 4. Escribe un programa que muestre tu horario de clase. Puedes usar
@@ -7,10 +6,8 @@
  *
  * @author Luis José Sánchez
  */
-
 public class S01Ejercicio04 {
   public static void main(String[] args) {
-
     System.out.println("Lunes\tMartes\tMiérc.\tJueves.\tViernes");
     System.out.println("======\t=======\t======\t=======\t=======");
     System.out.println("PROG\tPROG\tPROG\tPROG \tSIN");

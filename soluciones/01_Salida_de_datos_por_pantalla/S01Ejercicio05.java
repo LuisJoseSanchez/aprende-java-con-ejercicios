@@ -1,5 +1,4 @@
 /**
- * 
  * 1. Salida por pantalla
  *
  * 5. Modifica el programa anterior añadiendo colores. Puedes mostrar
@@ -7,10 +6,8 @@
  *
  * @author Luis José Sánchez
  */
-
 public class S01Ejercicio05 {
   public static void main(String[] args) {
-
     String rojo = "\033[31m";
     String verde = "\033[32m";
     String naranja = "\033[33m";

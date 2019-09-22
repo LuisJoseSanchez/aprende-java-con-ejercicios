@@ -1,5 +1,4 @@
 /**
- * 
  * 1. Salida por pantalla
  *
  * 9. Escribe un programa que pinte por pantalla alguna escena - el campo,
@@ -9,7 +8,6 @@
  *    caracteres Unicode. ¡Échale imaginación!
  *
  * @author Luis José Sánchez
- * 
  */
 public class S01Ejercicio09 {
   public static void main(String[] args) {

@@ -7,7 +7,6 @@
  *
  * @author Luis José Sánchez
  */
-
 public class S01Ejercicio03 {
   public static void main(String[] args) {
     System.out.printf("%-10s %s\n", "computer", "ordenador");

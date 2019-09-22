@@ -1,5 +1,4 @@
 /**
- *
  * 1. Salida por pantalla
  *
  * 2. Modifica el programa anterior para que además se muestre tu
@@ -8,7 +7,6 @@
  *
  * @author Luis José Sánchez
  */
-
 public class S01Ejercicio02 {
   public static void main(String[] args) {
     System.out.println("Luis José Sánchez González");
