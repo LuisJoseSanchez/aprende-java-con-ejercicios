@@ -1,17 +1,15 @@
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
 /**
  * Ejemplo de uso de la clase File
  * Lectura de un fichero de texto
  *
  * @author Luis José Sánchez
  */
-
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-
 class EjemploFichero01 {
-
   public static void main(String[] args) {
     
     try {  

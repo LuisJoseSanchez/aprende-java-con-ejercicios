@@ -1,16 +1,14 @@
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+
 /**
  * Ejemplo de uso de la clase File
  * Escritura en un fichero de texto
  *
  * @author Luis José Sánchez
  */
-
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.IOException;
-
 class EjemploFichero02 {
-
   public static void main(String[] args) {
 
   try {  

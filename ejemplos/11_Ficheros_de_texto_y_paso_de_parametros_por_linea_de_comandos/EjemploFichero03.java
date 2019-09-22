@@ -1,18 +1,16 @@
-/**
- * Ejemplo de uso de la clase File
- * Mezcla de dos ficheros
- *
- * @author Luis José Sánchez
- */
-
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
+/**
+ * Ejemplo de uso de la clase File
+ * Mezcla de dos ficheros
+ *
+ * @author Luis José Sánchez
+ */
 class EjemploFichero03 {
-
   public static void main(String[] args) {
     
     try {
