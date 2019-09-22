@@ -1,10 +1,9 @@
 import java.util.Scanner;
 
 public class EjemploExcepciones03 {
-
   public static void main(String[] args) {
-
     Scanner s = new Scanner(System.in);
+
     System.out.println("Este programa calcula la media de dos números");
 
     boolean datoValido = false;
