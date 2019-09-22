@@ -3,7 +3,6 @@
  * 
  * @author Luis José Sánchez
  */
-
 public class Disco {
   private String codigo = "LIBRE";
   private String autor;

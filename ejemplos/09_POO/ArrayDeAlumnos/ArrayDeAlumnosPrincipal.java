@@ -3,7 +3,6 @@
  * Programa que prueba un array de la clase Alumno
  * @author Luis José Sánchez
  */
-
 public class ArrayDeAlumnosPrincipal {
   public static void main(String[] args) {
     

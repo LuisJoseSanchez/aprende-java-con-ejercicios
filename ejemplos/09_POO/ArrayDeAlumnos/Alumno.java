@@ -3,7 +3,6 @@
  * Definición de la clase Alumno
  * @author Luis José Sánchez
  */
-
 public class Alumno {
   private String nombre;
   private double notaMedia = 0.0;
