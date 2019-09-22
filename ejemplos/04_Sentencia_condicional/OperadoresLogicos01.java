@@ -3,7 +3,6 @@
  *
  * @author Luis J. Sánchez
  */
-
 public class OperadoresLogicos01 {
   public static void main(String[] args) {
     System.out.println("Adivina el número que estoy pensando.");

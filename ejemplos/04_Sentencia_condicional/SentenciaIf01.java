@@ -3,7 +3,6 @@
  *
  * @author Luis J. Sánchez
  */
-
 public class SentenciaIf01 {
   public static void main(String[] args) {   
     System.out.print("¿Cuál es la capital de Kiribati? ");

@@ -4,7 +4,6 @@
  * @author Luis J. Sánchez
  *
  */
-
 public class SentenciaIf03 {
   public static void main(String[] args) {
     System.out.print("¿Qué nota has sacado en el último examen? ");

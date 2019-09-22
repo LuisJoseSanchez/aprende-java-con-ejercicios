@@ -5,7 +5,6 @@
  * @author Luis J. Sánchez
  *
  */
-
 public class OperadoresLogicos02 {
   public static void main(String[] args) {
     boolean a = true;

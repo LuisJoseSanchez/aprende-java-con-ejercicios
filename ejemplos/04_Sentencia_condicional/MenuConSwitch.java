@@ -3,7 +3,6 @@
  *
  * @author Luis José Sánchez
  */
-
 public class MenuConSwitch {
   public static void main(String[] args) {
   

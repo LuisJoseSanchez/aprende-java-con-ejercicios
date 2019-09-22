@@ -3,7 +3,6 @@
  *
  * @author Luis J. Sánchez
  */
-
 public class SentenciaIf02 {
   public static void main(String[] args) {
     System.out.print("Por favor, introduce un número entero: ");

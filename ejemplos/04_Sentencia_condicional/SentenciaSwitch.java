@@ -3,7 +3,6 @@
  *
  * @author Luis José Sánchez
  */
-
 public class SentenciaSwitch {
   public static void main(String[] args) {   
        
