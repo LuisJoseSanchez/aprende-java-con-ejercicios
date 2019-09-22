@@ -1,13 +1,10 @@
 /**
-*  Generación de números aleatorios.
-*
-*  @author Luis José Sánchez
-*/
-
+ *  Generación de números aleatorios.
+ *
+ *  @author Luis José Sánchez
+ */
 public class Aleatorio06 {
-    
   public static void main(String[] args) {
-
     System.out.println("Genera al azar piedra, papel o tijera:");
     
     switch((int)(Math.random()*3)) {

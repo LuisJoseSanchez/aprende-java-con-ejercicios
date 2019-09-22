@@ -1,12 +1,10 @@
 /**
-* Generación de números aleatorios.
-*
-* @author Luis José Sánchez
-*/
-
+ * Generación de números aleatorios.
+ *
+ * @author Luis José Sánchez
+ */
 public class Aleatorio07 {
   public static void main(String[] args) {
-
     System.out.println("Muestra un día de la semana al azar:");
     
     for (int i = 0; i < 20; i++) {

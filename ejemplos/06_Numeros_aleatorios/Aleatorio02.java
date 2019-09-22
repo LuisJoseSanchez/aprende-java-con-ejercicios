@@ -1,12 +1,10 @@
 /**
-*  Generación de números aleatorios.
-*
-*  @author Luis José Sánchez
-**/
-
+ * Generación de números aleatorios.
+ *
+ *  @author Luis José Sánchez
+ */
 public class Aleatorio02 {
   public static void main(String[] args) {
-
     System.out.println("20 números aleatorios entre 0 y 10");
     System.out.println(" sin llegar a 10 (con decimales):");
     
