@@ -1,19 +1,23 @@
 /**
  * Quiniela aleatoria con tres columnas rellenas dando más peso
  * al 1, luego a la x y luego al 2.
- * Se incluye el pleno al quince.
+ * Pleno al quince antiguo, cuando era como un partido más (1, X, 2)
  * 
  * @author Luis José Sánchez
  */
-public class S06Ejercicio08 {
+public class S06Ejercicio08Antiguo {
   public static void main(String[] args) {
 
     int resultadoPartido;
     int columnas = 3;
     
-    for (int fila = 1; fila <= 14; fila++) {
+    for (int fila = 1; fila <= 15; fila++) {
       System.out.printf("%4d. |", fila);
 
+      if (fila == 15) {
+        columnas = 1;
+      }
+      
       for (int apuesta = 1; apuesta <= columnas; apuesta++) {
         resultadoPartido = (int)(Math.random() * 6) + 1;
         switch(resultadoPartido) {
@@ -33,15 +37,5 @@ public class S06Ejercicio08 {
       }
       System.out.println();
     }
-    
-    // Pleno al 15
-    
-    System.out.print("\nPLENO AL 15 - Local...");
-    int goles = (int)(Math.random() * 4);
-    System.out.print(goles < 3 ? goles : "M");
-    
-    System.out.print("   Visitante...");
-    goles = (int)(Math.random() * 4);
-    System.out.print(goles < 3 ? goles : "M");
   }
 }
