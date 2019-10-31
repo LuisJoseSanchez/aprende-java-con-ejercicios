@@ -1,8 +1,5 @@
 /**
- * 6. Números aleatorios
- * 
- * 7. Escribe un programa que muestre tres apuestas de la quiniela en
- *    tres columnas para los partidos y el pleno al quince (15 filas).
+ * Quiniela aleatoria con tres columnas rellenas y pleno al quince.
  *
  * @author Luis José Sánchez
  */
@@ -12,13 +9,9 @@ public class S06Ejercicio07 {
     int resultadoPartido;
     int columnas = 3;
     
-    for (int fila = 1; fila <= 15; fila++) {
+    for (int fila = 1; fila <= 14; fila++) {
       System.out.printf("%4d. |", fila);
-      
-      if (fila == 15) {
-        columnas = 1;
-      }
-      
+
       for (int apuesta = 1; apuesta <= columnas; apuesta++) {
         resultadoPartido = (int)(Math.random() * 3) + 1;
         switch(resultadoPartido) {
@@ -35,5 +28,15 @@ public class S06Ejercicio07 {
       }
       System.out.println();
     }
+    
+    // Pleno al 15
+    
+    System.out.print("\nPLENO AL 15 - Local...");
+    int goles = (int)(Math.random() * 4);
+    System.out.print(goles < 3 ? goles : "M");
+    
+    System.out.print("   Visitante...");
+    goles = (int)(Math.random() * 4);
+    System.out.print(goles < 3 ? goles : "M");
   }
 }
