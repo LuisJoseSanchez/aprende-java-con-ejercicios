@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Articulo {
   private String codigo;
   private String descripcion;
@@ -68,5 +70,33 @@ public class Articulo {
     cadena += "\n------------------------------------------";
     return cadena;
   }
+
+  @Override
+  public int hashCode() {
+    int hash = 3;
+    hash = 59 * hash + Objects.hashCode(this.codigo);
+    return hash;
+  }
+
+  @Override
+  public boolean equals(Object obj) {
+    if (this == obj) {
+      return true;
+    }
+    if (obj == null) {
+      return false;
+    }
+    if (getClass() != obj.getClass()) {
+      return false;
+    }
+    final Articulo other = (Articulo) obj;
+    if (!Objects.equals(this.codigo, other.codigo)) {
+      return false;
+    }
+    return true;
+  }
+  
+  
 }
+
 
