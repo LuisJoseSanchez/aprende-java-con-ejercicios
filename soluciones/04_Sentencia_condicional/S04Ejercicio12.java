@@ -17,7 +17,7 @@ public class S04Ejercicio12 {
     int puntos = 0;
     String respuesta;
     
-    System.out.println("CUESTIONARIO DE 1º DAW");
+    System.out.println("CUESTIONARIO DE 1º DAM");
     
     System.out.println("1. ¿Cuál de los siguientes tipos de datos de Java tiene más precisión?");
     System.out.println("a) int\nb) double\nc) float"); 
