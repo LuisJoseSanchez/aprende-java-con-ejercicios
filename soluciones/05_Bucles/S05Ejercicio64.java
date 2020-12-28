@@ -48,6 +48,8 @@ public class S05Ejercicio64 {
           if ((ancho > 2) && (alto > 2)) {
             ancho--;
             alto--;
+          } else {
+            System.out.println("El rectángulo no se puede achicar más.");
           }
           break;
         case 3:
