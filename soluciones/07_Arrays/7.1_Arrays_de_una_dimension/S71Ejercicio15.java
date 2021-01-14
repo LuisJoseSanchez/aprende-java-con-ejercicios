@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /**
  * Aprende Java con Ejercicios (https://leanpub.com/aprendejava)
  * 
@@ -19,6 +21,8 @@ public class S71Ejercicio15 {
 
     int clientes; // número de clientes que llegan al restaurante buscando mesa
     
+    Scanner s = new Scanner(System.in);
+    
     do {
       // Muestra el estado de ocupación de las mesas
       System.out.println("\n┌─────────┬────┬────┬────┬────┬────┬────┬────┬────┬────┬────┐");
@@ -34,7 +38,7 @@ public class S71Ejercicio15 {
       System.out.println("│\n└─────────┴────┴────┴────┴────┴────┴────┴────┴────┴────┴────┘");
       
       System.out.print("¿Cuántos son? (Introduzca -1 para salir del programa): ");
-      clientes = Integer.parseInt(System.console().readLine());
+      clientes = Integer.parseInt(s.nextLine());
 
       if (clientes > 4) { // comprueba si el grupo de clientes es mayor a 4
         System.out.print("Lo siento, no admitimos grupos de 6, haga grupos de");
