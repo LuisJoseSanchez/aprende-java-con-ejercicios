@@ -8,16 +8,16 @@
  */
 public class S03Ejercicio04 {
   public static void main(String[] args) {
-    int x;
-    int y;
+    double x;
+    double y;
     String linea;
 
     System.out.print("Por favor, introduzca el primer número: ");
     linea = System.console().readLine();
-    x = Integer.parseInt( linea );
+    x = Double.parseDouble(linea);
     System.out.print("Introduzca el segundo número: ");
     linea = System.console().readLine();
-    y = Integer.parseInt( linea );
+    y = Double.parseDouble(linea);
     
     System.out.println("x = " + x);
     System.out.println("y = " + y);
