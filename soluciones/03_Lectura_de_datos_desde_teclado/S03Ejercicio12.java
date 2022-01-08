@@ -18,10 +18,8 @@
  *
  * @author Luis José Sánchez
  */
-
 public class S03Ejercicio12 {
   public static void main(String[] args) {
-
     System.out.print("Introduce la nota del primer examen: ");
     double nota1 = Double.parseDouble(System.console().readLine());
 
