@@ -12,13 +12,14 @@ public class S03Ejercicio01 {
     int y;
     String linea;
 
-    System.out.print("Por favor, introduce el primer número: ");
+    System.out.println("Este programa multiplica dos números enteros.");
+    System.out.print("Por favor, introduzca el primer número: ");
     linea = System.console().readLine();
-    x = Integer.parseInt( linea );
-    System.out.print("Introduce el segundo número: ");
+    x = Integer.parseInt(linea);
+    System.out.print("Introduzca el segundo número: ");
     linea = System.console().readLine();
-    y = Integer.parseInt( linea );
-    
-    System.out.println(x + "*" + y + "=" + (x * y));
+    y = Integer.parseInt(linea);
+
+    System.out.println(x + " * " + y + " = " + (x * y));
   }
 }
