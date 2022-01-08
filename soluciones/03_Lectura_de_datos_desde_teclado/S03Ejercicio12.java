@@ -34,6 +34,7 @@ public class S03Ejercicio12 {
     // nota2 = ((notaFinal * 100) - (nota1 * 40)) / 60
     double nota2 = ((notaFinal * 100) - (nota1 * 40)) / 60;
     
-    System.out.println("Para tener un " + notaFinal + " en el trimestre necesitas sacar un " + nota2 + " en el segundo examen.");
+    System.out.println("Para tener un " + notaFinal + " en el trimestre");
+    System.out.println(" necesitas sacar un " + nota2 + " en el segundo examen.");
   }
 }
