@@ -6,10 +6,8 @@
  *
  * @author Luis José Sánchez
  */
-
 public class S03Ejercicio03 {
   public static void main(String[] args) {
-
     System.out.print("Por favor, introduzca la cantidad de pesetas que quiere convertir: ");
     int pesetas = Integer.parseInt(System.console().readLine());
 

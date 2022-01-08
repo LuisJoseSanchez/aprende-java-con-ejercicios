@@ -7,7 +7,6 @@
  */
 public class S03Ejercicio05 {
   public static void main(String[] args) {
-
     System.out.println("Área de un rectángulo");
     System.out.print("Por favor, introduzca la longitud de la base (cm): ");
     double base = Double.parseDouble(System.console().readLine());

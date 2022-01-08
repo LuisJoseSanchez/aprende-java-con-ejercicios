@@ -8,7 +8,6 @@
  */
 public class S03Ejercicio09 {
   public static void main(String[] args) {
-
     final double PI = 3.141592654;
     // En lugar de definir una constante se podría usar
     // la constante predefinida Math.PI
