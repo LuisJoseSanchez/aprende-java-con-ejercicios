@@ -6,20 +6,21 @@
  *
  * @author Luis José Sánchez
  */
-
 public class S04Ejercicio01 {
   public static void main(String[] args) {
-
     String dia;
 
-    System.out.print("Por favor, introduzca un día de la semana y le diré qué asignatura toca a primera hora ese día: ");
-    dia = (System.console().readLine()); 
-    dia.toLowerCase(); // convierto a minúsculas todas las letras
+    System.out.println("Por favor, introduzca un día de la semana y le diré");
+    System.out.print("qué asignatura toca a primera hora ese día: ");
+    dia = System.console().readLine(); 
+    dia = dia.toLowerCase(); // convierte a minúsculas todas las letras
     
     switch(dia) {
       case "lunes":
         // continúa debajo
       case "martes":
+        // continúa debajo
+      case "miercoles":
         // continúa debajo
       case "miércoles":
         System.out.println("Programación");
@@ -30,6 +31,8 @@ public class S04Ejercicio01 {
       case "viernes":
         System.out.println("Bases de Datos");
         break;
+      case "sabado":
+        // continúa debajo
       case "sábado":
         // continúa debajo
       case "domingo":
