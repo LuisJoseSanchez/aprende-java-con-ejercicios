@@ -9,7 +9,6 @@
  *
  * @author Luis José Sánchez
  */
-
 public class S04Ejercicio02 {
   public static void main(String[] args) {
 
