@@ -3,7 +3,7 @@
  *
  * 12. Realiza un minicuestionario con 10 preguntas tipo test sobre las
  *     asignaturas que se imparten en el curso. Cada pregunta acertada
- *     sumará un punto. El programa mostrará al final la califcación
+ *     sumará un punto. El programa mostrará al final la calificación
  *     obtenida. Pásale el minicuestionario a tus compañeros y pídeles
  *     que lo hagan para ver qué tal andan de conocimientos en las
  *     diferentes asignaturas del curso.
@@ -25,6 +25,9 @@ public class S04Ejercicio12 {
     respuesta = System.console().readLine();
     if (respuesta.equals("b")) {
       puntos++;
+      System.out.println("Correcto");
+    } else {
+      System.out.println("Incorrecto");
     }
 
     System.out.println("2. ¿Cuál es el lenguaje que se utiliza para hacer consultas en las bases de datos");
@@ -33,6 +36,9 @@ public class S04Ejercicio12 {
     respuesta = System.console().readLine();  
     if (respuesta.equals("c")) {
       puntos++;
+      System.out.println("Correcto");
+    } else {
+      System.out.println("Incorrecto");
     }
 
     System.out.println("3. Para insertar un hiperenlace en una página se utiliza la etiqueta...");
@@ -41,6 +47,9 @@ public class S04Ejercicio12 {
     respuesta = System.console().readLine();
     if (respuesta.equals("b")) {
       puntos++;
+      System.out.println("Correcto");
+    } else {
+      System.out.println("Incorrecto");
     }
     
     System.out.println("4. ¿En qué directorio se encuentran los archivos de configuración de Linux?");
@@ -49,6 +58,9 @@ public class S04Ejercicio12 {
     respuesta = System.console().readLine();
     if (respuesta.equals("a")) {
       puntos++;
+      System.out.println("Correcto");
+    } else {
+      System.out.println("Incorrecto");
     }
     
     System.out.println("5. ¿Cuál de las siguientes memorias es volátil?");
@@ -57,6 +69,9 @@ public class S04Ejercicio12 {
     respuesta = System.console().readLine();
     if (respuesta.equals("a")) {
       puntos++;
+      System.out.println("Correcto");
+    } else {
+      System.out.println("Incorrecto");
     }
 
     System.out.println("\nHa obtenido " + puntos + " puntos.");

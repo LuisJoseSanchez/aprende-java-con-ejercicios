@@ -23,6 +23,6 @@ public class S04Ejercicio11 {
     int segundosHastaMedianoche = (24 * 3600) - segundosTranscurridos;
             
     //System.out.println("Desde las " + hora + ":" + minuto + " hasta la medianoche faltan " + segundosHastaMedianoche + " segundos.");
-    System.out.printf("Desde las %02d:%02d hasta la medianoche faltan %d segundos", hora, minuto, segundosHastaMedianoche);
+    System.out.printf("Desde las %02d:%02d hasta la medianoche faltan %d segundos.", hora, minuto, segundosHastaMedianoche);
   }
 }
