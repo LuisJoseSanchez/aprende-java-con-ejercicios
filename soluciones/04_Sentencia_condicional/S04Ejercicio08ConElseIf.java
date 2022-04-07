@@ -6,7 +6,7 @@
  *
  * @author Luis José Sánchez
  */
-public class S04Ejercicio08 {
+public class S04Ejercicio08ConElseIf {
 
   public static void main(String[] args) {
 
@@ -27,21 +27,13 @@ public class S04Ejercicio08 {
     
     if (media < 5) {
       System.out.print("Insuficiente");
-    }
-    
-    if ((media >= 5) && (media < 6)) {
+    } else if (media < 6) {
       System.out.print("Suficiente");
-    }
-    
-    if ((media >= 6) && (media < 7)) {
+    } else if (media < 7) {
       System.out.print("Bien");
-    }
-    
-    if ((media >= 7) && (media < 9)) {
+    } else if (media < 9) {
       System.out.print("Notable");
-    }
-    
-    if (media >= 9) {
+    } else {
       System.out.print("Sobresaliente");
     }
   }
