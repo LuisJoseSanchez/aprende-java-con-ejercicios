@@ -12,7 +12,7 @@ public class S04Ejercicio18 {
     
     int n, primera = 0;
     
-    System.out.print("Por favor, introduzca un número entero (de 5 cifras como máximo): ");
+    System.out.print("Por favor, introduzca un número entero positivo (de 5 cifras como máximo): ");
     n = Integer.parseInt(System.console().readLine());
     
     if ( n < 10 ) {
@@ -35,6 +35,6 @@ public class S04Ejercicio18 {
       primera = n / 10000;
     }
     
-    System.out.println("La primera cifra del número introducido es el " + primera);
+    System.out.println("La primera cifra del número introducido es el " + primera + ".");
   }
 }

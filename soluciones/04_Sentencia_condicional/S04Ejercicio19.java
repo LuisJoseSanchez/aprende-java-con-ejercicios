@@ -13,7 +13,7 @@ public class S04Ejercicio19 {
     
     int n, digitos = 0;
     
-    System.out.print("Por favor, introduzca un número entero (de 5 cifras como máximo): ");
+    System.out.print("Por favor, introduzca un número entero (5 cifras como máximo): ");
     n = Math.abs(Integer.parseInt(System.console().readLine()));
     
     if ( n < 10 ) {
@@ -36,6 +36,10 @@ public class S04Ejercicio19 {
       digitos = 5;
     }
     
-    System.out.println("El número introducido tiene " + digitos + " dígitos.");
+    if (digitos == 1) {
+      System.out.println("El número introducido tiene 1 dígito.");
+    } else {
+      System.out.println("El número introducido tiene " + digitos + " dígitos.");
+    }
   }
 }
