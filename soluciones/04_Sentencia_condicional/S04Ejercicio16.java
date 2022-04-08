@@ -86,15 +86,15 @@ public class S04Ejercicio16 {
     // Muestra el resultado del test
     
     if ( puntos <= 10 ) {
-      System.out.print("¡Enhorabuena! tu pareja parece ser totalmente fiel.");
+      System.out.print("\n¡Enhorabuena! tu pareja parece ser totalmente fiel.");
     }
     
     if ( (puntos > 11 ) && (puntos <= 22) ) {
-      System.out.print("Quizás exista el peligro de otra persona en su vida o en su mente, aunque seguramente será algo sin importancia. No bajes la guardia.");    
+      System.out.print("\nQuizás exista el peligro de otra persona en su vida o en su mente, aunque seguramente será algo sin importancia. No bajes la guardia.");    
     }
     
     if ( puntos >= 22 ) {
-      System.out.print("Tu pareja tiene todos los ingredientes para estar viviendo un romance con otra persona. Te aconsejamos que indagues un poco más y averigües qué es lo que está pasando por su cabeza.");
+      System.out.print("\nTu pareja tiene todos los ingredientes para estar viviendo un romance con otra persona. Te aconsejamos que indagues un poco más y averigües qué es lo que está pasando por su cabeza.");
     }
   }
 }
