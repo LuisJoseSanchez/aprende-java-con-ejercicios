@@ -9,18 +9,15 @@
  * 
  * @author Luis José Sánchez
  */
-
 public class S05Ejercicio15 {
-
   public static void main(String[] args) {
-     
-    System.out.print("Introduzca un número real como base: ");
-    double base = Double.parseDouble(System.console().readLine());
+    System.out.print("Introduzca la base: ");
+    int base = Integer.parseInt(System.console().readLine());
     
-    System.out.print("Introduzca un múmero entero como exponente: ");
+    System.out.print("Introduzca el exponente máximo: ");
     int exponenteFinal = Integer.parseInt(System.console().readLine());
 
-    double potencia;
+    int potencia;
     int exponente;
         
     for (int i = 1; i <= exponenteFinal; i++) {
@@ -34,6 +31,5 @@ public class S05Ejercicio15 {
       
       System.out.println(base + "^" + i + " = " + potencia);
     }
-
   }
 }

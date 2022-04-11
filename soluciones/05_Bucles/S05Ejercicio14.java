@@ -6,11 +6,8 @@
  * 
  * @author Luis José Sánchez
  */
-
 public class S05Ejercicio14 {
-
   public static void main(String[] args) {
-    
     System.out.println("Cálculo de una potencia");
     
     System.out.print("Introduzca la base: ");
@@ -19,7 +16,7 @@ public class S05Ejercicio14 {
     System.out.print("Introduzca el exponente: ");
     int exponente = Integer.parseInt(System.console().readLine());
 
-    double potencia = 1;
+    int potencia = 1;
         
     if (exponente == 0) {
       potencia = 1;

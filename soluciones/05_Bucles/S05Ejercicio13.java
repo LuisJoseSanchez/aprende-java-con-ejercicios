@@ -6,11 +6,8 @@
  * 
  * @author Luis José Sánchez
  */
-
 public class S05Ejercicio13 {
-
   public static void main(String[] args) {
-  
     System.out.println("Por favor, introduzca 10 números enteros: ");
 
     int negativos = 0;
@@ -24,7 +21,6 @@ public class S05Ejercicio13 {
       }
     }
     
-    System.out.println("Ha introducido " + positivos + " positivos y " + negativos + " negativos");
-
+    System.out.println("Ha introducido " + positivos + " positivos y " + negativos + " negativos.");
   }
 }
