@@ -6,7 +6,6 @@
  * @author Luis José Sánchez
  */
 public class S05Ejercicio08 {
-
   public static void main(String[] args) {
     
     System.out.print("Introduzca un número y le mostraré su tabla de multiplicar: ");

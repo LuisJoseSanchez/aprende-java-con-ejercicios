@@ -5,24 +5,19 @@
  * 
  * @author Luis José Sánchez
  */
-
 public class S05Ejercicio09 {
-
   public static void main(String[] args) {
-    
-    int numeroDeDigitos = 1, n, numeroIntroducido;
-
     System.out.print("Introduzca un número entero y le diré cuántos dígitos tiene: ");
-    numeroIntroducido = Integer.parseInt(System.console().readLine());
+    long numeroIntroducido = Long.parseLong(System.console().readLine());
     
-    n = numeroIntroducido;
+    long n = numeroIntroducido;
+    int numeroDeDigitos = 1;
     
     while (n > 10) {
-      n /= 10;
       numeroDeDigitos++;
+      n /= 10;
     }
     
     System.out.println(numeroIntroducido + " tiene " + numeroDeDigitos + " dígito/s.");
-
   }
 }

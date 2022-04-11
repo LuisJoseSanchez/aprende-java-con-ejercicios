@@ -6,9 +6,7 @@
  * @author Luis José Sánchez
  */
 public class S05Ejercicio03 {
-
   public static void main(String[] args) {
-    
     int i = 0;
     
     do {

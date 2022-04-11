@@ -11,7 +11,6 @@
  * @author Luis José Sánchez
  */
 public class S05Ejercicio07 {
-
   public static void main(String[] args) {
     
     int intentos = 4;

@@ -6,9 +6,7 @@
  * @author Luis José Sánchez
  */
 public class S05Ejercicio02 {
-
   public static void main(String[] args) {
-    
     int i = 0;
     
     while(i <= 100) {
