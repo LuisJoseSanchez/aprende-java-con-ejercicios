@@ -9,11 +9,11 @@ public class S05Ejercicio08 {
 
   public static void main(String[] args) {
     
-    System.out.print("Introduzca un número entero y le mostraré la tabla de multiplicar: ");
+    System.out.print("Introduzca un número y le mostraré su tabla de multiplicar: ");
     int numeroIntroducido = Integer.parseInt(System.console().readLine());
         
     for (int i = 0; i <= 10; i++) {
-      System.out.println(numeroIntroducido + " x " + i + " = " + numeroIntroducido * i);
+      System.out.printf("%d x %2d = %3d\n", numeroIntroducido, i, numeroIntroducido * i);
     }
 
   }
