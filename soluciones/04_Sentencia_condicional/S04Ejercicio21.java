@@ -24,7 +24,6 @@
  *
  * @author Luis José Sánchez
  */
-
 public class S04Ejercicio21 {
   public static void main(String[] args) {
 

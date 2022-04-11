@@ -12,7 +12,7 @@ public class S04Ejercicio18 {
     
     int n, primera = 0;
     
-    System.out.print("Por favor, introduzca un número entero positivo (de 5 cifras como máximo): ");
+    System.out.print("Por favor, introduzca un número entero positivo (5 cifras como máximo): ");
     n = Integer.parseInt(System.console().readLine());
     
     if ( n < 10 ) {
