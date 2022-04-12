@@ -36,8 +36,9 @@ public class S05Ejercicio21 {
       }
     } while (numeroIntroducido >= 0);
 
-    System.out.println("Ha introducido " + numeroDeElementos + " números");
-    System.out.println("La media de los impares es " + sumaImpares/numeroDeElementosImpares);
-    System.out.println("El máximo de los pares es " + maximoPar);
+    System.out.println("Ha introducido " + numeroDeElementos + " números positivos.");
+    System.out.print("La media de los impares es ");
+    System.out.println(sumaImpares / numeroDeElementosImpares + ".");
+    System.out.println("El máximo de los pares es " + maximoPar + ".");
   }
 }
