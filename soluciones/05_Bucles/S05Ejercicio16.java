@@ -7,7 +7,6 @@
  * 
  * @author Luis José Sánchez
  */
-
 public class S05Ejercicio16 {
 
   public static void main(String[] args) {
@@ -28,6 +27,10 @@ public class S05Ejercicio16 {
     } else {
       System.out.println("El número introducido no es primo.");
     }
+
+    // El if anterior se puede abreviar de esta otra manera.
+    // Descomenta para probarlo.
+    // System.out.println("El número introducido" + (esPrimo ? "" : " no") + " es primo.");
 
   }
 }

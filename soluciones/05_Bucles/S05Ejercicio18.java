@@ -7,7 +7,6 @@
  * 
  * @author Luis José Sánchez
  */
-
 public class S05Ejercicio18 {
 
   public static void main(String[] args) {
@@ -23,7 +22,8 @@ public class S05Ejercicio18 {
       segundoNumero = Integer.parseInt(System.console().readLine());
       
       if(primerNumero == segundoNumero) {
-        System.out.println("Los números introducidos no son válidos, deben ser distintos.");
+        System.out.print("Los números introducidos no son válidos, ");
+        System.out.println(" deben ser distintos.");
       }
     } while (primerNumero == segundoNumero);
     

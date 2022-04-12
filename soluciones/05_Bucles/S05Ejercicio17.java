@@ -18,7 +18,8 @@ public class S05Ejercicio17 {
       numeroIntroducido = Integer.parseInt(System.console().readLine());
       
       if(numeroIntroducido < 0) {
-        System.out.println("El número introducido no es correcto, debe introducir un número positivo.");
+        System.out.print("El número introducido no es correcto,");
+        System.out.println(" debe introducir un número positivo.");
       }
     } while (numeroIntroducido < 0);
     
@@ -28,6 +29,7 @@ public class S05Ejercicio17 {
       suma += i;
     }
 
-    System.out.println("La suma de los 100 números siguientes a " + numeroIntroducido + " es " + suma);
+    System.out.print("La suma de los 100 números siguientes a ");
+    System.out.println(numeroIntroducido + " es " + suma + ".");
   }
 }
