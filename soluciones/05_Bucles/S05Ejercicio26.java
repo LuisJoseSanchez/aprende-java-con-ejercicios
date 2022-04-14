@@ -12,16 +12,25 @@ public class S05Ejercicio26 {
   public static void main(String[] args) {
     
     System.out.print("Introduzca un número entero: ");
-    int numeroIntroducido = Integer.parseInt(System.console().readLine());
+    long numeroIntroducido = Integer.parseInt(System.console().readLine());
 
     System.out.print("Introduzca un dígito: ");
     int digito = Integer.parseInt(System.console().readLine());
 
-    System.out.print("Contando de izquierda a derecha, el " + digito + " aparece dentro de " + numeroIntroducido + " en las siguientes posiciones: ");
+    System.out.print("Contando de izquierda a derecha, el " + digito);
+    System.out.println(" aparece dentro de " + numeroIntroducido);
+    System.out.print("en las siguientes posiciones: ");
+    
+    // se hace una copia del número introducido
+    long numero = numeroIntroducido;
+    
+    // añade un 1 al final por si el número introducido termina en ceros,
+    // por ej. 10, 1000, etc.
+    numero = numero * 10 + 1;
     
     // le da la vueta al número y calcula la longitud
-    int numero = numeroIntroducido;
-    int volteado = 0;
+    
+    long volteado = 0;
     int longitud = 0;
     int posicion = 1;
     
@@ -36,7 +45,7 @@ public class S05Ejercicio26 {
     } // while
         
     // comprueba la posición
-    while (volteado > 0) {
+    while (volteado != 1) {
       if ((volteado % 10) == digito) {
         System.out.print(posicion + " ");
       }

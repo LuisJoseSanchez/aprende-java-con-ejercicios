@@ -26,7 +26,7 @@ public class S05Ejercicio28 {
     int factorial = numeroIntroducido;
     
     if (numeroIntroducido == 0) {
-      System.out.println("El factorial del " + numeroIntroducido + " es 1.");
+      System.out.println("0! = 1");
     } else {
       for (int i = 1; i < numeroIntroducido; i++) {
         factorial *= i;

@@ -25,6 +25,6 @@ public class S05Ejercicio27 {
     }
         
     System.out.print("\nDesde 1 hasta " + numeroIntroducido + " hay " + cuenta);
-    System.out.println(" múltiplos de 3 y suman " + suma);
+    System.out.println(" múltiplos de 3 y suman " + suma + ".");
   }
 }
