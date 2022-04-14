@@ -15,7 +15,7 @@ public class S05Ejercicio24 {
   public static void main(String[] args) {
     
     System.out.println("Este programa pinta una pirámide hecha a base de números.");
-    System.out.print("Por favor, introduzca la altura de la pirámide:");
+    System.out.print("Por favor, introduzca la altura de la pirámide: ");
     int alturaIntroducida = Integer.parseInt(System.console().readLine());
 
     int altura = 1;

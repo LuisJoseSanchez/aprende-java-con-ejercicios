@@ -27,6 +27,6 @@ public class S05Ejercicio23 {
     
     System.out.println("Ha introducido un total de " + numeroDeElementos + " números.");
     System.out.println("La suma total es " + suma + ".");
-    System.out.println("La media es " + suma / numeroDeElementos + ".");
+    System.out.println("La media es " + suma / (double) numeroDeElementos);
   }
 }
