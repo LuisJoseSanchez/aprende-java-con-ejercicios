@@ -17,7 +17,7 @@ public class S05Ejercicio40 {
     int espaciosPorDelante = alturaIntroducida / 2;
 
     if ((alturaIntroducida < 3) || (alturaIntroducida % 2 == 0)) {
-      System.out.print("Datos incorrectos. Debe introducir una altura impar mayor o igual a 3");
+      System.out.print("Datos incorrectos. Debe introducir una altura impar mayor o igual a 3.");
     } else {
       
       int altura = 1;

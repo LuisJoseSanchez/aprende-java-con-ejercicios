@@ -20,7 +20,7 @@ public class S05Ejercicio35 {
     int espaciosPorDelante = 0;
 
     if ((alturaIntroducida < 3) || (alturaIntroducida % 2 == 0)) {
-      System.out.print("Datos incorrectos. Debe introducir una altura impar mayor o igual a 3");
+      System.out.print("Datos incorrectos. Debe introducir una altura impar mayor o igual a 3.");
     } else {
       // parte de arriba /////////////////////////////////////
       while (altura < alturaIntroducida / 2 + 1) {
