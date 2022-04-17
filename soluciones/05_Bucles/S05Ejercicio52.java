@@ -18,7 +18,7 @@ public class S05Ejercicio52 {
     int primero =  (int)(numeroIntroducido / Math.pow(10, longitud - 1));
     long aux = (long)(primero * Math.pow(10, longitud - 1));
     long resultado = (numeroIntroducido - aux) * 10 + primero;
-    System.out.println("El número resultado es " + resultado);
+    System.out.println("El número resultado es " + resultado + ".");
   }
   
 }

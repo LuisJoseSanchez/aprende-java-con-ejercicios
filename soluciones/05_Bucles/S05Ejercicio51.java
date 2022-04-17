@@ -44,7 +44,7 @@ public class S05Ejercicio51 {
 
     if (numeroComido) {
       System.out.print("Después de haber sido comido por el gusano numérico");
-      System.out.println(" se queda en " + volteado);
+      System.out.println(" se queda en " + volteado + ".");
     } else {
       System.out.println("El gusano numérico no se ha comido ningún dígito.");
     }

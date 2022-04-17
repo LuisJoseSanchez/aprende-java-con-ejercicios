@@ -18,7 +18,7 @@ public class S05Ejercicio55 {
     int ultimo = (int) (numeroIntroducido % 10);
     long aux = numeroIntroducido / 10;
     long resultado = ultimo * (long) Math.pow(10, longitud - 1) + aux;
-    System.out.println("El número resultado es " + resultado);
+    System.out.println("El número resultado es " + resultado + ".");
   }
 
 }
