@@ -9,7 +9,7 @@ public class Aleatorio02 {
     System.out.println(" sin llegar a 10 (con decimales):");
     
     for (int i = 1; i <= 20; i++) {
-      System.out.println(Math.random() * 10 + "  ");
+      System.out.println(Math.random() * 10 + " ");
     }
   }
 }

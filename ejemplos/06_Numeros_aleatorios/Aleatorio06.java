@@ -7,7 +7,7 @@ public class Aleatorio06 {
   public static void main(String[] args) {
     System.out.println("Genera al azar piedra, papel o tijera:");
     
-    switch((int)(Math.random()*3)) {
+    switch((int)(Math.random() * 3)) {
       case 0:
         System.out.println("piedra");
         break;
