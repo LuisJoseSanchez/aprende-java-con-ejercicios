@@ -9,9 +9,7 @@
  */
 public class S06Ejercicio12 {
 
-  public static void main(String[] args) 
-    throws InterruptedException {
-
+  public static void main(String[] args) throws InterruptedException {
     int linea = 0;
     
     System.out.print("\033[32m"); // pinta en verde
