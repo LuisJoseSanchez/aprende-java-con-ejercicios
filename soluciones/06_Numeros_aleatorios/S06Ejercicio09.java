@@ -9,7 +9,6 @@
  */
 public class S06Ejercicio09 {
   public static void main(String[] args) {
-    
     int n = 0;
     int cuentaNumeros = 0;
     
