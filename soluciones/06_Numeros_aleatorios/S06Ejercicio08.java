@@ -12,7 +12,7 @@ public class S06Ejercicio08 {
     int columnas = 3;
     
     for (int fila = 1; fila <= 14; fila++) {
-      System.out.printf("%4d. |", fila);
+      System.out.printf("%2d. |", fila);
 
       for (int apuesta = 1; apuesta <= columnas; apuesta++) {
         resultadoPartido = (int)(Math.random() * 6) + 1;
