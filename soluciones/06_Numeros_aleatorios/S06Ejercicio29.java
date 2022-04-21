@@ -48,7 +48,7 @@ public class S06Ejercicio29 {
       temperaturaMaxima = aux;
     }
     
-    System.out.println("Previsión del tiempo para mañana");
+    System.out.println("\nPrevisión del tiempo para mañana");
     System.out.println("--------------------------------");
     System.out.println("Temperatura mínima: " + temperaturaMinima);
     System.out.println("Temperatura máxima: " + temperaturaMaxima);
