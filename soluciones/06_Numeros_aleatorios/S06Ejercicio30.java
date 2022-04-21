@@ -25,6 +25,8 @@ public class S06Ejercicio30 {
       (posicionPez == posicionCaracola) ||
       (posicionCaballito == posicionCaracola));
 
+    System.out.println();
+
     for (int i = 0; i < ancho; i++) {
       System.out.print("*");
     }
