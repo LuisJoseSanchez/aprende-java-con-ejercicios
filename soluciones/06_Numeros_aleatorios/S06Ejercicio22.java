@@ -10,12 +10,12 @@
 public class S06Ejercicio22 {
   public static void main(String[] args) {
 
-    System.out.print("Por favor, introduzca la longitud de la serpiente en ");
-    System.out.print("caracteres contando la cabeza: ");
+    System.out.print("Por favor, introduzca la longitud de la serpiente ");
+    System.out.print("contando la cabeza: ");
     int longitud = Integer.parseInt(System.console().readLine());
     
     // pinta la cabeza
-    System.out.println("            @");
+    System.out.println("\n            @");
     
     // pinta el cuerpo
     int i;

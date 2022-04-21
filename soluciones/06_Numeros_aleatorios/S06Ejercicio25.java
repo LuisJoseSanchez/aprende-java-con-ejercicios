@@ -22,11 +22,11 @@ public class S06Ejercicio25 {
       }
       
       if (esPrimo) {
-        System.out.print(" #" + numero + "# ");
+        System.out.print("#" + numero + "#  ");
       } else if ((numero % 5) == 0) {// múltiplo de 5
-        System.out.print(" [" + numero + "] ");
+        System.out.print("[" + numero + "]  ");
       } else {
-        System.out.print(" " + numero + " ");
+        System.out.print(numero + "  ");
       }
     } // for
   }
