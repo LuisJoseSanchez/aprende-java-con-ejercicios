@@ -8,7 +8,6 @@
  * @author Luis José Sánchez
  */
 public class S06Ejercicio15 {
-
   public static void main(String[] args) {
     
     int notas = 4 * (int)(Math.random() * 7 + 1);

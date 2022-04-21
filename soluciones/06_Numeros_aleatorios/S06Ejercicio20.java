@@ -13,6 +13,8 @@ public class S06Ejercicio20 {
     System.out.print("Por favor, indique la capacidad de la cuba en litros: ");
     int capacidad = Integer.parseInt(System.console().readLine());
 
+    System.out.println();
+    
     // Rellena la cuba con unos litros aleatorios
     // teniendo en cuenta no pasarse de la capacidad.
     int litros = (int)(Math.random() * (capacidad + 1));

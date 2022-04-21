@@ -6,7 +6,6 @@
  * @author Luis José Sánchez
  */
 public class S06Ejercicio14 {
-
   public static void main(String[] args) {
     
     int oportunidades = 5;

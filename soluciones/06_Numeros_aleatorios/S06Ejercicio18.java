@@ -10,9 +10,8 @@
 public class S06Ejercicio18 {
   public static void main(String[] args) {
 
-    // Todavía no se han visto arrays y por eso el ejercicio está
-    // implementado exclusivamente con variables. Con arrays podría
-    // ser mucho más corto.
+    // Todavía no se han visto arrays y por eso el ejercicio está implementado
+    // exclusivamente con variables. Con arrays es mucho más corto.
     
     int c1;
     int c2;
