@@ -30,6 +30,8 @@ public class S71Ejercicio08 {
       temperatura[i] = Integer.parseInt(System.console().readLine());
     }
 
+    System.out.println();
+    
     for (i = 0; i < 12; i++) {
       System.out.printf(azul + "%12s " + verde + "│", mes[i]);
       for (j = 0; j < temperatura[i]; j++) {
