@@ -19,6 +19,8 @@ public class S71Ejercicio09 {
       numero[i] = Integer.parseInt(System.console().readLine());
     }
 
+    System.out.println();
+    
     for (i = 0; i < 8; i++) {
       if (numero[i] % 2 == 0) {
         System.out.println(numero[i] + " par");
