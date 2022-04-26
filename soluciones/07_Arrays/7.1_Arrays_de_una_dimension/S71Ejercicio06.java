@@ -30,9 +30,9 @@ public class S71Ejercicio06 {
       }
       System.out.println("|");
       for (i = 0; i < 75; i++) {
-        System.out.print("⎯");
+        System.out.print("-");
       }
-      System.out.println("⎯");
+      System.out.println("-");
       for (i = 0; i < 15; i++) {
         System.out.printf("|%3d ", numero[i]);
       }
@@ -54,9 +54,9 @@ public class S71Ejercicio06 {
       }
       System.out.println("|");
       for (i = 0; i < 75; i++) {
-        System.out.print("⎯");
+        System.out.print("-");
       }
-      System.out.println("⎯");
+      System.out.println("-");
       for (i = 0; i < 15; i++) {
         System.out.printf("|%3d ", numero[i]);
       }
