@@ -17,7 +17,7 @@ public class S71Ejercicio16 {
       System.out.print(n[i] + " ");
     }
     
-    System.out.print("\n\n¿Qué números quiere resaltar? ");
+    System.out.print("\n¿Qué números quiere resaltar? ");
     System.out.print("(1 – los múltiplos de 5, 2 – los múltiplos de 7): ");
     int opcion = Integer.parseInt(System.console().readLine());
 
