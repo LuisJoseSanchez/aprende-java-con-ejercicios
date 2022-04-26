@@ -6,8 +6,8 @@
 public class Array01 {
   public static void main(String[] args) {
         
-    int[] n; // se define n como un array de enteros
-    n = new int[4]; // se reserva espacio para 4 enteros
+    int[] n; // define n como un array de enteros
+    n = new int[4]; // reserva espacio para 4 enteros
             
     n[0] = 26;
     n[1] = -30;
