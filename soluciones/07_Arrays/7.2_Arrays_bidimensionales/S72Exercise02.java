@@ -25,6 +25,8 @@ public class S72Exercise02 {
         num[fila][columna] = Integer.parseInt(System.console().readLine());
       }
     }
+    
+    System.out.println();
 
     // Muestra los datos y las sumas parciales de las filas
     int sumaFila;
