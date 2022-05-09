@@ -77,7 +77,7 @@ public class ArrayBiFunciones {
    */  
   public static void muestraArrayIntBi(int x[][]) {
   
-    String formatoNumero = "%" + matematicas.Varias.digitos(maximoArrayIntBi(x)) + "d";
+    String formatoNumero = "%" + Varias.digitos(maximoArrayIntBi(x)) + "d";
 
     for (int f = 0; f < filasArrayIntBi(x); f++) {
       for (int c = 0; c < columnasArrayIntBi(x); c++) {
