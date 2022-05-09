@@ -16,7 +16,7 @@ public class PruebaFunciones {
     System.out.print("Introduzca un número entero positivo: ");
     n = Integer.parseInt(System.console().readLine());
     
-    if (matematicas.Varias.esPrimo(n)) {
+    if (Varias.esPrimo(n)) {
       System.out.println("El " + n + " es primo.");
     } else {
       System.out.println("El " + n + " no es primo.");
@@ -28,7 +28,7 @@ public class PruebaFunciones {
     System.out.print("Introduzca un número entero positivo: ");
     n = Integer.parseInt(System.console().readLine());
 
-    System.out.println(n + " tiene " + matematicas.Varias.digitos(n) + " dígitos.");
+    System.out.println(n + " tiene " + Varias.digitos(n) + " dígitos.");
 
     // Prueba volumenCilindro()
 
@@ -40,6 +40,6 @@ public class PruebaFunciones {
     System.out.print("Introduzca la altura en metros: ");
     h = Double.parseDouble(System.console().readLine());
 
-    System.out.println("El volumen del cilindro es " + matematicas.Geometria.volumenCilindro(r, h) + " m3");
+    System.out.println("El volumen del cilindro es " + Geometria.volumenCilindro(r, h) + " m3");
   }
 }
