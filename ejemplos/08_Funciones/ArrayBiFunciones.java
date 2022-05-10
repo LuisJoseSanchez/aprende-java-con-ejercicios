@@ -12,7 +12,7 @@ public class ArrayBiFunciones {
 
     for(int i = 0; i < 6; i++) {
       for(int j = 0; j < 9; j++) {
-        n[i][j] = (int)(Math.random()*100000);
+        n[i][j] = (int)(Math.random() * 100000);
       }
     }
     
