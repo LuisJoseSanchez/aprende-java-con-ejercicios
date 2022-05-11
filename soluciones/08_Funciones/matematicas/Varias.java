@@ -154,7 +154,7 @@ public class Varias {
 
     long volteado = 0;
 
-    while(x > 0) {
+    while (x > 0) {
       volteado = (volteado * 10) + (x % 10);
       x = x / 10;
     }

@@ -94,10 +94,10 @@ public class S08Ejercicio19 {
       binario = binario / 1000;
     };
   
-    octal = matematicas.Varias.pegaPorDetras(octal, 1);
-    octal = matematicas.Varias.voltea(octal);
-    octal = matematicas.Varias.quitaPorDetras(octal, 1);
-    octal = matematicas.Varias.quitaPorDelante(octal, 1);
+    octal = Varias.pegaPorDetras(octal, 1);
+    octal = Varias.voltea(octal);
+    octal = Varias.quitaPorDetras(octal, 1);
+    octal = Varias.quitaPorDelante(octal, 1);
     
     return octal;
   }
@@ -111,10 +111,10 @@ public class S08Ejercicio19 {
   public static long binarioADecimal(long binario) {
     long decimal = 0;
   
-    int bits = matematicas.Varias.digitos(binario);
+    int bits = Varias.digitos(binario);
     
     for(int i = 0; i < bits; i++) {
-      decimal += matematicas.Varias.digitoN(binario, bits - i - 1) * matematicas.Varias.potencia(2, i);
+      decimal += Varias.digitoN(binario, bits - i - 1) * Varias.potencia(2, i);
     }
       
     return decimal;
@@ -147,8 +147,8 @@ public class S08Ejercicio19 {
   public static long octalABinario(long octal) {
     long binario = 0;
   
-    for (int i = 0; i < matematicas.Varias.digitos(octal); i++) {
-      binario = binario * 1000 + decimalABinario(matematicas.Varias.digitoN(octal, i));
+    for (int i = 0; i < Varias.digitos(octal); i++) {
+      binario = binario * 1000 + decimalABinario(Varias.digitoN(octal, i));
     }
     
     return binario;
@@ -168,12 +168,12 @@ public class S08Ejercicio19 {
     long binario = 1;
     
     while (decimal > 1) {
-      binario = matematicas.Varias.pegaPorDetras(binario, (int)decimal % 2);
+      binario = Varias.pegaPorDetras(binario, (int)decimal % 2);
       decimal = decimal / 2;
     }
-    binario = matematicas.Varias.pegaPorDetras(binario, 1);
-    binario = matematicas.Varias.voltea(binario);
-    binario = matematicas.Varias.quitaPorDetras(binario, 1);
+    binario = Varias.pegaPorDetras(binario, 1);
+    binario = Varias.voltea(binario);
+    binario = Varias.quitaPorDetras(binario, 1);
     
     return binario;
   }
@@ -189,7 +189,8 @@ public class S08Ejercicio19 {
     long binario = 0;
   
     for (int i = 0; i < hexadecimal.length(); i++) {
-      binario = binario * 10000 + decimalABinario(digitosHexa.indexOf(hexadecimal.charAt(i)));
+      final long decimal = decimalABinario(digitosHexa.indexOf(hexadecimal.charAt(i)));
+      binario = binario * 10000 + decimal;
     }
 
     return binario;
