@@ -16,10 +16,10 @@ public class S08Ejercicio17 {
     System.out.print("Introduzca un número binario: ");
     long binario = Long.parseLong(System.console().readLine());
     
-    int bits = matematicas.Varias.digitos(binario);
+    int bits = Varias.digitos(binario);
     
     for(int i = 0; i < bits; i++) {
-      decimal += matematicas.Varias.digitoN(binario, bits - i - 1) * matematicas.Varias.potencia(2, i);
+      decimal += Varias.digitoN(binario, bits - i - 1) * Varias.potencia(2, i);
     }
     
     System.out.println(binario + " en binario es " + decimal + " en decimal.");

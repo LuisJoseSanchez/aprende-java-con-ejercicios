@@ -14,7 +14,8 @@ public class S08Ejercicio18 {
     System.out.print("Introduzca un número en base diez para pasarlo a binario: ");
     int decimal = Integer.parseInt(System.console().readLine());
     
-    System.out.println(decimal + " en decimal es " + decimalABinario(decimal) + " en binario.");
+    System.out.println(decimal + " en decimal es " + decimalABinario(decimal)
+        + " en binario.");
     
   } // main
   
@@ -33,12 +34,12 @@ public class S08Ejercicio18 {
     long binario = 1;
     
     while (decimal > 1) {
-      binario = matematicas.Varias.pegaPorDetras(binario, decimal % 2);
+      binario = Varias.pegaPorDetras(binario, decimal % 2);
       decimal = decimal / 2;
     }
-    binario = matematicas.Varias.pegaPorDetras(binario, 1);
-    binario = matematicas.Varias.voltea(binario);
-    binario = matematicas.Varias.quitaPorDetras(binario, 1);
+    binario = Varias.pegaPorDetras(binario, 1);
+    binario = Varias.voltea(binario);
+    binario = Varias.quitaPorDetras(binario, 1);
     
     return binario;
   }
