@@ -379,7 +379,7 @@ public class Varias {
    * @return  número compuesto de los trozos <code>x</code> e <code>y</code>
    */
   public static long juntaNumeros(long x, long y) {
-    return (long)(x * potencia(10, digitos(y))) + y;
+    return x * (long)potencia(10, digitos(y)) + y;
   }
 
   /**

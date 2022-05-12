@@ -58,13 +58,13 @@ public class S08Ejercicio19 {
         resultado = binarioAHexadecimal(octalABinario(numeroIntroducido));
         break;
       case  7:
-        resultado = Long.toString(decimalABinario(numeroIntroducido));
+        resultado = Long.toString(decimalABinario((int)numeroIntroducido));
         break;
       case  8:
-        resultado = Long.toString(binarioAOctal(decimalABinario(numeroIntroducido)));
+        resultado = Long.toString(binarioAOctal(decimalABinario((int)numeroIntroducido)));
         break;
       case  9:
-        resultado = binarioAHexadecimal(decimalABinario(numeroIntroducido));
+        resultado = binarioAHexadecimal(decimalABinario((int)numeroIntroducido));
         break;
       case 10:
         resultado = Long.toString(hexadecimalABinario(numeroIntroducidoString));
@@ -154,13 +154,14 @@ public class S08Ejercicio19 {
     return binario;
   }
   
-  /**
+/**
    * Pasa un número decimal (en base 10) a binario (base 2).
    * 
-   * @param octal número entero en decimal
-   * @return      número inicial pasado a binario
+   * @param decimal número entero en base 10
+   * @return        número inicial pasado a binario
    */
-  public static long decimalABinario(long decimal) {
+  public static long decimalABinario(int decimal) {
+  
     if (decimal == 0) {
       return 0;
     }
@@ -168,7 +169,7 @@ public class S08Ejercicio19 {
     long binario = 1;
     
     while (decimal > 1) {
-      binario = Varias.pegaPorDetras(binario, (int)decimal % 2);
+      binario = Varias.pegaPorDetras(binario, decimal % 2);
       decimal = decimal / 2;
     }
     binario = Varias.pegaPorDetras(binario, 1);
