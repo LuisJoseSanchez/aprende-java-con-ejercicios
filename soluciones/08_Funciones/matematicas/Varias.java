@@ -188,7 +188,7 @@ public class Varias {
       x = x / 10;
     }
 
-    return (int)x % 10;
+    return (int)(x % 10);
   }
 
   /**
