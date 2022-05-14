@@ -13,6 +13,15 @@ public class S08Ejercicio38 {
     muestraArrayInt(filtraCapicuas(numeros));
   }
 
+  /**
+   * Devuelve un array con todos los números capicúas que se encuentren
+   * en otro array.
+   * Obviamente el tamaño del array que se devuelve será menor o igual
+   * al que se pasa como parámetro.
+   * 
+   * @param x array con números enteros
+   * @return array con los números capicúas extraidos de x
+   */
   public static int[] filtraCapicuas(int x[]) {
     int[] capicuas = new int[x.length];
     
