@@ -5,13 +5,13 @@ public class S08Ejercicio54 {
     System.out.println(ocurrencias(5, 5251535));
     System.out.println(ocurrencias(2, 123456));
 
-    int[] a = {714, 81, 9, 11};
+    final int[] a = {714, 81, 9, 11};
     System.out.println(ocurrencias(1, a));
     
-    int[] b = {42, 13, 12345, 4};
+    final int[] b = {42, 13, 12345, 4};
     System.out.println(ocurrencias(4, b));
     
-    int[] c = {6, 66, 666};
+    final int[] c = {6, 66, 666};
     System.out.println(ocurrencias(6, c));
   }
   

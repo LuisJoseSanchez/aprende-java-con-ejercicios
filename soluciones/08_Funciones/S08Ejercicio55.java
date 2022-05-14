@@ -1,7 +1,13 @@
 public class S08Ejercicio55 {
 
   public static void main(String[] args) {
-    String[] a = {"casa", "coche", "sol", "mesa", "mesa", "coche", "ordenador", "sol", "CASA"};
+    final String[] a = {"casa", "coche", "sol", "mesa", "mesa", "coche", "ordenador", "sol", "CASA"};
+    
+    for (String cadena : a) {
+      System.out.print(cadena + " ");
+    }
+    
+    System.out.println();
     
     for (String cadena : sinRepetir(a)) {
       System.out.print(cadena + " ");

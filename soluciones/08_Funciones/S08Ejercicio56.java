@@ -1,3 +1,5 @@
+import array.ArrayBi;
+
 public class S08Ejercicio56 {
 
   public static void main(String[] args) {
@@ -7,6 +9,10 @@ public class S08Ejercicio56 {
       {32, 42, 64, 23, 41, 39},
       {98, 45, 94, 11, 18, 48}
     };
+    
+    ArrayBi.muestraArrayBiInt(a);
+    
+    System.out.print("\ncorteza: ");
     
     for (int numero : corteza(a)) {
       System.out.print(numero + " ");
