@@ -5,14 +5,23 @@ import static matematicas.Varias.posicionDeDigito;
 public class S08Ejercicio40 {
 
   public static void main(String[] args) {
-    int[] numeros = generaArrayInt(20, 1, 1000);
+    final int[] numeros = generaArrayInt(20, 1, 1000);
 
     System.out.println("Array original: ");
     muestraArrayInt(numeros);
-    System.out.println("Capicúas: ");
+    System.out.println("Números que contienen un 7: ");
     muestraArrayInt(filtraCon7(numeros));
   }
 
+  /**
+   * Devuelve un array con todos los números que contienen el 7 (por ej. 7, 27,
+   * 782) que se encuentran en otro array.
+   * El tamaño del array que se devuelve será menor o igual al que se pasa como
+   * parámetro.
+   * 
+   * @param x array con números enteros
+   * @return array con los números que contienen el 7 extraidos de x
+   */
   public static int[] filtraCon7(int x[]) {
     int[] con7 = new int[x.length];
 

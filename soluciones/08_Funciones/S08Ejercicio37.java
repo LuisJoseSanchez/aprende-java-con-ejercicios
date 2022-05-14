@@ -13,7 +13,7 @@ public class S08Ejercicio37 {
   }
   
   public static String convierteEnMorse(int n) {
-    String[] morse = {
+    final String[] morse = {
 	  "_ _ _ _ _", ". _ _ _ _", ". . _ _ _", ". . . _ _", ". . . . _",
       ". . . . .", "_ . . . .", "_ _ . . .", "_ _ _ . .", "_ _ _ _ ."
     };
