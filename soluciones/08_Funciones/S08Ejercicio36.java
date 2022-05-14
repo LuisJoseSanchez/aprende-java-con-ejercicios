@@ -13,6 +13,15 @@ public class S08Ejercicio36 {
     muestraArrayInt(filtraPrimos(numeros));
   }
 
+  /**
+   * Devuelve un array con todos los números primos que se encuentren
+   * en otro array.
+   * Obviamente el tamaño del array que se devuelve será menor o igual
+   * al que se pasa como parámetro.
+   * 
+   * @param x array con números enteros
+   * @return array con los números primos extraidos de x
+  */
   public static int[] filtraPrimos(int x[]) {
     int[] primos = new int[x.length];
     
