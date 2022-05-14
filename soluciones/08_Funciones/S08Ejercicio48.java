@@ -1,17 +1,18 @@
+import array.Array;
+
 public class S08Ejercicio48 {
 
-  /**
-   * @param args the command line arguments
-   */
   public static void main(String[] args) {
 
-    int[] a = {8, 9, 0};
-    int[] b = {1, 2, 3};
+    final int[] a = {8, 9, 0};
+    final int[] b = {1, 2, 3};
     
-    for (int e : concatena(a, b)) {
-      System.out.println(e);
-    }
-    
+    System.out.print("a: ");
+    Array.muestraArrayInt(a);
+    System.out.print("b: ");
+    Array.muestraArrayInt(b);
+    System.out.print("concatena(a, b): ");
+    Array.muestraArrayInt(concatena(a, b));
   }
 
   public static int[] concatena(int[] a, int[] b) {
