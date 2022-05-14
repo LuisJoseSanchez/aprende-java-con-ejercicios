@@ -2,13 +2,13 @@ public class S08Ejercicio47 {
 
   public static void main(String[] args) {
 
-    int[] a = {};
+    final int[] a = {};
     System.out.println("a: " + convierteArrayEnString(a));
 
-    int[] b = {8};
+    final int[] b = {8};
     System.out.println("b: " + convierteArrayEnString(b));
     
-    int[] c = {6, 2, 5, 0, 1};
+    final int[] c = {6, 2, 5, 0, 1};
     System.out.println("b: " + convierteArrayEnString(c));
 
   }
