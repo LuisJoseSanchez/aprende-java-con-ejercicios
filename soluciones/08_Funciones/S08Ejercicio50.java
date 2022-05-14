@@ -1,8 +1,8 @@
 public class S08Ejercicio50 {
 
   public static void main(String[] args) {
-    int[] a = {8, 9, 0};
-    int[] b = {1, 2, 3};
+    final int[] a = {8, 9, 0};
+    final int[] b = {1, 2, 3};
 
     for (int n : mezcla(a, b)) {
       System.out.print(n + " ");
@@ -10,8 +10,8 @@ public class S08Ejercicio50 {
 
     System.out.println();
 
-    int[] c = {4, 3};
-    int[] d = {7, 8, 9, 10};
+    final int[] c = {4, 3};
+    final int[] d = {7, 8, 9, 10};
 
     for (int n : mezcla(c, d)) {
       System.out.print(n + " ");
@@ -19,16 +19,16 @@ public class S08Ejercicio50 {
 
     System.out.println();
 
-    int[] e = {8, 9, 0, 3};
-    int[] f = {1};
+    final int[] e = {8, 9, 0, 3};
+    final int[] f = {1};
 
     for (int n : mezcla(e, f)) {
       System.out.print(n + " ");
     }
 
     System.out.println();
-    int[] g = {};
-    int[] h = {1, 2, 3};
+    final int[] g = {};
+    final int[] h = {1, 2, 3};
 
     for (int n : mezcla(g, h)) {
       System.out.print(n + " ");
