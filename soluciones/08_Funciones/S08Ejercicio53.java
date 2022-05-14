@@ -8,25 +8,24 @@ public class S08Ejercicio53 {
     for (fila = 0; fila < 4; fila++) {
       for (columna = 0; columna < 6; columna++) {
         array[fila][columna] = (int) (Math.random() * 201);
-        System.out.printf("%5d ", array[fila][columna]);
+        System.out.printf("%3d ", array[fila][columna]);
       }
       System.out.println("");
     }
-    System.out.println(nEsimo(array, 3));
-    System.out.println(nEsimo(array, 20));
-    System.out.println(nEsimo(array, 24));
-    System.out.println(nEsimo(array, 23));
+    System.out.println("\n3 -> " + nEsimo(array, 3));
+    System.out.println("20 -> " + nEsimo(array, 20));
+    System.out.println("24 -> " + nEsimo(array, 24));
+    System.out.println("23 -> " + nEsimo(array, 23));
   }
 
   public static int nEsimo(int[][] n, int posicion) {
-	int filas = n.length;
+  int filas = n.length;
     int columnas = n[0].length;
     
     if ((posicion < 0) || (posicion > filas * columnas - 1)) {
       return -1;
     } else {
-	  return n[posicion / columnas][posicion % columnas];
-	}
+    return n[posicion / columnas][posicion % columnas];
+    }
   }
-  
 }
