@@ -4,7 +4,7 @@ import matematicas.Varias;
 public class S08Ejercicio51 {
 
   public static void main(String[] args) {
-    int[] a = Array.generaArrayInt(10, 2, 100);
+    final int[] a = Array.generaArrayInt(10, 2, 100);
     
     System.out.println("Array generado:");
     Array.muestraArrayInt(a);
