@@ -10,7 +10,7 @@ public class GatoSimple {
   String color;
   String raza;
   String sexo;
-  int    edad;
+  int edad;
   double peso;
   
   // métodos ///////////////////////////////
