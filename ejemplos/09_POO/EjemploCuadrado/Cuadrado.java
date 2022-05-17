@@ -15,6 +15,7 @@ public class Cuadrado {
     this.lado = l;
   }
   
+  @Override
   public String toString() {
     
     int i, espacios;
