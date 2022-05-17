@@ -19,6 +19,7 @@ public abstract class Animal {
     return this.sexo;
   }
 
+  @Override
   public String toString() {
     return "Sexo: " + this.sexo + "\n";
   }

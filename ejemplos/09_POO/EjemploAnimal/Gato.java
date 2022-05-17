@@ -27,6 +27,7 @@ public class Gato extends Animal {
     this.raza = "siamés";
   }
   
+  @Override
   public String toString() {
     return super.toString()
             + "Raza: " + this.raza
