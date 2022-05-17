@@ -64,7 +64,7 @@ public class GatoSimple {
     if (this.sexo.equals("hembra")) {
       System.out.println("no me gusta pelear");
     } else {
-      if (contrincante.getSexo().equals("hembra")) {
+      if (contrincante.sexo.equals("hembra")) {
         System.out.println("no peleo contra gatitas");
       } else {
         System.out.println("ven aquí que te vas a enterar");
