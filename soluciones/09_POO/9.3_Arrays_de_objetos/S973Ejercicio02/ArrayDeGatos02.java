@@ -21,7 +21,7 @@ public class ArrayDeGatos02 {
     gato[2] = new Gato("Mauri", "blanco", "manx");
     gato[3] = new Gato("Ulises", "marrón", "persa");
 
-    System.out.println("\nDatos de los gatos.");
+    System.out.println("Datos de los gatos:");
     
     for (i = 0; i < 4; i++) {
       System.out.println("\nGato nº" + (i + 1));

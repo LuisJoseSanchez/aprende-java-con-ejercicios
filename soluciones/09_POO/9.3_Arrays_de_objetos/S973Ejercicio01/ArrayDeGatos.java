@@ -13,7 +13,7 @@ public class ArrayDeGatos {
 
     int i;
 
-    System.out.println("\nPor favor, introduzca los datos de los gatos.");
+    System.out.println("Por favor, introduzca los datos de los gatos.");
   
     for (i = 0; i < 4; i++) {
       gato[i] = new Gato();
@@ -26,7 +26,7 @@ public class ArrayDeGatos {
       gato[i].setRaza(System.console().readLine());
     }
 
-    System.out.println("\n\nDatos de los gatos.");
+    System.out.println("\nDatos de los gatos:");
 
     for (i = 0; i < 4; i++) {
       System.out.println("\nGato nº" + (i + 1));
