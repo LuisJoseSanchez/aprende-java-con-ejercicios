@@ -75,7 +75,9 @@ public class Fraccion {
    *          fracción que se pasa como parámetro
    */
   public Fraccion multiplica(Fraccion f) {
-    return new Fraccion(this.signo * this.numerador * f.getNumerador(), this.denominador * f.getDenominador());
+    return new Fraccion(
+      this.signo * this.numerador * f.getNumerador(),
+      this.denominador * f.getDenominador());
   }
 
   /**
@@ -107,7 +109,9 @@ public class Fraccion {
    *          fracción que se pasa como parámetro
    */
   public Fraccion divide(Fraccion f) {
-    return new Fraccion(this.signo * this.numerador * f.getDenominador(), denominador * f.getNumerador());
+    return new Fraccion(
+      this.signo * this.numerador * f.getDenominador(),
+      denominador * f.getNumerador());
   }
 
   /**
@@ -125,7 +129,7 @@ public class Fraccion {
    */
   public Fraccion simplifica() {
     
-    int s = this.signo;
+    final int s = this.signo;
     int n = this.numerador;
     int d = this.denominador;
       
