@@ -12,7 +12,8 @@ public class ArrayDeAlumnosPrincipal {
 
     // Pide los datos de los alumnos /////////////////////////////////
         
-    System.out.println("A continuacion debera introducir el nombre y la nota media de 5 alumnos.");
+    System.out.println("A continuacion debera introducir el nombre y la nota"
+        + " media de 5 alumnos.");
 
     String nombreIntroducido;
     double notaIntroducida;
