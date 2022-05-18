@@ -31,7 +31,7 @@ public class PruebaVehiculos {
     Coche saab93 = new Coche(1900);
 
     while (opcion != 8) {
-      System.out.println("1. Anda con la bicicleta");
+      System.out.println("\n1. Anda con la bicicleta");
       System.out.println("2. Haz el caballito con la bicicleta");
       System.out.println("3. Anda con el coche");
       System.out.println("4. Quema rueda con el coche");
@@ -61,15 +61,15 @@ public class PruebaVehiculos {
           saab93.quemaRueda();
           break;
         case 5:
-          System.out.println("La bicicleta lleva recorridos ");
+          System.out.print("La bicicleta lleva recorridos ");
           System.out.println(bhSpeedrom.getKilometrosRecorridos() + " Km");
           break;
         case 6:
-          System.out.println("El coche lleva recorridos ");
+          System.out.print("El coche lleva recorridos ");
           System.out.println(saab93.getKilometrosRecorridos() + " Km");
           break;
         case 7:
-          System.out.println("Los vehículos llevan recorridos ");
+          System.out.print("Los vehículos llevan recorridos ");
           System.out.println(Vehiculo.getKilometrosTotales() + " Km");
         default:
       } // switch
