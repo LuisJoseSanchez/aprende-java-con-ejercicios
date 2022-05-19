@@ -49,9 +49,9 @@ public class ColeccionDeDiscosMejorado {
         // LISTADO //////////////////////////////////////////////////////////////////
         /////////////////////////////////////////////////////////////////////////////
 
-        int opcionListado;
-
         case 1:
+          int opcionListado;
+
           do {
             System.out.println("\nLISTADO");
             System.out.println("=======");
@@ -140,7 +140,7 @@ public class ColeccionDeDiscosMejorado {
           System.out.println("===========");
 
           // Busca la primera posición libre del array
-          primeraLibre = 0;
+          int primeraLibre = 0;
           codigo = discos[primeraLibre].getCodigo();
           while ((primeraLibre < N) && (!(codigo.equals("LIBRE")))) {
             primeraLibre++;
@@ -156,7 +156,7 @@ public class ColeccionDeDiscosMejorado {
             System.out.print("Código: ");
 
             // Comprueba que el código introducido no se repita
-            existeCodigo = true;
+            boolean existeCodigo = true;
             while (existeCodigo) {
               existeCodigo = false;
               codigoIntroducido = s.nextLine();
@@ -198,7 +198,7 @@ public class ColeccionDeDiscosMejorado {
           System.out.print("Por favor, introduzca el código del disco cuyos datos desea cambiar: ");
           codigoIntroducido = s.nextLine();
 
-          i = -1;
+          int i = -1;
           do {
             i++;
           } while (!((discos[i].getCodigo()).equals(codigoIntroducido)));
