@@ -71,4 +71,3 @@ public class Articulo {
     return cadena;
   }
 }
-
