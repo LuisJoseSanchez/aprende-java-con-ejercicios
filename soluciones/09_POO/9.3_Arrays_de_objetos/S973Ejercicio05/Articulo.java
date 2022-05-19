@@ -1,10 +1,25 @@
 public class Articulo {
-  private String codigo = "LIBRE";
+  private String codigo;
   private String descripcion;
   private double precioDeCompra;
   private double precioDeVenta;
   private int stock;
   
+  public Articulo() {
+    this.codigo = "LIBRE";
+  }
+
+  public Articulo(
+    String codigo, String descripcion, double precioDeCompra,
+    double precioDeVenta, int stock) {
+      
+    this.codigo = codigo;
+    this.descripcion = descripcion;
+    this.precioDeCompra = precioDeCompra;
+    this.precioDeVenta = precioDeVenta;
+    this.stock = stock;
+  }
+
   public String getCodigo() {
     return codigo;
   }

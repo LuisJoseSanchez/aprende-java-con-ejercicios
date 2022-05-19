@@ -1,59 +1,32 @@
-/*
- * 5. Crea el programa GESTISIMAL (GESTIón SIMplifcada de Almacén) para llevar
- *    el control de los artículos de un almacén. De cada artículo se debe saber
- *    el código, la descripción, el precio de compra, el precio de venta y el
- *    stock (número de unidades). El menú del programa debe tener, al menos, las
- *    siguientes opciones:
- *    <p>
- *    1. Listado
- *    2. Alta
- *    3. Baja
- *    4. Modifcación
- *    5. Entrada de mercancía
- *    6. Salida de mercancía
- *    7. Salir
- *    <p>
- *    La entrada y salida de mercancía supone respectivamente el incremento y
- *    decremento de stock de un determinado artículo. Hay que controlar que no
- *    se pueda sacar más mercancía de la que hay en el almacén.
- *    
- *    @author Luis José Sánchez
- */
+import java.util.Scanner;
 
 public class Gestisimal {
 
   // N determina el tamaño del array
-  static int N = 100;
-  
+  static final int N = 100;
+
+  static Articulo[] articulos = new Articulo[N];
+
   public static void main(String[] args) {
 
+    // Inicializa el array
+    for(int i = 0; i < N; i++) {
+      Gestisimal.articulos[i] = new Articulo();
+    }
+
     int opcion;
-    int primeraLibre;
-    int i;
     int stockIntroducido;
     double precioDeCompraIntroducido;
     double precioDeVentaIntroducido;
     String codigo;
     String codigoIntroducido = "";
     String descripcionIntroducida;
-    String precioDeCompraIntroducidoString;
-    String precioDeVentaIntroducidoString;
-    String stockIntroducidoString;
-    boolean existeCodigo;
-    
-    //Crea el array de artículos
-    Articulo[] articulo = new Articulo[N];
 
-    // Crea todos los artículos que van en cada una de
-    // las celdas del array
-    for(i = 0; i < N; i++) {
-      articulo[i] = new Articulo();
-    }
-    
-    // Menu
+    Scanner s = new Scanner(System.in);
+
+    // MENU ///////////////////////////////////////////////////////////////////
     do {
-      System.out.println("\n\nG E S T I S I M A L");
-      System.out.println("===================");
+      pintaTitulo("G E S T I S I M A L");
       System.out.println("1. Listado");
       System.out.println("2. Alta");
       System.out.println("3. Baja");
@@ -62,237 +35,166 @@ public class Gestisimal {
       System.out.println("6. Salida de mercancía");
       System.out.println("7. Salir");
       System.out.print("Introduzca una opción: ");
-      opcion = Integer.parseInt(System.console().readLine());
+      opcion = Integer.parseInt(s.nextLine());
       
       switch (opcion) {
 
-        /////////////////////////////////////////////////////////////////////////////
-        // LISTADO //////////////////////////////////////////////////////////////////
-        /////////////////////////////////////////////////////////////////////////////
-  
+        // LISTADO ////////////////////////////////////////////////////////////
         case 1:
-          System.out.println("\nLISTADO");
-          System.out.println("=======");
+          pintaTitulo("LISTADO");
           
-          for(i = 0; i < N; i++) {
-            if (!articulo[i].getCodigo().equals("LIBRE")) {
-              System.out.println(articulo[i]);
+          for(Articulo a : articulos) {
+            if (!a.getCodigo().equals("LIBRE")) {
+              System.out.println(a);
             }
           }
   
           break;
-          
-        /////////////////////////////////////////////////////////////////////////////
-        // ALTA /////////////////////////////////////////////////////////////////////
-        /////////////////////////////////////////////////////////////////////////////
-          
+
+        // ALTA ///////////////////////////////////////////////////////////////
         case 2:
-          System.out.println("\nNUEVO ARTÍCULO");
-          System.out.println("==============");
+          pintaTitulo("NUEVO ARTÍCULO");
           
-          // Busca la primera posición libre del array
-          primeraLibre = 0;
-          codigo = articulo[primeraLibre].getCodigo();
-          while ((primeraLibre < N) && (!(codigo.equals("LIBRE")))) {
-            primeraLibre++;
-            if (primeraLibre < N) {
-              codigo = articulo[primeraLibre].getCodigo();
-            }
-          }
-          
-          if (primeraLibre == N) {
-            System.out.println("Lo siento, a base de datos está llena.");
+          if (primeraPosicionLibre() == N) {
+            System.out.println("Lo siento, la base de datos está llena.");
           } else {
             
             // Introducción de datos 
-            
             System.out.println("Por favor, introduzca los datos del artículo.");  
             System.out.print("Código: ");
             
             // Comprueba que el código introducido no se repita
-            existeCodigo = true;
-            while (existeCodigo) {
-              existeCodigo = false;
-              codigoIntroducido = System.console().readLine();
-              
-              for (i = 0; i < N; i++) {
-                if (codigoIntroducido.equals(articulo[i].getCodigo())) {
-                  existeCodigo = true;
-                }
-              }
-              
-              if (existeCodigo) {
+            do {
+              codigoIntroducido = s.nextLine();
+              if (existeCodigo(codigoIntroducido)) {
                 System.out.println("Ese código ya existe en la base de datos.");
                 System.out.print("Introduzca otro código: ");
               }
-            } // while (existeCodigo)
-            
-            articulo[primeraLibre].setCodigo(codigoIntroducido);
+            } while (existeCodigo(codigoIntroducido));
             
             System.out.print("Descripcion: ");
-            descripcionIntroducida = System.console().readLine();
-            articulo[primeraLibre].setDescripcion(descripcionIntroducida);
-            
+            descripcionIntroducida = s.nextLine();
             System.out.print("Precio de compra: ");
-            precioDeCompraIntroducido = Double.parseDouble(System.console().readLine());
-            articulo[primeraLibre].setPrecioDeCompra(precioDeCompraIntroducido);
-            
+            precioDeCompraIntroducido = Double.parseDouble(s.nextLine());
             System.out.print("Precio de venta: ");
-            precioDeVentaIntroducido = Double.parseDouble(System.console().readLine());
-            articulo[primeraLibre].setPrecioDeVenta(precioDeVentaIntroducido);
-            
+            precioDeVentaIntroducido = Double.parseDouble(s.nextLine());
             System.out.print("Stock: ");
-            stockIntroducido = Integer.parseInt(System.console().readLine());
-            articulo[primeraLibre].setStock(stockIntroducido);
+            stockIntroducido = Integer.parseInt(s.nextLine());
+
+            // Crea el nuevo artículo
+            articulos[primeraPosicionLibre()] = new Articulo(
+              codigoIntroducido, descripcionIntroducida, precioDeCompraIntroducido,
+              precioDeVentaIntroducido, stockIntroducido);
           }
           
           break;
 
-        /////////////////////////////////////////////////////////////////////////////
-        // BAJA /////////////////////////////////////////////////////////////////////
-        /////////////////////////////////////////////////////////////////////////////
-            
+        // BAJA ///////////////////////////////////////////////////////////////
         case 3:
-          System.out.println("\nBAJA");
-          System.out.println("====");
+          pintaTitulo("BAJA");
           
-          System.out.print("Por favor, introduzca el código del artículo que desea dar de baja: ");
-          codigoIntroducido = System.console().readLine();
+          System.out.print("Por favor, introduzca el código del artículo: ");
+          codigoIntroducido = s.nextLine();
     
-          i = -1;
-          codigo = "";
-          do {
-            i++;
-            if (i < N) {
-              codigo = articulo[i].getCodigo();
-            }
-          } while (!(codigo.equals(codigoIntroducido)) && (i < N));
-      
-          if (i == N) {
+          if (!existeCodigo(codigoIntroducido)) {
             System.out.println("Lo siento, el código introducido no existe.");
           } else {
-            articulo[i].setCodigo("LIBRE");
-            System.out.println("articulo borrado.");  
+            articulos[posicionConCodigo(codigoIntroducido)].setCodigo("LIBRE");
+            System.out.println("Artículo borrado.");  
           }
           
           break;
           
-        /////////////////////////////////////////////////////////////////////////////
-        // MODIFICACIÓN /////////////////////////////////////////////////////////////
-        /////////////////////////////////////////////////////////////////////////////
-          
+        // MODIFICACIÓN ///////////////////////////////////////////////////////
         case 4:
-          System.out.println("\nMODIFICACIÓN");
-          System.out.println("============");
+          pintaTitulo("MODIFICACIÓN");
           
-          System.out.print("Por favor, introduzca el código del artículo cuyos datos desea cambiar: ");
-          codigoIntroducido = System.console().readLine();
-    
-          i = -1;
-          do {
-            i++;
-          } while (!((articulo[i].getCodigo()).equals(codigoIntroducido)));
-          
-          System.out.println("Introduzca los nuevos datos del artículo o INTRO para dejarlos igual.");
-    
-          System.out.println("Código: " + articulo[i].getCodigo());
-          System.out.print("Nuevo código: ");
-          codigoIntroducido = System.console().readLine();
-          if (!codigoIntroducido.equals("")) {
-            articulo[i].setCodigo(codigoIntroducido);
+          System.out.print("Por favor, introduzca el código del artículo: ");
+          codigoIntroducido = s.nextLine();
+
+          if (!existeCodigo(codigoIntroducido)) {
+            System.out.println("Lo siento, el código introducido no existe.");
+          } else {
+            System.out.print("Introduzca los nuevos datos del artículo");
+            System.out.println(" o INTRO para dejarlos igual.");
+      
+            int i = posicionConCodigo(codigoIntroducido);
+
+            System.out.println("Código: " + articulos[i].getCodigo());
+            System.out.print("Nuevo código: ");
+            codigoIntroducido = s.nextLine();
+            if (!codigoIntroducido.equals("")) {
+              articulos[i].setCodigo(codigoIntroducido);
+            }
+            
+            System.out.println("Descripción: " + articulos[i].getDescripcion());
+            System.out.print("Nueva descripción: ");
+            descripcionIntroducida = s.nextLine();
+            if (!descripcionIntroducida.equals("")) {
+              articulos[i].setDescripcion(descripcionIntroducida);
+            }
+            
+            System.out.println("Precio de compra: " + articulos[i].getPrecioDeCompra());
+            System.out.print("Nuevo precio de compra: ");
+            String precioDeCompraIntroducidoString = s.nextLine();
+            if (!precioDeCompraIntroducidoString.equals("")) {
+              articulos[i].setPrecioDeCompra(Double.parseDouble(precioDeCompraIntroducidoString));
+            }
+            System.out.println("Precio de venta: " + articulos[i].getPrecioDeVenta());
+            System.out.print("Nuevo precio de venta: ");
+            String precioDeVentaIntroducidoString = s.nextLine();
+            if (!precioDeVentaIntroducidoString.equals("")) {
+              articulos[i].setPrecioDeVenta(Double.parseDouble(precioDeVentaIntroducidoString));
+            }
+            System.out.println("Stock: " + articulos[i].getStock());
+            System.out.print("Nuevo stock: ");
+            String stockIntroducidoString = s.nextLine();
+            if (!stockIntroducidoString.equals("")) {
+              articulos[i].setStock(Integer.parseInt(stockIntroducidoString));
+            }
           }
           
-          System.out.println("Descripción: " + articulo[i].getDescripcion());
-          System.out.print("Nueva descripción: ");
-          descripcionIntroducida = System.console().readLine();
-          if (!descripcionIntroducida.equals("")) {
-            articulo[i].setDescripcion(descripcionIntroducida);
-          }
-          
-          System.out.println("Precio de compra: " + articulo[i].getPrecioDeCompra());
-          System.out.print("Nuevo precio de compra: ");
-          precioDeCompraIntroducidoString = System.console().readLine();
-          if (!precioDeCompraIntroducidoString.equals("")) {
-            articulo[i].setPrecioDeCompra(Double.parseDouble(precioDeCompraIntroducidoString));
-          }
-          System.out.println("Precio de venta: " + articulo[i].getPrecioDeVenta());
-          System.out.print("Nuevo precio de venta: ");
-          precioDeVentaIntroducidoString = System.console().readLine();
-          if (!precioDeVentaIntroducidoString.equals("")) {
-            articulo[i].setPrecioDeVenta(Double.parseDouble(precioDeVentaIntroducidoString));
-          }
-          System.out.println("Stock: " + articulo[i].getStock());
-          System.out.print("Nuevo stock: ");
-          stockIntroducidoString = System.console().readLine();
-          if (!stockIntroducidoString.equals("")) {
-            articulo[i].setStock(Integer.parseInt(stockIntroducidoString));
-          }
           break;
   
-          
-          /////////////////////////////////////////////////////////////////////////////
-          // ENTRADA DE MERCANCÍA /////////////////////////////////////////////////////
-          /////////////////////////////////////////////////////////////////////////////
-              
+          // ENTRADA DE MERCANCÍA /////////////////////////////////////////////
           case 5:
-            System.out.println("\nENTRADA DE MERCANCÍA");
-            System.out.println("====================");
+            pintaTitulo("ENTRADA DE MERCANCÍA");
             
             System.out.print("Por favor, introduzca el código del artículo: ");
-            codigoIntroducido = System.console().readLine();
-      
-            i = -1;
-            codigo = "";
-            do {
-              i++;
-              if (i < N) {
-                codigo = articulo[i].getCodigo();
-              }
-            } while (!(codigo.equals(codigoIntroducido)) && (i < N));
+            codigoIntroducido = s.nextLine();
         
-            if (i == N) {
+            if (!existeCodigo(codigoIntroducido)) {
               System.out.println("Lo siento, el código introducido no existe.");
             } else {
+              int i = posicionConCodigo(codigoIntroducido);
               System.out.println("Entrada de mercancía del siguiente artículo: ");
-              System.out.println(articulo[i]);
-              System.out.print("Introduzca el número de unidades que entran al almacén: ");
-              stockIntroducidoString = System.console().readLine();
-              articulo[i].setStock(Integer.parseInt(stockIntroducidoString) + articulo[i].getStock());
+              System.out.println(articulos[i]);
+              System.out.print("Introduzca el número de unidades que entran: ");
+              String stockIntroducidoString = s.nextLine();
+              articulos[i].setStock(
+                Integer.parseInt(stockIntroducidoString) + articulos[i].getStock());
               System.out.println("La mercancía ha entrado en el almacén.");  
             }
             
             break;
 
-            
-            /////////////////////////////////////////////////////////////////////////////
-            // SALIDA DE MERCANCÍA //////////////////////////////////////////////////////
-            /////////////////////////////////////////////////////////////////////////////
-                
+            // SALIDA DE MERCANCÍA ////////////////////////////////////////////
             case 6:
-              System.out.println("\nSALIDA DE MERCANCÍA");
-              System.out.println("===================");
+              pintaTitulo("SALIDA DE MERCANCÍA");
               
               System.out.print("Por favor, introduzca el código del artículo: ");
-              codigoIntroducido = System.console().readLine();
-        
-              i = -1;
-              codigo = "";
-              do {
-                i++;
-                if (i < N) {
-                  codigo = articulo[i].getCodigo();
-                }
-              } while (!(codigo.equals(codigoIntroducido)) && (i < N));
-          
-              if (i == N) {
+              codigoIntroducido = s.nextLine();
+
+              if (!existeCodigo(codigoIntroducido)) {
                 System.out.println("Lo siento, el código introducido no existe.");
               } else {
+                int i = posicionConCodigo(codigoIntroducido);
                 System.out.println("Salida de mercancía del siguiente artículo: ");
-                System.out.println(articulo[i]);
+                System.out.println(articulos[i]);
                 System.out.print("Introduzca el número de unidades que desea sacar del almacén: ");
-                stockIntroducido = Integer.parseInt(System.console().readLine());
-                if (articulo[i].getStock() - stockIntroducido > 0) {
-                  articulo[i].setStock(articulo[i].getStock() - stockIntroducido);
+                stockIntroducido = Integer.parseInt(s.nextLine());
+                if (articulos[i].getStock() - stockIntroducido > 0) {
+                  articulos[i].setStock(articulos[i].getStock() - stockIntroducido);
                   System.out.println("La mercancía ha salido del almacén.");
                 } else {
                   System.out.println("Lo siento, no se pueden sacar tantas unidades.");
@@ -303,4 +205,63 @@ public class Gestisimal {
       } // switch
     } while (opcion != 7);
   }
+
+  // FUNCIONES ////////////////////////////////////////////////////////////////
+
+  /**
+   * Busca la primera posición libre del array.
+   * Si no quedan huecos, devuelve -1.
+   * 
+   * @return primera posición libre del array o -1 si no quedan huecos
+   */
+  public static int primeraPosicionLibre() {
+    for (int i = 0; i < articulos.length; i++) {
+      if (articulos[i].getCodigo().equals("LIBRE")) {
+        return i;
+      }
+    }
+    return -1;
+  }
+  
+  /**
+   * Dice si existe o no un artículo con un determinado código.
+   * 
+   * @return true si existe el código y false si no existe
+   */
+  public static boolean existeCodigo(String codigo) {
+    for (Articulo a : articulos) {
+      if (a.getCodigo().equals(codigo)) {
+        return true;
+      }
+    }
+    return false;
+  }
+  
+  /**
+   * Pinta un título con subrayado.
+   */
+  public static void pintaTitulo(String titulo) {
+    System.out.println("\n" + titulo);
+    for (int i = 0; i < titulo.length(); i++) {
+      System.out.print("=");  
+    }
+    System.out.println();
+  }
+
+  /**
+   * Devuelve la posición dentro del array en la que se encuentra un artículo
+   * con un determinado código.
+   * Si el código no se encuentra, devuelve -1.
+   * 
+   * @return posición dentro del array en la que se encuentra un artículo
+   */
+  public static int posicionConCodigo(String codigo) {
+    for (int i = 0; i < articulos.length; i++) {
+      if (articulos[i].getCodigo().equals(codigo)) {
+        return i;
+      }
+    }
+    return -1;
+  }
+  
 }
