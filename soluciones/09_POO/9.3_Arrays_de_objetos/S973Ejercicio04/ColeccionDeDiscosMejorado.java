@@ -33,7 +33,7 @@ public class ColeccionDeDiscosMejorado {
 
     // Menu
     do {
-      System.out.println("\n\nCOLECCIÓN DE DISCOS");
+      System.out.println("\nCOLECCIÓN DE DISCOS");
       System.out.println("===================");
       System.out.println("1. Listado");
       System.out.println("2. Nuevo disco");
@@ -103,7 +103,8 @@ public class ColeccionDeDiscosMejorado {
                 System.out.println("==================");
 
                 for (Disco d : discos) {
-                  if (d.getGenero().equals(generoIntroducido)) {
+                  if ((!d.getCodigo().equals("LIBRE"))
+                    && d.getGenero().equals(generoIntroducido)) {
                     System.out.println(d);
                   }
                 }
