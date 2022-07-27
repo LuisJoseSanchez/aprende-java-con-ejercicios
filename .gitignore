@@ -1,2 +1,9 @@
 *.class
 
+/mavenproject1/nbproject/
+/mavenproject1/target/
+/poo/target/
+/POO1/nbproject/private/
+/POO1/build/
+/Consultorio/nbproject/private/
+/Consultorio/build/
