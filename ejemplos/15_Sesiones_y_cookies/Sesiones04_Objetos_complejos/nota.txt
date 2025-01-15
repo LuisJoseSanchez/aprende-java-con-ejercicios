@@ -1,2 +1,0 @@
-La clase "Persona" se debe definir dentro del paquete "clases". No va en la carpeta "web" junto con las páginas jsp.
-
